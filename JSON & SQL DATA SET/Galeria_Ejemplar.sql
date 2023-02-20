@@ -1,0 +1,60 @@
+INSERT INTO Galeria_Galeria_Ejemplar (ID_Galeria_Ejemplar,ID_Ejemplar)
+VALUES
+  (1,24),
+  (2,21),
+  (3,41),
+  (4,39),
+  (5,43),
+  (6,35),
+  (7,48),
+  (8,42),
+  (9,3),
+  (10,9);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Ejemplar,ID_Ejemplar)
+VALUES
+  (11,18),
+  (12,43),
+  (13,24),
+  (14,25),
+  (15,28),
+  (16,22),
+  (17,19),
+  (18,18),
+  (19,17),
+  (20,0);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Ejemplar,ID_Ejemplar)
+VALUES
+  (21,32),
+  (22,13),
+  (23,28),
+  (24,18),
+  (25,25),
+  (26,5),
+  (27,37),
+  (28,8),
+  (29,43),
+  (30,21);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Ejemplar,ID_Ejemplar)
+VALUES
+  (31,13),
+  (32,6),
+  (33,36),
+  (34,8),
+  (35,28),
+  (36,9),
+  (37,26),
+  (38,37),
+  (39,29),
+  (40,22);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Ejemplar,ID_Ejemplar)
+VALUES
+  (41,6),
+  (42,48),
+  (43,16),
+  (44,27),
+  (45,26),
+  (46,17),
+  (47,40),
+  (48,26),
+  (49,29),
+  (50,27);

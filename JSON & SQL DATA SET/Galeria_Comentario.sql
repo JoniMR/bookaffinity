@@ -1,0 +1,60 @@
+INSERT INTO Galeria_Comentario (ID_Galeria_Comentario,ID_Comentario)
+VALUES
+  (1,6),
+  (2,34),
+  (3,32),
+  (4,14),
+  (5,24),
+  (6,16),
+  (7,15),
+  (8,15),
+  (9,29),
+  (10,21);
+INSERT INTO Galeria_Comentario (ID_Galeria_Comentario,ID_Comentario)
+VALUES
+  (11,14),
+  (12,35),
+  (13,1),
+  (14,25),
+  (15,30),
+  (16,21),
+  (17,40),
+  (18,36),
+  (19,17),
+  (20,46);
+INSERT INTO Galeria_Comentario (ID_Galeria_Comentario,ID_Comentario)
+VALUES
+  (21,49),
+  (22,7),
+  (23,46),
+  (24,16),
+  (25,14),
+  (26,29),
+  (27,31),
+  (28,13),
+  (29,33),
+  (30,3);
+INSERT INTO Galeria_Comentario (ID_Galeria_Comentario,ID_Comentario)
+VALUES
+  (31,49),
+  (32,9),
+  (33,1),
+  (34,7),
+  (35,44),
+  (36,16),
+  (37,8),
+  (38,43),
+  (39,33),
+  (40,5);
+INSERT INTO Galeria_Comentario (ID_Galeria_Comentario,ID_Comentario)
+VALUES
+  (41,2),
+  (42,11),
+  (43,41),
+  (44,13),
+  (45,12),
+  (46,16),
+  (47,19),
+  (48,8),
+  (49,22),
+  (50,36);

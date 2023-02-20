@@ -1,0 +1,252 @@
+[
+	{
+		"ID_Tiene": 1,
+		"ID_Libro": 0,
+		"ID_Categoria": 2
+	},
+	{
+		"ID_Tiene": 2,
+		"ID_Libro": 10,
+		"ID_Categoria": 1
+	},
+	{
+		"ID_Tiene": 3,
+		"ID_Libro": 1,
+		"ID_Categoria": 20
+	},
+	{
+		"ID_Tiene": 4,
+		"ID_Libro": 8,
+		"ID_Categoria": 43
+	},
+	{
+		"ID_Tiene": 5,
+		"ID_Libro": 9,
+		"ID_Categoria": 24
+	},
+	{
+		"ID_Tiene": 6,
+		"ID_Libro": 3,
+		"ID_Categoria": 47
+	},
+	{
+		"ID_Tiene": 7,
+		"ID_Libro": 1,
+		"ID_Categoria": 1
+	},
+	{
+		"ID_Tiene": 8,
+		"ID_Libro": 1,
+		"ID_Categoria": 34
+	},
+	{
+		"ID_Tiene": 9,
+		"ID_Libro": 10,
+		"ID_Categoria": 35
+	},
+	{
+		"ID_Tiene": 10,
+		"ID_Libro": 2,
+		"ID_Categoria": 48
+	},
+	{
+		"ID_Tiene": 11,
+		"ID_Libro": 10,
+		"ID_Categoria": 39
+	},
+	{
+		"ID_Tiene": 12,
+		"ID_Libro": 9,
+		"ID_Categoria": 32
+	},
+	{
+		"ID_Tiene": 13,
+		"ID_Libro": 4,
+		"ID_Categoria": 14
+	},
+	{
+		"ID_Tiene": 14,
+		"ID_Libro": 2,
+		"ID_Categoria": 8
+	},
+	{
+		"ID_Tiene": 15,
+		"ID_Libro": 5,
+		"ID_Categoria": 47
+	},
+	{
+		"ID_Tiene": 16,
+		"ID_Libro": 5,
+		"ID_Categoria": 11
+	},
+	{
+		"ID_Tiene": 17,
+		"ID_Libro": 1,
+		"ID_Categoria": 33
+	},
+	{
+		"ID_Tiene": 18,
+		"ID_Libro": 1,
+		"ID_Categoria": 22
+	},
+	{
+		"ID_Tiene": 19,
+		"ID_Libro": 1,
+		"ID_Categoria": 40
+	},
+	{
+		"ID_Tiene": 20,
+		"ID_Libro": 4,
+		"ID_Categoria": 14
+	},
+	{
+		"ID_Tiene": 21,
+		"ID_Libro": 0,
+		"ID_Categoria": 4
+	},
+	{
+		"ID_Tiene": 22,
+		"ID_Libro": 9,
+		"ID_Categoria": 9
+	},
+	{
+		"ID_Tiene": 23,
+		"ID_Libro": 6,
+		"ID_Categoria": 31
+	},
+	{
+		"ID_Tiene": 24,
+		"ID_Libro": 4,
+		"ID_Categoria": 17
+	},
+	{
+		"ID_Tiene": 25,
+		"ID_Libro": 3,
+		"ID_Categoria": 14
+	},
+	{
+		"ID_Tiene": 26,
+		"ID_Libro": 0,
+		"ID_Categoria": 28
+	},
+	{
+		"ID_Tiene": 27,
+		"ID_Libro": 3,
+		"ID_Categoria": 3
+	},
+	{
+		"ID_Tiene": 28,
+		"ID_Libro": 7,
+		"ID_Categoria": 43
+	},
+	{
+		"ID_Tiene": 29,
+		"ID_Libro": 10,
+		"ID_Categoria": 17
+	},
+	{
+		"ID_Tiene": 30,
+		"ID_Libro": 2,
+		"ID_Categoria": 42
+	},
+	{
+		"ID_Tiene": 31,
+		"ID_Libro": 3,
+		"ID_Categoria": 47
+	},
+	{
+		"ID_Tiene": 32,
+		"ID_Libro": 8,
+		"ID_Categoria": 37
+	},
+	{
+		"ID_Tiene": 33,
+		"ID_Libro": 0,
+		"ID_Categoria": 28
+	},
+	{
+		"ID_Tiene": 34,
+		"ID_Libro": 3,
+		"ID_Categoria": 1
+	},
+	{
+		"ID_Tiene": 35,
+		"ID_Libro": 7,
+		"ID_Categoria": 46
+	},
+	{
+		"ID_Tiene": 36,
+		"ID_Libro": 9,
+		"ID_Categoria": 25
+	},
+	{
+		"ID_Tiene": 37,
+		"ID_Libro": 8,
+		"ID_Categoria": 46
+	},
+	{
+		"ID_Tiene": 38,
+		"ID_Libro": 1,
+		"ID_Categoria": 30
+	},
+	{
+		"ID_Tiene": 39,
+		"ID_Libro": 3,
+		"ID_Categoria": 36
+	},
+	{
+		"ID_Tiene": 40,
+		"ID_Libro": 10,
+		"ID_Categoria": 43
+	},
+	{
+		"ID_Tiene": 41,
+		"ID_Libro": 9,
+		"ID_Categoria": 23
+	},
+	{
+		"ID_Tiene": 42,
+		"ID_Libro": 9,
+		"ID_Categoria": 37
+	},
+	{
+		"ID_Tiene": 43,
+		"ID_Libro": 7,
+		"ID_Categoria": 18
+	},
+	{
+		"ID_Tiene": 44,
+		"ID_Libro": 6,
+		"ID_Categoria": 27
+	},
+	{
+		"ID_Tiene": 45,
+		"ID_Libro": 6,
+		"ID_Categoria": 50
+	},
+	{
+		"ID_Tiene": 46,
+		"ID_Libro": 9,
+		"ID_Categoria": 45
+	},
+	{
+		"ID_Tiene": 47,
+		"ID_Libro": 7,
+		"ID_Categoria": 37
+	},
+	{
+		"ID_Tiene": 48,
+		"ID_Libro": 8,
+		"ID_Categoria": 11
+	},
+	{
+		"ID_Tiene": 49,
+		"ID_Libro": 8,
+		"ID_Categoria": 44
+	},
+	{
+		"ID_Tiene": 50,
+		"ID_Libro": 7,
+		"ID_Categoria": 41
+	}
+]

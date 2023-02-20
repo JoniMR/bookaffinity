@@ -1,0 +1,352 @@
+[
+	{
+		"ID_Comentario": 1,
+		"Puntuacion": 2,
+		"Text": "ornare tortor at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam tincidunt, nunc",
+		"ID_Libro": 13,
+		"ID_Usuario": 2
+	},
+	{
+		"ID_Comentario": 2,
+		"Puntuacion": 1,
+		"Text": "elit, pretium et, rutrum non, hendrerit id, ante. Nunc mauris sapien,",
+		"ID_Libro": 28,
+		"ID_Usuario": 7
+	},
+	{
+		"ID_Comentario": 3,
+		"Puntuacion": 4,
+		"Text": "luctus aliquet odio. Etiam",
+		"ID_Libro": 12,
+		"ID_Usuario": 40
+	},
+	{
+		"ID_Comentario": 4,
+		"Puntuacion": 5,
+		"Text": "erat. Vivamus nisi. Mauris nulla. Integer urna. Vivamus molestie dapibus ligula. Aliquam",
+		"ID_Libro": 33,
+		"ID_Usuario": 22
+	},
+	{
+		"ID_Comentario": 5,
+		"Puntuacion": 4,
+		"Text": "Quisque purus sapien, gravida non, sollicitudin a, malesuada",
+		"ID_Libro": 46,
+		"ID_Usuario": 46
+	},
+	{
+		"ID_Comentario": 6,
+		"Puntuacion": 1,
+		"Text": "ultrices posuere cubilia Curae Phasellus ornare. Fusce mollis. Duis sit amet diam",
+		"ID_Libro": 29,
+		"ID_Usuario": 48
+	},
+	{
+		"ID_Comentario": 7,
+		"Puntuacion": 1,
+		"Text": "In mi pede, nonummy ut, molestie in, tempus eu, ligula. Aenean",
+		"ID_Libro": 25,
+		"ID_Usuario": 26
+	},
+	{
+		"ID_Comentario": 8,
+		"Puntuacion": 4,
+		"Text": "dapibus id, blandit at, nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur",
+		"ID_Libro": 31,
+		"ID_Usuario": 21
+	},
+	{
+		"ID_Comentario": 9,
+		"Puntuacion": 4,
+		"Text": "molestie arcu. Sed eu nibh vulputate mauris sagittis placerat. Cras dictum ultricies ligula.",
+		"ID_Libro": 11,
+		"ID_Usuario": 31
+	},
+	{
+		"ID_Comentario": 10,
+		"Puntuacion": 2,
+		"Text": "metus. In nec orci. Donec nibh. Quisque",
+		"ID_Libro": 39,
+		"ID_Usuario": 0
+	},
+	{
+		"ID_Comentario": 11,
+		"Puntuacion": 3,
+		"Text": "sem ut dolor dapibus gravida.",
+		"ID_Libro": 11,
+		"ID_Usuario": 24
+	},
+	{
+		"ID_Comentario": 12,
+		"Puntuacion": 2,
+		"Text": "ac, feugiat non,",
+		"ID_Libro": 41,
+		"ID_Usuario": 23
+	},
+	{
+		"ID_Comentario": 13,
+		"Puntuacion": 3,
+		"Text": "magna. Phasellus dolor elit, pellentesque a, facilisis non, bibendum sed, est. Nunc laoreet",
+		"ID_Libro": 24,
+		"ID_Usuario": 7
+	},
+	{
+		"ID_Comentario": 14,
+		"Puntuacion": 0,
+		"Text": "Donec tempus, lorem fringilla ornare placerat, orci lacus vestibulum lorem, sit",
+		"ID_Libro": 29,
+		"ID_Usuario": 35
+	},
+	{
+		"ID_Comentario": 15,
+		"Puntuacion": 4,
+		"Text": "a sollicitudin orci sem eget massa. Suspendisse eleifend. Cras sed",
+		"ID_Libro": 15,
+		"ID_Usuario": 40
+	},
+	{
+		"ID_Comentario": 16,
+		"Puntuacion": 4,
+		"Text": "tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet",
+		"ID_Libro": 27,
+		"ID_Usuario": 21
+	},
+	{
+		"ID_Comentario": 17,
+		"Puntuacion": 3,
+		"Text": "sit amet lorem semper",
+		"ID_Libro": 4,
+		"ID_Usuario": 0
+	},
+	{
+		"ID_Comentario": 18,
+		"Puntuacion": 2,
+		"Text": "libero et tristique pellentesque, tellus sem mollis dui, in sodales elit erat vitae risus. Duis",
+		"ID_Libro": 14,
+		"ID_Usuario": 26
+	},
+	{
+		"ID_Comentario": 19,
+		"Puntuacion": 1,
+		"Text": "ante bibendum ullamcorper. Duis cursus, diam at pretium aliquet, metus urna convallis",
+		"ID_Libro": 20,
+		"ID_Usuario": 31
+	},
+	{
+		"ID_Comentario": 20,
+		"Puntuacion": 3,
+		"Text": "at auctor ullamcorper, nisl arcu iaculis enim,",
+		"ID_Libro": 27,
+		"ID_Usuario": 12
+	},
+	{
+		"ID_Comentario": 21,
+		"Puntuacion": 3,
+		"Text": "orci tincidunt adipiscing. Mauris molestie pharetra nibh. Aliquam",
+		"ID_Libro": 34,
+		"ID_Usuario": 10
+	},
+	{
+		"ID_Comentario": 22,
+		"Puntuacion": 3,
+		"Text": "nascetur ridiculus mus. Donec dignissim magna a tortor. Nunc commodo auctor velit.",
+		"ID_Libro": 4,
+		"ID_Usuario": 36
+	},
+	{
+		"ID_Comentario": 23,
+		"Puntuacion": 5,
+		"Text": "eu, ligula.",
+		"ID_Libro": 8,
+		"ID_Usuario": 18
+	},
+	{
+		"ID_Comentario": 24,
+		"Puntuacion": 0,
+		"Text": "justo eu arcu. Morbi sit amet massa. Quisque porttitor eros nec tellus. Nunc",
+		"ID_Libro": 33,
+		"ID_Usuario": 34
+	},
+	{
+		"ID_Comentario": 25,
+		"Puntuacion": 3,
+		"Text": "id magna et ipsum cursus vestibulum. Mauris magna. Duis",
+		"ID_Libro": 29,
+		"ID_Usuario": 44
+	},
+	{
+		"ID_Comentario": 26,
+		"Puntuacion": 3,
+		"Text": "consectetuer adipiscing elit. Etiam laoreet, libero",
+		"ID_Libro": 48,
+		"ID_Usuario": 33
+	},
+	{
+		"ID_Comentario": 27,
+		"Puntuacion": 5,
+		"Text": "arcu et",
+		"ID_Libro": 28,
+		"ID_Usuario": 4
+	},
+	{
+		"ID_Comentario": 28,
+		"Puntuacion": 3,
+		"Text": "Vivamus sit",
+		"ID_Libro": 12,
+		"ID_Usuario": 12
+	},
+	{
+		"ID_Comentario": 29,
+		"Puntuacion": 5,
+		"Text": "Etiam laoreet, libero et tristique pellentesque, tellus sem mollis dui, in",
+		"ID_Libro": 37,
+		"ID_Usuario": 49
+	},
+	{
+		"ID_Comentario": 30,
+		"Puntuacion": 0,
+		"Text": "ullamcorper. Duis at lacus. Quisque purus sapien, gravida non, sollicitudin a,",
+		"ID_Libro": 3,
+		"ID_Usuario": 30
+	},
+	{
+		"ID_Comentario": 31,
+		"Puntuacion": 4,
+		"Text": "ac turpis",
+		"ID_Libro": 25,
+		"ID_Usuario": 29
+	},
+	{
+		"ID_Comentario": 32,
+		"Puntuacion": 3,
+		"Text": "Nunc laoreet lectus quis massa. Mauris vestibulum,",
+		"ID_Libro": 36,
+		"ID_Usuario": 13
+	},
+	{
+		"ID_Comentario": 33,
+		"Puntuacion": 1,
+		"Text": "elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus.",
+		"ID_Libro": 34,
+		"ID_Usuario": 8
+	},
+	{
+		"ID_Comentario": 34,
+		"Puntuacion": 1,
+		"Text": "Etiam ligula tortor, dictum eu, placerat",
+		"ID_Libro": 18,
+		"ID_Usuario": 41
+	},
+	{
+		"ID_Comentario": 35,
+		"Puntuacion": 4,
+		"Text": "nulla at sem molestie sodales. Mauris blandit enim consequat purus.",
+		"ID_Libro": 17,
+		"ID_Usuario": 50
+	},
+	{
+		"ID_Comentario": 36,
+		"Puntuacion": 4,
+		"Text": "eget ipsum. Suspendisse",
+		"ID_Libro": 7,
+		"ID_Usuario": 15
+	},
+	{
+		"ID_Comentario": 37,
+		"Puntuacion": 1,
+		"Text": "tempor augue",
+		"ID_Libro": 24,
+		"ID_Usuario": 46
+	},
+	{
+		"ID_Comentario": 38,
+		"Puntuacion": 4,
+		"Text": "nunc sed pede. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur",
+		"ID_Libro": 32,
+		"ID_Usuario": 12
+	},
+	{
+		"ID_Comentario": 39,
+		"Puntuacion": 4,
+		"Text": "Integer eu lacus.",
+		"ID_Libro": 4,
+		"ID_Usuario": 3
+	},
+	{
+		"ID_Comentario": 40,
+		"Puntuacion": 1,
+		"Text": "ornare egestas ligula. Nullam feugiat placerat",
+		"ID_Libro": 23,
+		"ID_Usuario": 31
+	},
+	{
+		"ID_Comentario": 41,
+		"Puntuacion": 0,
+		"Text": "sem mollis dui, in sodales",
+		"ID_Libro": 34,
+		"ID_Usuario": 31
+	},
+	{
+		"ID_Comentario": 42,
+		"Puntuacion": 4,
+		"Text": "odio vel est tempor bibendum. Donec felis orci, adipiscing non, luctus sit",
+		"ID_Libro": 5,
+		"ID_Usuario": 40
+	},
+	{
+		"ID_Comentario": 43,
+		"Puntuacion": 0,
+		"Text": "ligula elit, pretium",
+		"ID_Libro": 41,
+		"ID_Usuario": 21
+	},
+	{
+		"ID_Comentario": 44,
+		"Puntuacion": 0,
+		"Text": "Donec sollicitudin adipiscing ligula.",
+		"ID_Libro": 7,
+		"ID_Usuario": 1
+	},
+	{
+		"ID_Comentario": 45,
+		"Puntuacion": 2,
+		"Text": "ac urna. Ut tincidunt vehicula risus. Nulla eget metus eu erat",
+		"ID_Libro": 46,
+		"ID_Usuario": 11
+	},
+	{
+		"ID_Comentario": 46,
+		"Puntuacion": 4,
+		"Text": "dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros.",
+		"ID_Libro": 49,
+		"ID_Usuario": 22
+	},
+	{
+		"ID_Comentario": 47,
+		"Puntuacion": 4,
+		"Text": "sodales purus, in molestie tortor nibh sit amet orci. Ut sagittis lobortis mauris. Suspendisse aliquet",
+		"ID_Libro": 43,
+		"ID_Usuario": 13
+	},
+	{
+		"ID_Comentario": 48,
+		"Puntuacion": 3,
+		"Text": "risus. Duis",
+		"ID_Libro": 28,
+		"ID_Usuario": 12
+	},
+	{
+		"ID_Comentario": 49,
+		"Puntuacion": 3,
+		"Text": "Nulla semper tellus id nunc interdum feugiat. Sed nec metus facilisis lorem tristique aliquet.",
+		"ID_Libro": 5,
+		"ID_Usuario": 2
+	},
+	{
+		"ID_Comentario": 50,
+		"Puntuacion": 2,
+		"Text": "Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique",
+		"ID_Libro": 20,
+		"ID_Usuario": 19
+	}
+]

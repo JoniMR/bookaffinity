@@ -1,0 +1,252 @@
+[
+	{
+		"ID_Factura": 1,
+		"ID_Ejemplar": 12,
+		"ID_Usuario": 30
+	},
+	{
+		"ID_Factura": 2,
+		"ID_Ejemplar": 28,
+		"ID_Usuario": 11
+	},
+	{
+		"ID_Factura": 3,
+		"ID_Ejemplar": 27,
+		"ID_Usuario": 34
+	},
+	{
+		"ID_Factura": 4,
+		"ID_Ejemplar": 38,
+		"ID_Usuario": 37
+	},
+	{
+		"ID_Factura": 5,
+		"ID_Ejemplar": 4,
+		"ID_Usuario": 23
+	},
+	{
+		"ID_Factura": 6,
+		"ID_Ejemplar": 37,
+		"ID_Usuario": 16
+	},
+	{
+		"ID_Factura": 7,
+		"ID_Ejemplar": 6,
+		"ID_Usuario": 5
+	},
+	{
+		"ID_Factura": 8,
+		"ID_Ejemplar": 47,
+		"ID_Usuario": 33
+	},
+	{
+		"ID_Factura": 9,
+		"ID_Ejemplar": 12,
+		"ID_Usuario": 19
+	},
+	{
+		"ID_Factura": 10,
+		"ID_Ejemplar": 16,
+		"ID_Usuario": 48
+	},
+	{
+		"ID_Factura": 11,
+		"ID_Ejemplar": 16,
+		"ID_Usuario": 9
+	},
+	{
+		"ID_Factura": 12,
+		"ID_Ejemplar": 2,
+		"ID_Usuario": 39
+	},
+	{
+		"ID_Factura": 13,
+		"ID_Ejemplar": 10,
+		"ID_Usuario": 45
+	},
+	{
+		"ID_Factura": 14,
+		"ID_Ejemplar": 10,
+		"ID_Usuario": 19
+	},
+	{
+		"ID_Factura": 15,
+		"ID_Ejemplar": 0,
+		"ID_Usuario": 15
+	},
+	{
+		"ID_Factura": 16,
+		"ID_Ejemplar": 27,
+		"ID_Usuario": 20
+	},
+	{
+		"ID_Factura": 17,
+		"ID_Ejemplar": 20,
+		"ID_Usuario": 21
+	},
+	{
+		"ID_Factura": 18,
+		"ID_Ejemplar": 8,
+		"ID_Usuario": 48
+	},
+	{
+		"ID_Factura": 19,
+		"ID_Ejemplar": 5,
+		"ID_Usuario": 16
+	},
+	{
+		"ID_Factura": 20,
+		"ID_Ejemplar": 18,
+		"ID_Usuario": 16
+	},
+	{
+		"ID_Factura": 21,
+		"ID_Ejemplar": 29,
+		"ID_Usuario": 0
+	},
+	{
+		"ID_Factura": 22,
+		"ID_Ejemplar": 20,
+		"ID_Usuario": 32
+	},
+	{
+		"ID_Factura": 23,
+		"ID_Ejemplar": 21,
+		"ID_Usuario": 49
+	},
+	{
+		"ID_Factura": 24,
+		"ID_Ejemplar": 33,
+		"ID_Usuario": 45
+	},
+	{
+		"ID_Factura": 25,
+		"ID_Ejemplar": 17,
+		"ID_Usuario": 47
+	},
+	{
+		"ID_Factura": 26,
+		"ID_Ejemplar": 22,
+		"ID_Usuario": 3
+	},
+	{
+		"ID_Factura": 27,
+		"ID_Ejemplar": 32,
+		"ID_Usuario": 9
+	},
+	{
+		"ID_Factura": 28,
+		"ID_Ejemplar": 14,
+		"ID_Usuario": 39
+	},
+	{
+		"ID_Factura": 29,
+		"ID_Ejemplar": 15,
+		"ID_Usuario": 38
+	},
+	{
+		"ID_Factura": 30,
+		"ID_Ejemplar": 3,
+		"ID_Usuario": 44
+	},
+	{
+		"ID_Factura": 31,
+		"ID_Ejemplar": 46,
+		"ID_Usuario": 44
+	},
+	{
+		"ID_Factura": 32,
+		"ID_Ejemplar": 6,
+		"ID_Usuario": 45
+	},
+	{
+		"ID_Factura": 33,
+		"ID_Ejemplar": 2,
+		"ID_Usuario": 13
+	},
+	{
+		"ID_Factura": 34,
+		"ID_Ejemplar": 42,
+		"ID_Usuario": 47
+	},
+	{
+		"ID_Factura": 35,
+		"ID_Ejemplar": 5,
+		"ID_Usuario": 1
+	},
+	{
+		"ID_Factura": 36,
+		"ID_Ejemplar": 18,
+		"ID_Usuario": 31
+	},
+	{
+		"ID_Factura": 37,
+		"ID_Ejemplar": 33,
+		"ID_Usuario": 36
+	},
+	{
+		"ID_Factura": 38,
+		"ID_Ejemplar": 49,
+		"ID_Usuario": 17
+	},
+	{
+		"ID_Factura": 39,
+		"ID_Ejemplar": 7,
+		"ID_Usuario": 34
+	},
+	{
+		"ID_Factura": 40,
+		"ID_Ejemplar": 13,
+		"ID_Usuario": 43
+	},
+	{
+		"ID_Factura": 41,
+		"ID_Ejemplar": 18,
+		"ID_Usuario": 7
+	},
+	{
+		"ID_Factura": 42,
+		"ID_Ejemplar": 14,
+		"ID_Usuario": 45
+	},
+	{
+		"ID_Factura": 43,
+		"ID_Ejemplar": 24,
+		"ID_Usuario": 6
+	},
+	{
+		"ID_Factura": 44,
+		"ID_Ejemplar": 32,
+		"ID_Usuario": 38
+	},
+	{
+		"ID_Factura": 45,
+		"ID_Ejemplar": 22,
+		"ID_Usuario": 34
+	},
+	{
+		"ID_Factura": 46,
+		"ID_Ejemplar": 35,
+		"ID_Usuario": 14
+	},
+	{
+		"ID_Factura": 47,
+		"ID_Ejemplar": 42,
+		"ID_Usuario": 49
+	},
+	{
+		"ID_Factura": 48,
+		"ID_Ejemplar": 40,
+		"ID_Usuario": 48
+	},
+	{
+		"ID_Factura": 49,
+		"ID_Ejemplar": 3,
+		"ID_Usuario": 20
+	},
+	{
+		"ID_Factura": 50,
+		"ID_Ejemplar": 50,
+		"ID_Usuario": 46
+	}
+]

@@ -1,0 +1,302 @@
+[
+	{
+		"ID_Libro": 1,
+		"ISBN": 1705132086266,
+		"Nombre": "Dean K. Marquez",
+		"Resumen": "placerat eget, venenatis a, magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique pellentesque,"
+	},
+	{
+		"ID_Libro": 2,
+		"ISBN": 6551511174724,
+		"Nombre": "Galvin Soto",
+		"Resumen": "eu, eleifend nec, malesuada ut, sem. Nulla interdum. Curabitur dictum. Phasellus in felis. Nulla tempor augue"
+	},
+	{
+		"ID_Libro": 3,
+		"ISBN": 9658123103990,
+		"Nombre": "Gage W. Alonso",
+		"Resumen": "egestas. Fusce aliquet magna a neque. Nullam ut nisi a odio semper cursus. Integer mollis."
+	},
+	{
+		"ID_Libro": 4,
+		"ISBN": 4374365506275,
+		"Nombre": "Richard K. Sanz",
+		"Resumen": "ac nulla. In tincidunt congue turpis. In condimentum. Donec at arcu."
+	},
+	{
+		"ID_Libro": 5,
+		"ISBN": 4418863673265,
+		"Nombre": "Garrison A. Ortega",
+		"Resumen": "placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec"
+	},
+	{
+		"ID_Libro": 6,
+		"ISBN": 6945541876421,
+		"Nombre": "Alma Castillo",
+		"Resumen": "sociis natoque"
+	},
+	{
+		"ID_Libro": 7,
+		"ISBN": 9185543191724,
+		"Nombre": "Brent Rubio",
+		"Resumen": "eu,"
+	},
+	{
+		"ID_Libro": 8,
+		"ISBN": 4744160076542,
+		"Nombre": "Joshua Guerrero",
+		"Resumen": "lacus pede sagittis augue, eu tempor"
+	},
+	{
+		"ID_Libro": 9,
+		"ISBN": 4559223268571,
+		"Nombre": "Otto Iglesias",
+		"Resumen": "Quisque nonummy ipsum non arcu. Vivamus sit amet risus. Donec egestas. Aliquam nec enim."
+	},
+	{
+		"ID_Libro": 10,
+		"ISBN": 7062999542064,
+		"Nombre": "Sacha N. Torres",
+		"Resumen": "orci lobortis augue scelerisque mollis. Phasellus libero mauris,"
+	},
+	{
+		"ID_Libro": 11,
+		"ISBN": 4826777391759,
+		"Nombre": "Hop Suarez",
+		"Resumen": "tortor at risus. Nunc ac sem ut dolor dapibus gravida."
+	},
+	{
+		"ID_Libro": 12,
+		"ISBN": 4245331660613,
+		"Nombre": "Simon Y. Ramos",
+		"Resumen": "nonummy ac, feugiat non, lobortis"
+	},
+	{
+		"ID_Libro": 13,
+		"ISBN": 1700160907863,
+		"Nombre": "Cyrus Pardo",
+		"Resumen": "eget nisi dictum augue malesuada malesuada. Integer id magna et ipsum cursus vestibulum. Mauris magna."
+	},
+	{
+		"ID_Libro": 14,
+		"ISBN": 5743225745949,
+		"Nombre": "Kelly Herrera",
+		"Resumen": "vulputate dui, nec tempus mauris erat eget ipsum. Suspendisse sagittis. Nullam vitae"
+	},
+	{
+		"ID_Libro": 15,
+		"ISBN": 3814647298321,
+		"Nombre": "Jermaine T. Ortiz",
+		"Resumen": "id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per"
+	},
+	{
+		"ID_Libro": 16,
+		"ISBN": 3527642940235,
+		"Nombre": "Emerald J. Molina",
+		"Resumen": "elementum, dui quis accumsan convallis, ante lectus convallis est, vitae sodales nisi magna sed dui."
+	},
+	{
+		"ID_Libro": 17,
+		"ISBN": 3283697991059,
+		"Nombre": "Richard Pascual",
+		"Resumen": "nec ante. Maecenas mi felis,"
+	},
+	{
+		"ID_Libro": 18,
+		"ISBN": 6937272667705,
+		"Nombre": "Fallon H. Carmona",
+		"Resumen": "ut, pellentesque eget, dictum"
+	},
+	{
+		"ID_Libro": 19,
+		"ISBN": 3211288076085,
+		"Nombre": "Dane N. Merino",
+		"Resumen": "id, blandit at,"
+	},
+	{
+		"ID_Libro": 20,
+		"ISBN": 7724264089257,
+		"Nombre": "Kevin Prieto",
+		"Resumen": "pellentesque eget, dictum placerat, augue. Sed molestie. Sed id"
+	},
+	{
+		"ID_Libro": 21,
+		"ISBN": 2912737205270,
+		"Nombre": "Reece Gonzalez",
+		"Resumen": "Duis mi enim, condimentum eget, volutpat ornare, facilisis eget, ipsum. Donec sollicitudin adipiscing"
+	},
+	{
+		"ID_Libro": 22,
+		"ISBN": 9193112474891,
+		"Nombre": "Octavius Sanchez",
+		"Resumen": "risus. Duis a mi fringilla mi lacinia mattis. Integer eu lacus. Quisque imperdiet,"
+	},
+	{
+		"ID_Libro": 23,
+		"ISBN": 2808480708818,
+		"Nombre": "Stone C. Herrera",
+		"Resumen": "Quisque purus sapien, gravida non, sollicitudin a, malesuada id, erat. Etiam"
+	},
+	{
+		"ID_Libro": 24,
+		"ISBN": 8439637336398,
+		"Nombre": "Olivia G. Marin",
+		"Resumen": "vitae, aliquet nec, imperdiet nec, leo. Morbi"
+	},
+	{
+		"ID_Libro": 25,
+		"ISBN": 8863704720597,
+		"Nombre": "Larissa F. Torres",
+		"Resumen": "fringilla, porttitor vulputate, posuere vulputate, lacus. Cras"
+	},
+	{
+		"ID_Libro": 26,
+		"ISBN": 2270875693957,
+		"Nombre": "Kay Herrera",
+		"Resumen": "in sodales elit erat vitae risus. Duis a mi fringilla mi lacinia mattis. Integer"
+	},
+	{
+		"ID_Libro": 27,
+		"ISBN": 3743641864688,
+		"Nombre": "Lucy R. Martinez",
+		"Resumen": "a, dui. Cras pellentesque. Sed dictum. Proin eget odio. Aliquam vulputate ullamcorper magna. Sed eu eros."
+	},
+	{
+		"ID_Libro": 28,
+		"ISBN": 5970801120243,
+		"Nombre": "Rhonda N. Saez",
+		"Resumen": "hendrerit id, ante. Nunc mauris sapien, cursus in, hendrerit consectetuer, cursus et, magna. Praesent"
+	},
+	{
+		"ID_Libro": 29,
+		"ISBN": 1992654640142,
+		"Nombre": "Hadassah S. Sanz",
+		"Resumen": "justo. Praesent luctus."
+	},
+	{
+		"ID_Libro": 30,
+		"ISBN": 9935107151317,
+		"Nombre": "Elijah P. Fernandez",
+		"Resumen": "vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+	},
+	{
+		"ID_Libro": 31,
+		"ISBN": 7297562846764,
+		"Nombre": "Jaden Lorenzo",
+		"Resumen": "magna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam laoreet, libero et tristique"
+	},
+	{
+		"ID_Libro": 32,
+		"ISBN": 5474199924355,
+		"Nombre": "John Delgado",
+		"Resumen": "id, mollis nec, cursus a, enim. Suspendisse aliquet, sem ut cursus luctus,"
+	},
+	{
+		"ID_Libro": 33,
+		"ISBN": 5482412652855,
+		"Nombre": "April W. Vidal",
+		"Resumen": "eu, euismod ac,"
+	},
+	{
+		"ID_Libro": 34,
+		"ISBN": 8721717047154,
+		"Nombre": "Mechelle Torres",
+		"Resumen": "euismod ac, fermentum vel,"
+	},
+	{
+		"ID_Libro": 35,
+		"ISBN": 6725663110093,
+		"Nombre": "Eleanor Serrano",
+		"Resumen": "a neque. Nullam ut nisi a odio semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices"
+	},
+	{
+		"ID_Libro": 36,
+		"ISBN": 7987442797172,
+		"Nombre": "Dolan Marti",
+		"Resumen": "venenatis lacus. Etiam bibendum fermentum metus. Aenean sed pede nec ante blandit viverra. Donec tempus, lorem"
+	},
+	{
+		"ID_Libro": 37,
+		"ISBN": 4003636261479,
+		"Nombre": "Dieter Navarro",
+		"Resumen": "Suspendisse dui. Fusce"
+	},
+	{
+		"ID_Libro": 38,
+		"ISBN": 2822370148615,
+		"Nombre": "Tad Molina",
+		"Resumen": "et ultrices posuere cubilia Curae Donec tincidunt. Donec vitae erat vel pede blandit congue. In scelerisque"
+	},
+	{
+		"ID_Libro": 39,
+		"ISBN": 9605323567339,
+		"Nombre": "Orlando Calvo",
+		"Resumen": "sem elit, pharetra ut, pharetra sed, hendrerit a, arcu. Sed"
+	},
+	{
+		"ID_Libro": 40,
+		"ISBN": 8335894569631,
+		"Nombre": "Justine Santos",
+		"Resumen": "Phasellus fermentum convallis ligula. Donec luctus aliquet odio. Etiam ligula tortor, dictum eu, placerat eget, venenatis a, magna."
+	},
+	{
+		"ID_Libro": 41,
+		"ISBN": 2617749173740,
+		"Nombre": "Wyatt X. Serrano",
+		"Resumen": "mus. Donec dignissim magna a tortor. Nunc commodo auctor velit. Aliquam nisl."
+	},
+	{
+		"ID_Libro": 42,
+		"ISBN": 3126025470769,
+		"Nombre": "Xantha L. Castro",
+		"Resumen": "Vivamus sit amet risus. Donec"
+	},
+	{
+		"ID_Libro": 43,
+		"ISBN": 5629320755129,
+		"Nombre": "Rhonda Y. Alonso",
+		"Resumen": "viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus vestibulum lorem, sit amet ultricies sem magna nec"
+	},
+	{
+		"ID_Libro": 44,
+		"ISBN": 4338123421315,
+		"Nombre": "Matthew Rubio",
+		"Resumen": "dignissim tempor arcu."
+	},
+	{
+		"ID_Libro": 45,
+		"ISBN": 6641288605287,
+		"Nombre": "Walter S. Garcia",
+		"Resumen": "sit amet ultricies sem magna nec quam. Curabitur vel lectus. Cum sociis"
+	},
+	{
+		"ID_Libro": 46,
+		"ISBN": 1861123865579,
+		"Nombre": "Yolanda B. Muñoz",
+		"Resumen": "eu lacus. Quisque imperdiet, erat nonummy ultricies ornare, elit elit fermentum risus, at fringilla"
+	},
+	{
+		"ID_Libro": 47,
+		"ISBN": 2424394484446,
+		"Nombre": "Michelle Campos",
+		"Resumen": "Nulla facilisi. Sed"
+	},
+	{
+		"ID_Libro": 48,
+		"ISBN": 7767124771979,
+		"Nombre": "Imani J. Rodriguez",
+		"Resumen": "vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu."
+	},
+	{
+		"ID_Libro": 49,
+		"ISBN": 9580399632200,
+		"Nombre": "Regina B. Cano",
+		"Resumen": "Cras sed leo. Cras"
+	},
+	{
+		"ID_Libro": 50,
+		"ISBN": 8682019538015,
+		"Nombre": "Rhonda Ibañez",
+		"Resumen": "tempor arcu. Vestibulum ut"
+	}
+]

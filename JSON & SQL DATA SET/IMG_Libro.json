@@ -1,0 +1,252 @@
+[
+	{
+		"ID_IMG_Libro": 1,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 28
+	},
+	{
+		"ID_IMG_Libro": 2,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 33
+	},
+	{
+		"ID_IMG_Libro": 3,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 19
+	},
+	{
+		"ID_IMG_Libro": 4,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 27
+	},
+	{
+		"ID_IMG_Libro": 5,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 18
+	},
+	{
+		"ID_IMG_Libro": 6,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 48
+	},
+	{
+		"ID_IMG_Libro": 7,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 27
+	},
+	{
+		"ID_IMG_Libro": 8,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 22
+	},
+	{
+		"ID_IMG_Libro": 9,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 19
+	},
+	{
+		"ID_IMG_Libro": 10,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 2
+	},
+	{
+		"ID_IMG_Libro": 11,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 6
+	},
+	{
+		"ID_IMG_Libro": 12,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 31
+	},
+	{
+		"ID_IMG_Libro": 13,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 5
+	},
+	{
+		"ID_IMG_Libro": 14,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 6
+	},
+	{
+		"ID_IMG_Libro": 15,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 41
+	},
+	{
+		"ID_IMG_Libro": 16,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 44
+	},
+	{
+		"ID_IMG_Libro": 17,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 31
+	},
+	{
+		"ID_IMG_Libro": 18,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 37
+	},
+	{
+		"ID_IMG_Libro": 19,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 23
+	},
+	{
+		"ID_IMG_Libro": 20,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 20
+	},
+	{
+		"ID_IMG_Libro": 21,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 46
+	},
+	{
+		"ID_IMG_Libro": 22,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 36
+	},
+	{
+		"ID_IMG_Libro": 23,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 23
+	},
+	{
+		"ID_IMG_Libro": 24,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 36
+	},
+	{
+		"ID_IMG_Libro": 25,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 18
+	},
+	{
+		"ID_IMG_Libro": 26,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 9
+	},
+	{
+		"ID_IMG_Libro": 27,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 20
+	},
+	{
+		"ID_IMG_Libro": 28,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 36
+	},
+	{
+		"ID_IMG_Libro": 29,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 49
+	},
+	{
+		"ID_IMG_Libro": 30,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 18
+	},
+	{
+		"ID_IMG_Libro": 31,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 40
+	},
+	{
+		"ID_IMG_Libro": 32,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 18
+	},
+	{
+		"ID_IMG_Libro": 33,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 16
+	},
+	{
+		"ID_IMG_Libro": 34,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 17
+	},
+	{
+		"ID_IMG_Libro": 35,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 6
+	},
+	{
+		"ID_IMG_Libro": 36,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 42
+	},
+	{
+		"ID_IMG_Libro": 37,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 7
+	},
+	{
+		"ID_IMG_Libro": 38,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 7
+	},
+	{
+		"ID_IMG_Libro": 39,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 2
+	},
+	{
+		"ID_IMG_Libro": 40,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 4
+	},
+	{
+		"ID_IMG_Libro": 41,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 35
+	},
+	{
+		"ID_IMG_Libro": 42,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 24
+	},
+	{
+		"ID_IMG_Libro": 43,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 15
+	},
+	{
+		"ID_IMG_Libro": 44,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 37
+	},
+	{
+		"ID_IMG_Libro": 45,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 15
+	},
+	{
+		"ID_IMG_Libro": 46,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 18
+	},
+	{
+		"ID_IMG_Libro": 47,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 36
+	},
+	{
+		"ID_IMG_Libro": 48,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 26
+	},
+	{
+		"ID_IMG_Libro": 49,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 9
+	},
+	{
+		"ID_IMG_Libro": 50,
+		"Ruta" : "https://picsum.photos/350/350",
+		"ID_Galeria_Libro": 15
+	}
+]
