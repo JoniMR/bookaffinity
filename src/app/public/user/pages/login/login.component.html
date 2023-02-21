@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="container">
+    <form class="container-form">
+      <h1 class="title">Sign in</h1>
+      <div class="email-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+        </mat-form-field>
+      </div>
+      <div class="password-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [formControl]="password" required>
+
+        </mat-form-field>
+      </div>
+      <div class="container-buttton">
+          <div class="pass"><a href="#">Forgot password?</a></div>
+          <div class="row button">
+            <button mat-raised-button color="accent">Accent</button>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+          </div>
+        </div>
+        
+    </form>
+</div>
+
