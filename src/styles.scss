@@ -28,6 +28,31 @@ $bookaffinity-theme: mat.define-light-theme((
   )
 ));
 
+
+// Fonts
+
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
+$fontConfig: (
+  display-4: mat.define-typography-level(112px, 112px, 500, 'Inter', -0.0134em),
+  display-3: mat.define-typography-level(56px, 56px, 400, 'Inter', -0.0089em),
+  display-2: mat.define-typography-level(45px, 48px, 400, 'Inter', 0.0000em),
+  display-1: mat.define-typography-level(34px, 40px, 400, 'Inter', 0.0074em),
+  headline: mat.define-typography-level(24px, 32px, 400, 'Inter', 0.0000em),
+  title: mat.define-typography-level(20px, 32px, 500, 'Inter', 0.0075em),
+  subheading-2: mat.define-typography-level(16px, 28px, 400, 'Inter', 0.0094em),
+  subheading-1: mat.define-typography-level(15px, 24px, 500, 'Inter', 0.0067em),
+  body-2: mat.define-typography-level(14px, 24px, 500, 'Inter', 0.0179em),
+  body-1: mat.define-typography-level(14px, 20px, 400, 'Inter', 0.0179em),
+  button: mat.define-typography-level(14px, 14px, 500, 'Inter', 0.0893em),
+  caption: mat.define-typography-level(12px, 20px, 400, 'Inter', 0.0333em),
+  input: mat.define-typography-level(inherit, 1.125, 400, 'Inter', 1.5px)
+);
+
+// Compute font config
+@include mat.core($fontConfig);
+
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
@@ -36,4 +61,4 @@ $bookaffinity-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Inter, "Helvetica Neue", sans-serif; }
