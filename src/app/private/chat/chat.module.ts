@@ -16,6 +16,11 @@ import { ContactsComponent } from './components/contacts/contacts.component';
   imports: [
     CommonModule,
     ChatRoutingModule
+  ],
+  exports: [
+    ChatComponent,
+    MailboxComponent,
+    ContactsComponent
   ]
 })
 export class ChatModule { }
