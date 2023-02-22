@@ -27,11 +27,6 @@ import { FormsModule } from '@angular/forms';
     MaterialRoutingModule,
     MatDialogModule,
     MatButtonModule,
-  ],
-  exports:[
-    MatDialogModule,
-    MatButtonModule,
-    MatIconModule
   ]
 })
 export class MaterialModule { }
