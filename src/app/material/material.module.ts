@@ -16,14 +16,21 @@ import { FormsModule } from '@angular/forms';
   declarations: [],
   imports: [
     CommonModule,
-    MaterialRoutingModule
+    MaterialRoutingModule,
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    MatDialogModule,
+    MatButtonModule,
   ],
   exports: [
     MatInputModule,
     MatIconModule,
     MatFormFieldModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
     MaterialRoutingModule,
     MatDialogModule,
     MatButtonModule,
