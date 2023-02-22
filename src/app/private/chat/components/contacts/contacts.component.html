@@ -1,8 +1,4 @@
+<h2 class="contact--title">Messages</h2>
 <div class="contact--list">
-  <app-contact></app-contact>
-  <app-contact></app-contact>
-  <app-contact></app-contact>
-  <app-contact></app-contact>
-  <app-contact></app-contact>
-  <app-contact></app-contact>
+  <app-contact *ngFor="let user of usersContacts" [user]="user"></app-contact>
 </div>
