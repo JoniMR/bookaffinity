@@ -1,3 +1,4 @@
+import { MaterialModule } from 'src/app/material/material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,19 +8,21 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AccountComponent } from './components/account/account.component';
 
 
+
 @NgModule({
   declarations: [
     NavbarComponent,
     FooterComponent,
-    AccountComponent
+    AccountComponent,
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
+    MaterialModule
   ],
   exports: [
     AccountComponent,
-    NavbarComponent
+    NavbarComponent,
   ]
 })
 export class SharedModule { }
