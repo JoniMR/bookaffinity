@@ -1,3 +1,4 @@
+import { AdminModule } from './private/admin/admin.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,6 +18,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     PublicModule,
     SharedModule,
+    AdminModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

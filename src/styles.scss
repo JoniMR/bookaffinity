@@ -101,7 +101,7 @@ $dark-bg-tooltip:     lighten(#2c2c2c, 20%);
 $dark-bg-alpha-4:     rgba(#2c2c2c, 0.04);
 $dark-bg-alpha-12:    rgba(#2c2c2c, 0.12);
 
-$mat-light-theme-background: (
+$mat-light-theme-background: (  
   background:               $light-background,
   status-bar:               $light-bg-darker-20,
   app-bar:                  $light-bg-darker-5,
@@ -272,4 +272,11 @@ $altTheme: (
 	border-radius: 2vh;
   width: 170px;
   color: white;
+}
+.button-Green{
+  background-color: #00BC4B ;
+  color: white;
+}
+h1{
+  font-size: 3em;
 }

@@ -8,6 +8,13 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -24,6 +31,14 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MatDialogModule,
     MatButtonModule,
+    MatTabsModule,
+    MatCardModule,
+    MatAutocompleteModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatListModule,
+    MatPaginatorModule,
+    
   ],
   exports: [
     MatInputModule,
@@ -34,6 +49,13 @@ import { FormsModule } from '@angular/forms';
     MaterialRoutingModule,
     MatDialogModule,
     MatButtonModule,
+    MatTabsModule,
+    MatCardModule,
+    MatAutocompleteModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatListModule,
+    MatPaginatorModule,
   ]
 })
 export class MaterialModule { }
