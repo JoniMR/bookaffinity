@@ -7,26 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsComponent implements OnInit {
 
-  usersContacts: object[];
-  constructor() {
-
-    this.usersContacts = [
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"},
-      {name: "JGabriel", lastMessage: "Thanks, Thomas"}
-    ]
-  }
+  
+  
 
   ngOnInit(): void {}
+
 }

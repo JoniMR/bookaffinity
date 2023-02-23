@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MailboxComponent } from './mailbox.component';
+import { MailboxHeaderComponent } from './mailbox-header.component';
 
-describe('MailboxComponent', () => {
-  let component: MailboxComponent;
-  let fixture: ComponentFixture<MailboxComponent>;
+describe('MailboxHeaderComponent', () => {
+  let component: MailboxHeaderComponent;
+  let fixture: ComponentFixture<MailboxHeaderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MailboxComponent ]
+      declarations: [ MailboxHeaderComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MailboxComponent);
+    fixture = TestBed.createComponent(MailboxHeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,24 +1,20 @@
 .contact{
+    width: 30%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     border-radius: 0;
     cursor: pointer;
+    margin-left: 4em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--primary-main-color);
 }
-.contact:hover{
-    background-color: var(--secondary-hover-color);
-}
-
 p{
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 .contact--name{
     font-weight: bold;
 }   
 .contact--text{
     margin-left: 1rem;
-}
-
-img {
-    height: 2.5em;
 }

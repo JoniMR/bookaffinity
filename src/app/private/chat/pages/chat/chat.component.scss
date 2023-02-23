@@ -1,4 +1,16 @@
-.chat--container{
+.chat{
+    display: flex;
+    flex-direction: row;
+}
+.chat--userlist{
     height: 60vh;
     display: flex;
+}
+
+.chat--chatbox{
+    width: 100%;
+}
+
+app-mailbox{
+    width: 100%;
 }
