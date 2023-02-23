@@ -1,128 +1,89 @@
-.container {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    width: 400px;
-    margin-left: 300px;
-    height: 400px;
-    box-shadow: 0px 0px 5px 1px rgb(232, 226, 226);
+body{
+    max-width: 100%;
 }
 
-
-h1{
-    display: flex;
-    justify-content: center;
-    font-size: large;
-    color: black;
+.login-card{
+    width: 25%;
+    margin-top: 10%;
+    margin-left: 35%;
 }
+
 button{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    width: 150px; 
-    height:40px; 
-    text-align:center;
-    font-weight:700;
-    color: #FFF;
     background-image: linear-gradient(to right, #F8B823, #D86A2C);
-    }
-.container-form{
-    justify-content: center;
-    margin-top: 40px;
+    width: 80%;
+    margin-left: 10% !important;
 }
-.mat-form-field{
-    border-color: #EAB334 !important;
-    width: 35vw !important;
+.input-login{
+    background-color: gainsboro;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    padding: 0 4px 0 4px;
+    width: 90%;
+    height: 50%;
+    border-color: gainsboro;
 }
-.container-buttton{
 
-    margin-top: 15px;
-}
 .pass{
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
 }
 
-.container .mat-form-field + .mat-form-field {
-    margin-left: 8px;
-  }
+.mat-form-field{
+    width: 70%;
+    margin-left: 15%;
+}
+::ng-deep.mat-card-header-text {
+    width: 100%;
+}
+.title {
+    text-align: center;
+}
 
 
-// .wrapper{
-//     width: 100%;
-//     background:#93ecee;
-//     box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
-//   }
-//   .wrapper .title{
-//     background: white;
-//     border-radius: 5px 5px 0 0;
-//     color: black;
-//     font-size: 30px;
-//     font-weight: 300px;
-//     display: flex;
-//     justify-content: center;
-//   }
-//   .wrapper form{
-//     padding: 30px 25px 25px 25px;
-//   }
-//   form .row input:focus{
-//     border-color:#c4c3ca;
-//     box-shadow: inset 0px 0px 2px 2px rgba(212, 218, 217, 0.25);
-//   }
-//   .wrapper form .button input{
-//     color: #fff;
-//     font-size: 20px;
-//     font-weight: 500;
-//     padding-left: 0px;
-//     border: 1px solid #16a085;
-//   }
-  
-//   form .row input::placeholder{
-//     color: #999;
-//   }
-//   .container{
-//     max-width: 440px;
-//     padding: 0 20px;
-//     margin: 170px auto;
-//   }
-// .container-form{
-//     margin-top: 100px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     width: 400px;
-// 	margin: 50px auto;
-//     font-weight: 300;
-// 	font-size: 15px;
-// 	line-height: 1.7;
-// 	color: #c4c3ca;
-// 	background-color: gray;
-// 	overflow-x: hidden;
-// }
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+button{
+    margin-left: 30%;
+}
+input{
+    width: 100%;
+    margin-left:10%
+}
+.login-card{
+    width: 50%;
+    margin-left: 20%;
+}
+}
+@media screen and (max-width: 600px) and (min-width: 400px) {
+    button{
+        margin-left: 35% !important;
+    }
+    input{
+        width: 60%;
+    }
+    .login-card{
+        width: 60%;
+        margin-left: 15%;
+        margin-top: 20%;
+    }
+    .mat-form-field{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 400px) and (min-width: 250px) {
+    button{
+      margin-left: 35% !important;
+    }
+    input{
+        width: 50%;
+    }
+    .login-card{
+        width: 60%;
+        margin-right: 15%;
+    }
+    .mat-form-field{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
 
-// input{
-//     border-color: black;
-//     width: 250px;
-//     height: 20px;
-// }
-
-// .wrapper form .row input{
-//     height: 100%;
-//     width: 100%;
-//     outline: none;
-//     padding-left: 60px;
-//     border-radius: 5px;
-//     border: 1px solid lightgrey;
-//     font-size: 16px;
-//     transition: all 0.3s ease;
-//   }
-//   .wrapper form .button input{
-//     color: #fff;
-//     font-size: 20px;
-//     font-weight: 500;
-//     padding-left: 0px;
-//     background: #16a085;
-//     border: 1px solid #16a085;
-//   }

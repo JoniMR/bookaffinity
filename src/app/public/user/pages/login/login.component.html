@@ -1,32 +1,31 @@
-<div class="container">
-    <form class="container-form">
-      <h1 class="title">Sign in</h1>
-      <div class="email-container">
+ <mat-card class="login-card">
+  <mat-card-header>
+    <mat-card-title class="title">Sign in</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <div>
         <mat-form-field appearance="fill">
-          <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-label class="input-login" >Ingrese su email</mat-label>
+          <input  placeholder="pat@example.com" [formControl]="email" required>
         </mat-form-field>
       </div>
       <div class="password-container">
         <mat-form-field appearance="fill">
-          <mat-label>Enter your password</mat-label>
-          <input matInput [formControl]="password" required>
-
+          <mat-label class="input-login" >Ingrese su contraseña</mat-label>
+          <input class="input-login" [formControl]="password" required>
         </mat-form-field>
       </div>
+      <div class="pass">
+        <a href="#">¿Olvidó su contraseña?</a>
+      </div>
+  </mat-card-content>
+  <mat-card-actions class="button-singin">
       <div class="container-buttton">
-          <div class="pass"><a href="#">Forgot password?</a></div>
-          <div class="row button">
-            <button mat-raised-button color="accent">Accent</button>
-          </div>
-          <div>
-            <div></div>
-            <div></div>
-            <div></div>
-
-          </div>
-        </div>
+            <button mat-raised-button color="accent">Aceptar</button>
+      </div>
         
-    </form>
-</div>
+      </mat-card-actions>
+        
+  </mat-card>
+
 
