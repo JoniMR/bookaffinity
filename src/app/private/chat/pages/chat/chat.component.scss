@@ -9,8 +9,16 @@
 
 .chat--chatbox{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat--chat{
+    flex-grow: 1;    
+    height: calc(100vh - 24em);
 }
 
 app-mailbox{
     width: 100%;
 }
+
