@@ -6,6 +6,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ListComponent } from './components/list/list.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { SearchComponent } from './components/search/search.component';
+import { MaterialModule } from 'src/app/material/material.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SearchComponent } from './components/search/search.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
+    MaterialModule
   ],
   exports: [
     DashboardComponent
