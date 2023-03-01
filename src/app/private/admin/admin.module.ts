@@ -16,7 +16,7 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
     BookRequestsComponent,
     UserManagementComponent,
     SearchBarComponent,
-    PaginatorComponent,
+    PaginatorComponent
   ],
   imports: [
     CommonModule,

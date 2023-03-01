@@ -15,6 +15,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatTableModule} from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 
@@ -38,6 +41,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatGridListModule,
     MatListModule,
     MatPaginatorModule,
+    MatTableModule,
+    MatSortModule,
+    MatCheckboxModule,
     
   ],
   exports: [
@@ -56,6 +62,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatGridListModule,
     MatListModule,
     MatPaginatorModule,
+    MatTableModule,
+    MatCheckboxModule
   ]
 })
 export class MaterialModule { }
+
