@@ -1,1 +1,12 @@
-<p>carousel works!</p>
+<div class="container">
+  <button mat-stroked-button class="lateral-button left-button" (click)=prevPage()><</button>
+  <div class="pictures">
+    <div class="pic-container" *ngFor="let photo of photos.slice(currentPage * 5, currentPage*5 + 5)">
+      <img *ngIf="photo" class="picture" [src]="photo" />
+      <div *ngIf="!photo" class="no-photo">A</div>
+    </div>
+  </div>
+  <button mat-stroked-button class="lateral-button right-button" (click)=nextPage()>></button>
+</div>
+
+{{currentPage}}
