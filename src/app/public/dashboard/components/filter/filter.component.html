@@ -1,1 +1,35 @@
-<p>filter works!</p>
+<div>
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-select-trigger> Géneros </mat-select-trigger>
+      <mat-select [(ngModel)]="selectedLanguage" name="language">
+        <mat-option *ngFor="let language of languages" [value]="language.value"
+          ><img
+            src="../../../../../assets/svg/{{ language.value }}.svg"
+            alt=""
+          />
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>
+<div>
+  <form>
+    <mat-form-field appearance="fill">
+      <mat-select-trigger>
+        <img
+          src="../../../../../assets/svg/{{ selectedLanguage }}.svg"
+          alt=""
+        />
+      </mat-select-trigger>
+      <mat-select [(ngModel)]="selectedLanguage" name="language">
+        <mat-option *ngFor="let language of languages" [value]="language.value"
+          ><img
+            src="../../../../../assets/svg/{{ language.value }}.svg"
+            alt=""
+          />
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+</div>

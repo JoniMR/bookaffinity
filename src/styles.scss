@@ -12,7 +12,7 @@
 // Fonts
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 :root {
 	--primary-main-color: #F8B823;
 	--secondary-main-color: #D86A2C;
@@ -274,4 +274,13 @@ $altTheme: (
   .mat-badge-content {
     font-family: 'Inter';
   }
+}
+
+.button-messsage{
+  background: linear-gradient(to right ,#F8B823, #D86A2C);
+	border: none;
+	text-align: center;
+	border-radius: 2vh;
+  width: 170px;
+  color: white;
 }
