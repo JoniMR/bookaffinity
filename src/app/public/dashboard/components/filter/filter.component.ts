@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormControl } from '@angular/forms';
 interface Language {
   value: string;
 }
 
-interface Genre {
+interface OrderBy {
   value: string;
 }
 @Component({
@@ -27,24 +27,31 @@ export class FilterComponent implements OnInit {
 
   selectedGenre: string = 'Géneros';
 
-  genres: Genre[] = [
+  genresForm = new FormControl('');
+
+  genres: string[] = [
+    'Historia',
+    'Novela negra',
+    'Ciencia ficción',
+    'Fantasía',
+    'Romántica',
+    ' Erótica',
+    'Terror',
+  ];
+
+  selectedOrderBy: string = 'Relevancia';
+
+  orderByForm = new FormControl('');
+
+  orderBy: OrderBy[] = [
     {
-      value: 'Historia',
+      value: 'Relevancia',
     },
     {
-      value: 'Novela negra',
+      value: 'Precio - De menor a mayor',
     },
     {
-      value: 'Ciencia ficción',
-    },
-    {
-      value: 'Fantasía',
-    },
-    {
-      value: 'Romántica',
-    },
-    {
-      value: 'Erótica',
+      value: 'Precio - De mayor a menor',
     },
   ];
 
