@@ -197,7 +197,6 @@ $theme-accent: mat.define-palette($mat-accent, main, lighter, darker);
 
 
 body {
-  margin: 0;
   --warn-color: #bc0000;
   --warn-lighter-color: #00bc4b;
   --warn-darker-color: #ff0000;
@@ -264,4 +263,13 @@ $altTheme: (
   .mat-badge-content {
     font-family: 'Inter';
   }
+}
+
+.button-messsage{
+  background: linear-gradient(to right ,#F8B823, #D86A2C);
+	border: none;
+	text-align: center;
+	border-radius: 2vh;
+  width: 170px;
+  color: white;
 }
