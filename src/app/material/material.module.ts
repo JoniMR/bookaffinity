@@ -19,7 +19,14 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [],
   imports: [
     CommonModule,
-    MaterialRoutingModule
+    MaterialRoutingModule,
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    MatDialogModule,
+    MatButtonModule,
   ],
   exports: [
     MatInputModule,
