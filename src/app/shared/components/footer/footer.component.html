@@ -1,3 +1,12 @@
-<footer class="footer">
-    <p> Copyright 2023 BookAfiinity. All rights reserved. <a>User agreement </a> ,<a>Privacy </a>  and <a> Cookies</a>.</p>
+<footer class="footer" *ngIf="currentWindowWidth >= 768">
+    <p>&copy; 2023 BookAfiinity. All rights reserved. <a>User agreement </a>, <a>Privacy </a>  and <a> Cookies</a>.</p>
+</footer>
+
+<footer class="footer footer_mobile" *ngIf="currentWindowWidth < 768">
+    <div class="links-container">
+        <a>User agreement</a>
+        <a>Privacy</a>
+        <a>Cookies</a>
+    </div>
+    <p> &copy; 2023 BookAfiinity. All rights reserved.</p>
 </footer>
