@@ -1,3 +1,4 @@
+import { MatDialogModule } from '@angular/material/dialog';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialRoutingModule } from './material-routing.module';
@@ -21,7 +22,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialRoutingModule
   ],
   exports: [
-    MatButtonModule,
     MatInputModule,
     MatIconModule,
     MatFormFieldModule,
@@ -32,6 +32,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatCardModule,
     MatListModule,
     MatPaginatorModule,
+    MatButtonModule,
+    MaterialRoutingModule,
+    MatDialogModule,
   ]
 })
 export class MaterialModule { }
