@@ -22,6 +22,7 @@ import { MaterialModule } from '../material/material.module';
   exports: [
     AccountComponent,
     NavbarComponent,
+    FooterComponent,
   ]
 })
 export class SharedModule { }
