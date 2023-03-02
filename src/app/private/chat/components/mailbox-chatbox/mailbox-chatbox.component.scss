@@ -6,7 +6,9 @@
   display: flex;
   flex-direction: column;
 }
-
+p{
+  font-family: Inter;
+}
 .chat {
   display: inline-block;
   border: 1px solid var(--primary-main-color);
