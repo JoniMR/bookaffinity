@@ -3,16 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { AddCopyRoutingModule } from './add-copy-routing.module';
 import { AddCopyComponent } from './pages/add-copy/add-copy.component';
-
+import { MaterialModule } from 'src/app/material/material.module';
 
 @NgModule({
-  declarations: [
-  
+  declarations: [  
     AddCopyComponent
   ],
   imports: [
     CommonModule,
-    AddCopyRoutingModule
+    AddCopyRoutingModule,
+    MaterialModule
   ],
   exports: [
     AddCopyComponent

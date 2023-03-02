@@ -1,1 +1,39 @@
-<p>add-copy works!</p>
+<form action="" class="add-copy-form">
+  <div class="form-grid">
+    <label class="title">Título</label>
+    <mat-form-field class="mat-title" appearance="fill">
+      <mat-label>Introduce el título</mat-label>
+      <input matInput />
+    </mat-form-field>
+    <label class="condition">Estado</label>
+    <mat-form-field class="mat-condition" appearance="fill">
+      <mat-label>¿Cómo está tu libro?</mat-label>
+      <mat-select>
+        <mat-option value="one">Como nuevo</mat-option>
+        <mat-option value="two">En buen estado</mat-option>
+        <mat-option value="trhee">Con algún desperfecto</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <label class="details">Detalles</label>
+    <mat-form-field class="mat-details" appearance="fill">
+      <mat-label>Añade algún detalle más</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+    <label>Fotos</label>
+    <div class="img-preview">
+      <img src="https://picsum.photos/200/200" alt="preview" width="150px">
+      <img src="https://picsum.photos/200/200" alt="preview" width="150px">
+      <img src="https://picsum.photos/200/200" alt="preview" width="150px">
+      <img src="https://picsum.photos/200/200" alt="preview" width="150px">
+      <img src="https://picsum.photos/200/200" alt="preview" width="150px">
+      <img src="https://picsum.photos/200/200" alt="preview" width="150px">
+      <img src="https://picsum.photos/200/200" alt="preview" width="150px">
+    </div>
+    <button mat-stroked-button class="up-photo">Sube una foto</button>
+    <label class="details">Descripción</label>
+    <mat-form-field class="mat-description" appearance="fill">
+      <mat-label>Describe con detalle el libro</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+  </div>
+</form>
