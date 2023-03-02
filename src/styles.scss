@@ -13,6 +13,14 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
+:root {
+	--primary-main-color: #F8B823;
+	--secondary-main-color: #D86A2C;
+	--primary-hover-color: #EAB334;
+  --secondary-hover-color: #FFFBF3;  
+}
+
+
 $fontConfig: (
   display-4: mat.define-typography-level(112px, 112px, 500, "Inter", -0.0134em),
   display-3: mat.define-typography-level(56px, 56px, 400, "Inter", -0.0089em),
