@@ -1,24 +1,62 @@
 .container {
-  display: flex;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
-  max-height: 10vh;
-  margin-top: 10px;
-  margin-left: 260px;
+  justify-items: center;
+  height: 10vh;
+  grid-template-columns: 2fr 10fr;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+
 
 .button--container {
-    margin-right: 260px;
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
+  display: grid;
+  justify-self: end;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.logo--svg {
-  max-width: 40%;
-  max-height: 40%;
+.logo--container {
+  justify-self: end;
+}
+
+.logo--svg-show {
+  width: 80%;
+  height: 80%;
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+  &:not(:hover) {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+  }
+}
+
+.logo--svg-hidden {
+  display: none;
+  width: 40%;
+  height: 40%;
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+  &:not(:hover) {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1);
+  }
 }
 
 .button--login {
-    color: #EAB334;
+  color: #eab334;
+}
+
+@media (max-width: 768px) {
+  .logo--svg-show {
+    display: none;
+  }
+
+  .logo--svg-hidden {
+    display: inline;
+  }
 }

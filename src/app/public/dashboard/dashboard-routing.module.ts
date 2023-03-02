@@ -8,11 +8,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 const routes: Routes = [{
   path: '',
   children: [
-    { path: 'filter', component: FilterComponent},
-    { path: 'list', component: ListComponent},
-    { path: 'search', component: SearchComponent},
     { path: 'index', component: DashboardComponent},
-    { path: '**', redirectTo: 'index'}
+    { path: '', redirectTo: 'index'}
   ]
 }];
 
