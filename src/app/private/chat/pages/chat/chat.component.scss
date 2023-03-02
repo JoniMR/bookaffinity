@@ -1,7 +1,8 @@
 .chat{
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin-top: 5vh;
+    font-family: inter;
 }
 .chat--userlist{
     height: 60vh;
@@ -16,7 +17,7 @@
 
 .chat--chat{
     flex-grow: 1;    
-    height: calc(100vh - 24em);
+    height: calc(100vh - 22em);
 }
 
 app-mailbox{
