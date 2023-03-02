@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
   currentPage: number = 0;
+  itemIndex: number = 0;
 
   photos: string[] = [
     'https://media.karousell.com/media/photos/products/2015/10/11/a_project_guide_to_ux_design_for_user_experience_designers_guide_book_1444559799_5757a608.jpg',
@@ -23,14 +24,29 @@ export class CarouselComponent implements OnInit {
     'https://cdn.shopify.com/s/files/1/0330/7333/products/PXL_20221219_153213154_608x760.jpg?v=1671811225',
   ];
 
+  indexIncrease(): void {}
+
   nextPage(): void {
-    this.currentPage += 1;
+    if (this.photos[(this.currentPage+1) * 5]) {
+      this.currentPage += 1;
+      this.fillRow();
+    }
   }
   prevPage(): void {
     if (this.currentPage > 0) this.currentPage -= 1;
   }
 
+  fillRow(): void {
+    for (let i = this.currentPage * 5; i < this.currentPage * 5 + 5; i++) {
+      if (!this.photos[i]) {
+        this.photos.push('no-photo');
+      }
+    }
+  }
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.fillRow();
+  }
 }

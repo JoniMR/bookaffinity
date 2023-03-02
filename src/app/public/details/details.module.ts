@@ -24,7 +24,8 @@ import { MaterialModule } from 'src/app/material/material.module';
   ],
   exports:[
     SheetComponent,
-    CarouselComponent
+    CarouselComponent,
+    ReviewComponent
   ]
 })
 export class DetailsModule { }
