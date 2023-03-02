@@ -25,11 +25,5 @@
   margin-bottom: 2vh;
 }
 
-@media (max-width: 1024px) {
-  .list--container {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    align-items: center;
-    justify-items: center;
-  }
-}
+
+
