@@ -1,3 +1,4 @@
+import { DetailsModule } from './details/details.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PublicRoutingModule } from './public-routing.module';
@@ -7,6 +8,7 @@ import { PublicRoutingModule } from './public-routing.module';
   imports: [
     CommonModule,
     PublicRoutingModule,
+    DetailsModule
   ],
   exports: [
   ]

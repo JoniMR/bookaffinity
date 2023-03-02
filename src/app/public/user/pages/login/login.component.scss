@@ -1,89 +1,130 @@
 body{
-    max-width: 100%;
+    max-height: 100vh;
 }
-
-.login-card{
-    width: 25%;
-    margin-top: 10%;
-    margin-left: 35%;
+.modal-login{
+    width: 30vw;
+    height: 43vh;
+    margin-top: 0% !important;
 }
-
 button{
     background-image: linear-gradient(to right, #F8B823, #D86A2C);
-    width: 80%;
-    margin-left: 10% !important;
-}
-.input-login{
-    background-color: gainsboro;
-    border-radius: 5px;
-    border: 1px solid #000000;
-    padding: 0 4px 0 4px;
     width: 90%;
-    height: 50%;
-    border-color: gainsboro;
+    margin-left: 5% !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-
 .pass{
     display: flex;
     justify-content:flex-end;
 }
 
-.mat-form-field{
-    width: 70%;
-    margin-left: 15%;
+.login-input{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    margin-left: 5%;
+    }
+.forgot-password{
+    margin-left: 60%;
 }
-::ng-deep.mat-card-header-text {
-    width: 100%;
-}
+
 .title {
-    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+.link-register{
+    text-decoration-color: #D86A2C;
+    color: #D86A2C;
+    font-weight: bold;
+    margin-left: 25%;
+}
+.text-link{
+    margin-left: 30%;
+    margin-bottom: 0;
 }
 
-
-@media screen and (max-width: 1000px) and (min-width: 600px) {
+@media screen and (max-width: 1500px) and (min-width: 800px) {
+.modal-login{
+    width: 35vw;
+    height: 55vh;
+    }
 button{
     margin-left: 30%;
 }
-input{
-    width: 100%;
-    margin-left:10%
+.link-register{
+    margin-left: 40%;
+    text-decoration-color: #D86A2C;
 }
-.login-card{
-    width: 50%;
+.text-register{
     margin-left: 20%;
+    text-decoration-color: #D86A2C;
 }
+.link-register{
+    margin-left: 23%;
+    color: #D86A2C !important;
+    }
+.text-link{
+    margin-top: 5%;
+    margin-left: 20%;
+    }
 }
-@media screen and (max-width: 600px) and (min-width: 400px) {
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    .modal-login{
+    width: 50vw;
+    height: 45vh;
+    }
     button{
-        margin-left: 35% !important;
-    }
-    input{
-        width: 60%;
-    }
-    .login-card{
-        width: 60%;
-        margin-left: 15%;
-        margin-top: 20%;
+    margin-left: 5% !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
     }
     .mat-form-field{
-        width: 90%;
-        margin-left: 5%;
+    width: 90%;
+    margin-left: 5%;
+    } 
+    .link-register{
+    margin-left: 20%;
+    color: #D86A2C !important;
+    }
+    .title{
+        margin-left: 35%;
+    }
+    .text-link{
+    margin-top: 5%;
+    margin-left: 12%;
     }
 }
-@media screen and (max-width: 400px) and (min-width: 250px) {
+@media screen and (max-width: 500px) and (min-width: 250px) {
+    .title{
+    margin-left: 30%;
+    }
+    .modal-login{
+    width: 70vw;
+    height: 60vh;
+    }
     button{
-      margin-left: 35% !important;
+    width: 60vw;
+    height: 5vh;
     }
-    input{
-        width: 50%;
+    .link-register{
+    margin-left: 20%;
+    color: #D86A2C !important;
     }
-    .login-card{
-        width: 60%;
-        margin-right: 15%;
+    .text-link{
+    margin-top: 10%;
+    margin-left: 4%;
     }
-    .mat-form-field{
-        width: 100%;
-        margin-left: 0%;
+    .login-input{
+    width: 60vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    margin-left: 5%;
     }
 }
 

@@ -1,0 +1,37 @@
+<div class="container modal-review">
+    <h2 class="title-review">Deja tu comentario sobre el libro</h2>
+    <div>
+        <div>
+            <h3>Puntuación</h3>
+            <div class="stars">
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+                <mat-icon class="star">star</mat-icon>
+            </div>
+        </div>
+        <div class="email-container">
+            <h3>Título</h3>
+            <input class="headline-input" type="text" placeholder="Título">        
+        </div>
+        <div class="message-container">
+            <h3>Escribe tu comentario</h3>
+            <input class="message-input" type="text" placeholder="Introduce tu comentario" >        
+        </div>
+        <h3>Añade imágenes</h3>
+        <div class="comment-photo">
+            <div class="picture-review" *ngFor="let picture of picturelist">
+                <img *ngIf="picture" class="pic-review" [src]="picture">
+                <div *ngIf="!picture" class="no-picture"></div>
+            </div>   
+        </div>
+        <button class="publish-photo" mat-raised-button color="accent">Subir foto</button>
+        <mat-card-actions class="button-singin">
+            <div class="container-buttton">
+                <button class="publish-button" mat-raised-button color="accent">Publicar comentario</button>
+            </div>
+            </mat-card-actions>
+
+    </div>
+</div>

@@ -15,7 +15,7 @@ password: FormControl;
   constructor() {
     this.email = new FormControl('', [Validators.required, Validators.email]);
     this.password = new FormControl('', [Validators.required]);
-   }
+  }
 
   ngOnInit(): void {
   }

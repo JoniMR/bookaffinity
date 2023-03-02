@@ -4,8 +4,9 @@
   </div>
   <div class="button button--container">
     <button class="button button--sell" mat-button>Vende tu libro</button>
-    <button class="button button--login" mat-button >Login</button>
-    <button class="button button--register" mat-button>Regístrate</button>
+    <button class="button button--login" mat-button (click)="openLogin()">Login</button>
+    <button class="button button--register" mat-button (click)="openRegister()">Regístrate</button>
     <button mat-button (click)="openDialog()">Abrir Perfil</button>
+    <button mat-button (click)="openReview()">Abrir review</button>
   </div>
 </div>

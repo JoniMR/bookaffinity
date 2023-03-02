@@ -1,3 +1,4 @@
+import { DetailsModule } from './public/details/details.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DashboardModule } from './public/dashboard/dashboard.module';
@@ -20,7 +21,8 @@ import { UserModule } from './public/user/user.module';
     PublicModule,
     DashboardModule,
     SharedModule,
-    UserModule
+    UserModule,
+    DetailsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
