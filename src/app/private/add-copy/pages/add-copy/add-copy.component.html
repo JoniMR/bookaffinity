@@ -54,8 +54,7 @@
     <label class="price">Precio <span>*</span></label>
     <mat-form-field class="mat-price" appearance="fill">
       <mat-label>Introduzca el precio</mat-label>
-      <p matPrefix class="currency">€ &nbsp;</p>
-      <input matInput type="number" formControlName="price" min="0.01" step="0.01" max="2500"/>
+      <input matInput currencyMask formControlName="value" [options]="{ prefix: '€ ', thousands: '.', decimal: ',' }" />
       <mat-error *ngIf="formError('price', 'required')">
         El precio es <strong>obligatorio</strong>
       </mat-error>
