@@ -1,5 +1,5 @@
 hr {
-  border: 1px solid #E4E4EE
+  border: 1px solid #e4e4ee;
 }
 
 p,
@@ -37,8 +37,6 @@ h2 {
 .filter,
 .sortby {
   font-size: 14px;
-  margin-bottom: 1vh;
-  margin-top: 2vh;
 }
 
 .review {
@@ -57,18 +55,15 @@ h2 {
   flex: 1;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  color:#888888;
+  color: #888888;
   font-size: 14px;
-
 }
 
 .date {
   margin-top: 1vh;
   margin-bottom: 1vh;
-  color:#888888;
+  color: #888888;
   font-size: 14px;
-
-
 }
 
 .review-button {
@@ -109,20 +104,20 @@ h2 {
   color: #f8b823;
 }
 
-.pic-container{
+.pic-container {
   height: 8vh;
   margin-right: 1vw;
-  flex:1;
+  flex: 1;
   margin-top: 1vh;
 }
 
-.picture{
-   height: 100%;
-   width: 100%;
+.picture {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
-.pictures{
+.pictures {
   display: flex;
   flex-direction: row;
   width: 30%;
@@ -130,12 +125,29 @@ h2 {
   margin-left: 0.3vw;
   margin-bottom: 1vh;
 }
-#hr1{
+#hr1 {
   margin-top: 1vh;
 }
-#hr2{
+#hr2 {
   margin-top: 1vh;
 }
-#hr3{
+#hr3 {
   margin-top: 2vh;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+}
+
+.filter-icon{
+  margin-right: 1vw;
+}
+.filters-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

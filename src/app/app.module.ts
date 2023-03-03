@@ -8,6 +8,7 @@ import { PublicModule } from './public/public.module';
 import { SharedModule } from './shared/shared.module';
 import { DetailsModule } from './public/details/details.module';
 import { DashboardModule } from './public/dashboard/dashboard.module';
+import { EcommerceModule } from './private/ecommerce/ecommerce.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DashboardModule } from './public/dashboard/dashboard.module';
     PublicModule,
     DashboardModule,
     SharedModule,
-    DetailsModule
+    DetailsModule,
+    EcommerceModule
   ],
   providers: [],
   bootstrap: [AppComponent]
