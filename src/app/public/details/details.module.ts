@@ -6,6 +6,7 @@ import { DetailsComponent } from './pages/details/details.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SheetComponent } from './components/sheet/sheet.component';
 import { ReviewComponent } from './components/review/review.component';
+import { MaterialModule } from 'src/app/material/material.module';
 
 
 @NgModule({
@@ -13,11 +14,17 @@ import { ReviewComponent } from './components/review/review.component';
     DetailsComponent,
     CarouselComponent,
     SheetComponent,
-    ReviewComponent
+    ReviewComponent,
+
   ],
   imports: [
     CommonModule,
-    DetailsRoutingModule
+    DetailsRoutingModule,
+    MaterialModule
+  ],
+  exports:[
+    DetailsComponent
+
   ]
 })
 export class DetailsModule { }

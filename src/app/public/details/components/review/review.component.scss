@@ -1,0 +1,153 @@
+hr {
+  border: 1px solid #e4e4ee;
+}
+
+p,
+h1,
+h2 {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filter,
+.sortby {
+  font-size: 14px;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.data-review {
+  flex: 6;
+}
+
+.author {
+  flex: 1;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  color: #888888;
+  font-size: 14px;
+}
+
+.date {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  color: #888888;
+  font-size: 14px;
+}
+
+.review-button {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-clip: text;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  border-image: linear-gradient(to right, #f8b823, #d86a2c) 1;
+  font-size: 12px;
+  background-image: linear-gradient(to right, #f8b823, #d86a2c);
+  margin-right: 1.5vw;
+}
+
+.text-button {
+  // background: linear-gradient(to right, #F8B823, #D86A2C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-review {
+  margin-top: 1vh;
+  margin-left: 0.3vw;
+  font-size: 14px;
+}
+
+.stars {
+  margin-right: 0.6vw;
+  flex: 2;
+
+  margin-top: 1vh;
+}
+
+.star {
+  transform: scale(0.75);
+  width: 1.5vw;
+  color: #f8b823;
+}
+
+.pic-container {
+  height: 8vh;
+  margin-right: 1vw;
+  flex: 1;
+  margin-top: 1vh;
+}
+
+.picture {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  margin-top: 1.5vh;
+  margin-left: 0.3vw;
+  margin-bottom: 1vh;
+}
+#hr1 {
+  margin-top: 1vh;
+}
+#hr2 {
+  margin-top: 1vh;
+}
+#hr3 {
+  margin-top: 2vh;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1vh;
+  margin-top: 2vh;
+}
+
+.filter-icon{
+  margin-right: 1vw;
+}
+.filters-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
