@@ -268,10 +268,6 @@ $altTheme: (
   }
 }
 
-body {
-  margin: 0;
-}
-
 .mat-form-field-appearance-legacy .mat-form-field-underline {
   background-color: #EAB334;
 }
@@ -284,23 +280,6 @@ body {
   background-color: #EAB334;
 }
 
-.mat-list-item-content {
-  padding: 0 !important;
-}
-
-.mat-card {
-  object-fit: cover;
-  overflow: hidden;
-  width: 13vw;
-}
-
-.mat-card-content {
-  object-fit: cover;
-  overflow: hidden;
-  width: 13vw;
-  height: 20vh;
-}
-
-.mat-option {
-  font-family: Inter;
+body {
+  margin: 0;
 }

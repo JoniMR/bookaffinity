@@ -10,7 +10,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDividerModule} from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -42,6 +42,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MaterialRoutingModule,
     MatDialogModule,
-  ]
+  ],
 })
 export class MaterialModule { }
