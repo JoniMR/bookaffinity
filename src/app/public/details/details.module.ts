@@ -26,6 +26,6 @@ import { ModalstockComponent } from './components/modalstock/modalstock.componen
     DetailsRoutingModule,
     MaterialModule
   ],
-  exports: [ModalreviewComponent]
+  exports: [ModalreviewComponent, DetailsComponent]
 })
 export class DetailsModule { }

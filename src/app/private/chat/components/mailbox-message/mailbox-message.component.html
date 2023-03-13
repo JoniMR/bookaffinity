@@ -1,0 +1,10 @@
+<div class="chat--container">
+  <form class="chat--form">
+    <mat-form-field class="chat--input">
+      <mat-label>Escribe tu mensaje</mat-label>
+      <input matInput #message maxlength="256" />
+      <mat-hint align="end">{{ message.value.length }} / 256</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button color="accent" class="chat--button">Enviar</button>
+  </form>
+</div>
