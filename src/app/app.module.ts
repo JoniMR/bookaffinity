@@ -24,11 +24,7 @@ import { EcommerceModule } from './private/ecommerce/ecommerce.module';
     SharedModule,
     DetailsModule,
     EcommerceModule,
-<<<<<<< HEAD
-    AdminModule,
-=======
     AdminModule
->>>>>>> 84cc01416bdfbe7e2d5280e66dad0191a1ddc591
   ],
   providers: [],
   bootstrap: [AppComponent]
