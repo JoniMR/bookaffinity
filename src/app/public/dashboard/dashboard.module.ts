@@ -7,13 +7,16 @@ import { ListComponent } from './components/list/list.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { SearchComponent } from './components/search/search.component';
 import { MaterialModule } from 'src/app/material/material.module';
+import { PaginatePipe } from './pipes/paginate.pipe';
+
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ListComponent,
     FilterComponent,
-    SearchComponent
+    SearchComponent,
+    PaginatePipe
   ],
   imports: [
     CommonModule,

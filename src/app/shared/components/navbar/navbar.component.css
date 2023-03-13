@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 10vh;
+  margin-top: 10px;
+  margin-left: 260px;
+}
+
+.button--container {
+  margin-right: 260px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo--svg {
+  max-width: 40%;
+  max-height: 40%;
+}
+
+.button--login {
+  color: #EAB334;
+}/*# sourceMappingURL=navbar.component.css.map */

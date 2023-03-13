@@ -1,0 +1,75 @@
+<div class="container">
+  <h1 class="page-title">On sale list</h1>
+  <h2 class="book-title">Clean code</h2>
+  <hr id="hr1" />
+  <div class="filters-container">
+    <p class="results">Results: 3</p>
+    <div class="sortby">
+      <label class="label-sortby" for="select-sortby">Sort by:</label>
+      <select class="select-sortby">
+        <option value="DateAsc">Date Added (Asc)</option>
+        <option value="DateDesc">Date Added (Desc)</option>
+      </select>
+    </div>
+  </div>
+  <hr id="hr2" />
+  <div class="item-card">
+    <img
+      class="picture"
+      src="https://stancalau.ro/wp-content/uploads/2020/04/CleanCode.jpg"
+    />
+    <div class="item-info">
+      <div class="soldby">
+        <p class="soldby-text">Sold by -</p>
+        <p class="vendor">Michael</p>
+      </div>
+      <div class="field">
+        <p class="tag">Author:</p>
+        <p class="field-value">Anonimo</p>
+      </div>
+      <div class="field">
+        <p class="tag">Condition:</p>
+        <p class="field-value">New</p>
+      </div>
+      <div class="field">
+        <p class="tag">Upload date:</p>
+        <p class="field-value">01/01/2023</p>
+      </div>
+    </div>
+    <p class="price">32€</p> 
+  </div>
+  <hr id="hr2" />
+
+  <div class="item-card">
+    <img
+      class="picture"
+      src="https://stancalau.ro/wp-content/uploads/2020/04/CleanCode.jpg"
+    />
+    <div class="item-info">
+      <div class="soldby">
+        <p class="soldby-text">Sold by -</p>
+        <p class="vendor">Michael</p>
+      </div>
+      <div class="field">
+        <p class="tag">Author:</p>
+        <p class="field-value">Anonimo</p>
+      </div>
+      <div class="field">
+        <p class="tag">Condition:</p>
+        <p class="field-value">New</p>
+      </div>
+      <div class="field">
+        <p class="tag">Upload date:</p>
+        <p class="field-value">01/01/2023</p>
+      </div>
+    </div>
+    <p class="price">32€</p> 
+  </div>
+  <hr id="hr2" />
+  <mat-paginator
+  [length]="200"
+  [pageSizeOptions]="[10, 50, 100]"
+  aria-label="Select page"
+>
+</mat-paginator>
+</div>

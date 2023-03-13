@@ -1,113 +1,29 @@
 <mat-list role="list" class="list list--container">
   <mat-list-item role="listitem">
-    <mat-card>
-      <mat-card-header> </mat-card-header>
+    <mat-card *ngFor="let l of list | paginate:page_size:page_number">
       <div class="list list--img-container">
         <img
           mat-card-image
-          src="../../../../../assets/img/Libro1.jpg"
+          src="{{l.img}}"
           alt="Photo of a Shiba Inu"
         />
       </div>
       <mat-card-content>
         <div class="list list--card-text">
-          <p class="mat-subheading-2"><b>EL CUCO DE CRISTAL</b></p>
+          <p class="mat-subheading-2"><b>{{l.title}}</b></p>
           <hr />
-          <p class="mat-subheading-1">JAVIER CASTILLO</p>
+          <p class="mat-subheading-1">{{l.author}}</p>
         </div>
         <mat-icon>favorite_border</mat-icon>
         <mat-icon>add_shopping_cart</mat-icon>
-      </mat-card-content>
-    </mat-card>
-  </mat-list-item>
-  <mat-list-item role="listitem">
-    <mat-card>
-      <mat-card-header> </mat-card-header>
-      <div class="list list--img-container">
-        <img
-          mat-card-image
-          src="../../../../../assets/img/Libro2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-      </div>
-      <mat-card-content>
-        <div class="list list--card-text">
-          <p class="mat-subheading-2"><b>EL CUCO DE CRISTAL</b></p>
-          <hr />
-          <p class="mat-subheading-1">JAVIER CASTILLO</p>
-        </div>
-        <mat-icon>favorite_border</mat-icon>
-        <mat-icon>add_shopping_cart</mat-icon>
-      </mat-card-content>
-    </mat-card>
-  </mat-list-item>
-  <mat-list-item role="listitem">
-    <mat-card>
-      <mat-card-header> </mat-card-header>
-      <div class="list list--img-container">
-        <img
-          mat-card-image
-          src="../../../../../assets/img/Libro3.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-      </div>
-      <mat-card-content>
-        <div class="list list--card-text">
-          <p class="mat-subheading-2"><b>CASTILLOS DE FUEGO</b></p>
-          <hr />
-          <p class="mat-subheading-1">IGNACIO MARTÍNEZ DE PISÓN</p>
-        </div>
-        <mat-icon>favorite_border</mat-icon
-        ><mat-icon>add_shopping_cart</mat-icon>
-      </mat-card-content>
-    </mat-card>
-  </mat-list-item>
-  <mat-list-item role="listitem">
-    <mat-card>
-      <mat-card-header> </mat-card-header>
-      <div class="list list--img-container">
-        <img
-          mat-card-image
-          src="../../../../../assets/img/Libro4.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-      </div>
-      <mat-card-content>
-        <div class="list list--card-text">
-          <p class="mat-subheading-2"><b>LA CAMARERA</b></p>
-          <hr />
-          <p class="mat-subheading-1">NITA PROSE</p>
-        </div>
-        <mat-icon>favorite_border</mat-icon
-        ><mat-icon>add_shopping_cart</mat-icon>
-      </mat-card-content>
-    </mat-card>
-  </mat-list-item>
-  <mat-list-item role="listitem">
-    <mat-card>
-      <mat-card-header> </mat-card-header>
-      <div class="list list--img-container">
-        <img
-          mat-card-image
-          src="../../../../../assets/img/Libro5.jpg"
-          alt="Photo of a Shiba Inu"
-        />
-      </div>
-      <mat-card-content>
-        <div class="list list--card-text">
-          <p class="mat-subheading-2"><b>EL ENJAMBRE</b></p>
-          <hr />
-          <p class="mat-subheading-1">JOSE GIL ROMERO & GORETTI IRISARRI</p>
-        </div>
-        <mat-icon>favorite_border</mat-icon
-        ><mat-icon>add_shopping_cart</mat-icon>
       </mat-card-content>
     </mat-card>
   </mat-list-item>
 </mat-list>
 <mat-paginator
-  [length]="200"
-  [pageSizeOptions]="[10, 50, 100]"
-  aria-label="Select page"
+[length]="list.length"
+[pageSize]="page_size"
+aria-label="Select page"
+(page)="handlePage($event)"
 >
 </mat-paginator>

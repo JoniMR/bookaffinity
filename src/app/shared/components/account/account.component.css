@@ -1,0 +1,66 @@
+.image-profile {
+  border: solid 2px #EAB334;
+  border-radius: 50%;
+  width: 45vh;
+  display: inline-block;
+  align-items: center;
+}
+
+.tarjeta {
+  width: 70vw;
+  display: flex;
+}
+
+.content {
+  display: inline-block;
+  margin-left: 5vw;
+}
+
+.p-dorado {
+  color: #EAB334;
+  display: inline-block;
+  margin-left: 1%;
+}
+
+.button-message {
+  background: linear-gradient(to right, #F8B823, #D86A2C);
+  border: none;
+  text-align: center;
+  border-radius: 2vh;
+}
+
+.userName {
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  border: dotted 1px red;
+  padding: 5px;
+}
+
+.texto {
+  display: inline-block;
+}
+
+.icono {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 729px) {
+  .bio {
+    visibility: hidden;
+    display: none;
+  }
+  .image-profile {
+    border-radius: 50%;
+    width: 25vw;
+  }
+  .userName {
+    display: none;
+  }
+  .location {
+    display: none;
+  }
+}/*# sourceMappingURL=account.component.css.map */
