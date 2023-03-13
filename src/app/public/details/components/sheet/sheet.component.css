@@ -1,0 +1,203 @@
+h1,
+h2,
+p {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.navbar-test {
+  background-color: rgb(159, 159, 159);
+  width: 100%;
+  height: 4vw;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5vw;
+  align-items: flex-start;
+}
+
+.book-cover {
+  height: 37vw;
+  width: 25vw;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 6.25vw;
+}
+
+.info {
+  width: 28vw;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  height: 37vw;
+}
+
+.title {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2vh;
+  justify-content: space-between;
+}
+
+.stars {
+  margin-right: 0.6vw;
+  flex: 2;
+}
+
+.star {
+  transform: scale(0.75);
+  width: 1.5vw;
+  color: #F8B823;
+}
+
+.number-reviews {
+  margin: 0;
+  margin-right: 0.6vw;
+  font-size: 14px;
+  margin-top: 0.4vw;
+  color: #D86A2C;
+  font-weight: 500;
+  flex: 3;
+}
+
+.number-orders {
+  margin: 0;
+  margin-right: 0.6vw;
+  font-size: 14px;
+  margin-top: 0.4vw;
+  font-weight: 500;
+  color: #81818F;
+  flex: 1.5;
+}
+
+.specifics {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-row {
+  margin-top: 1.5vh;
+  display: flex;
+}
+
+.tag-spec {
+  flex: 1;
+  font-size: 13px;
+  color: #81818F;
+}
+
+.value-spec {
+  flex: 3;
+  font-size: 13px;
+}
+
+.text-desc {
+  margin-top: 1.5vh;
+  font-size: 13px;
+}
+
+.title-section {
+  margin-top: 2vh;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.action-button {
+  font-size: 12px;
+  background-image: linear-gradient(to right, #F8B823, #D86A2C);
+  margin-right: 1.5vw;
+}
+
+.publish-button {
+  color: white;
+}
+
+.review-button {
+  -webkit-background-clip: text;
+          background-clip: text;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  -o-border-image: linear-gradient(to right, #F8B823, #D86A2C) 1;
+     border-image: linear-gradient(to right, #F8B823, #D86A2C) 1;
+}
+
+.text-button {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sold-by {
+  width: 14vw;
+  margin-right: 6.25vw;
+}
+
+.sold-by-container {
+  border: 1.5px solid rgba(230, 128, 10, 0.3137254902);
+  border-radius: 5px;
+}
+
+.sold-by-title {
+  padding-left: 1vw;
+  padding-top: 1.3vw;
+  padding-bottom: 1.3vw;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product-at-sell {
+  border: 1.5px solid rgba(230, 128, 10, 0.3137254902);
+  border-radius: 5px;
+  margin-top: 2vh;
+}
+
+.user-id {
+  font-size: 14px;
+  margin-left: 1vw;
+  margin-top: 1.5vh;
+  color: #0072BC;
+}
+
+.feedback {
+  margin-left: 1vw;
+  margin-top: 1.5vh;
+  font-size: 14px;
+}
+
+.contact {
+  margin-left: 1vw;
+  margin-top: 1.5vh;
+  font-size: 14px;
+  color: #0072BC;
+}
+
+.rule {
+  border: 1px solid rgba(230, 128, 10, 0.3137254902);
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+}
+
+.other-items {
+  margin-left: 1vw;
+  font-size: 14px;
+  margin-top: 1.5vh;
+  color: #0072BC;
+  margin-bottom: 1.5vh;
+}/*# sourceMappingURL=sheet.component.css.map */

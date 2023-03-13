@@ -108,18 +108,18 @@ $dark-bg-tooltip: lighten(#2c2c2c, 20%);
 $dark-bg-alpha-4: rgba(#2c2c2c, 0.04);
 $dark-bg-alpha-12: rgba(#2c2c2c, 0.12);
 
-$mat-light-theme-background: (
-  background: $light-background,
-  status-bar: $light-bg-darker-20,
-  app-bar: $light-bg-darker-5,
-  hover: $dark-bg-alpha-4,
-  card: $light-bg-lighter-5,
-  dialog: $light-bg-lighter-5,
-  tooltip: $dark-bg-tooltip,
-  disabled-button: $dark-bg-alpha-12,
-  raised-button: $light-bg-lighter-5,
-  focused-button: $dark-focused,
-  selected-button: $light-bg-darker-20,
+$mat-light-theme-background: (  
+  background:               $light-background,
+  status-bar:               $light-bg-darker-20,
+  app-bar:                  $light-bg-darker-5,
+  hover:                    $dark-bg-alpha-4,
+  card:                     $light-bg-lighter-5,
+  dialog:                   $light-bg-lighter-5,
+  tooltip:                  $dark-bg-tooltip,
+  disabled-button:          $dark-bg-alpha-12,
+  raised-button:            $light-bg-lighter-5,
+  focused-button:           $dark-focused,
+  selected-button:          $light-bg-darker-20,
   selected-disabled-button: $light-bg-darker-30,
   disabled-button-toggle: $light-bg-darker-10,
   unselected-chip: $light-bg-darker-10,
@@ -218,7 +218,6 @@ $mat-warn: (
   lighter: #00bc4b,
   darker: #ff0000,
   200: #bc0000,
-  // For slide toggle,
   contrast:
     (
       main: $light-primary-text,
@@ -251,9 +250,6 @@ $altTheme: (
   @include mat.all-component-themes($altTheme);
 }
 
-// Specific component overrides, pieces that are not in line with the general theming
-
-// Handle buttons appropriately, with respect to line-height
 .mat-raised-button,
 .mat-stroked-button,
 .mat-flat-button {
@@ -276,6 +272,21 @@ $altTheme: (
   }
 }
 
+.button-messsage{
+  background: linear-gradient(to right ,#F8B823, #D86A2C);
+	border: none;
+	text-align: center;
+	border-radius: 2vh;
+  width: 170px;
+  color: white;
+}
+.button-Green{
+  background-color: #00BC4B ;
+  color: white;
+}
+h1{
+  font-size: 3em;
+}
 body {
   margin: 0;
 }
@@ -311,4 +322,20 @@ body {
 
 .mat-option {
   font-family: Inter;
+}
+.mat-tab-body-content{
+  overflow:hidden;
+}
+.mat-tab-body-content{
+  overflow:hidden !important;
+}
+body, html { 
+  position: relative;
+  margin:0; 
+  min-height:100vh;
+
+} 
+app-admin{
+  position: relative  !important;
+  margin-bottom: 5rem !important;
 }

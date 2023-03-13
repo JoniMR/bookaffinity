@@ -1,3 +1,4 @@
+import { AdminModule } from './private/admin/admin.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +9,8 @@ import { PublicModule } from './public/public.module';
 import { SharedModule } from './shared/shared.module';
 import { PrivateModule } from './private/private.module';
 import { DashboardModule } from './public/dashboard/dashboard.module';
+import { DetailsModule } from './public/details/details.module';
+import { EcommerceModule } from './private/ecommerce/ecommerce.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { DashboardModule } from './public/dashboard/dashboard.module';
     PublicModule,
     DashboardModule,
     SharedModule,
-    PrivateModule
+    PrivateModule,
+    DetailsModule,
+    EcommerceModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
