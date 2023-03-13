@@ -1,6 +1,10 @@
+import { ModalreviewComponent } from './../../../public/details/components/modalreview/modalreview.component';
+import { LoginComponent } from './../../../public/user/pages/login/login.component';
+import { RegisterComponent } from 'src/app/public/user/pages/register/register.component';
 import { AccountComponent } from './../account/account.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ModalstockComponent } from 'src/app/public/details/components/modalstock/modalstock.component';
 
 @Component({
   selector: 'app-navbar',
@@ -16,6 +20,19 @@ export class NavbarComponent implements OnInit {
     
   }
   openDialog() {
-   this.dialog.open(AccountComponent);
+    this.dialog.open(AccountComponent);
+  }
+
+  openLogin() {
+    this.dialog.open(LoginComponent)
+  }
+  openRegister() {
+    this.dialog.open(RegisterComponent)
+  }
+  openReview() {
+    this.dialog.open(ModalreviewComponent)
+  }
+  openStock() {
+    this.dialog.open(ModalstockComponent)
   }
 }

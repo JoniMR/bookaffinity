@@ -15,9 +15,6 @@ import { PrivateRoutingModule } from './private-routing.module';
   exports: [
     AddCopyModule,
     ChatModule
-  ],
-  exports: [
-    ChatModule
   ]
 })
 export class PrivateModule { }

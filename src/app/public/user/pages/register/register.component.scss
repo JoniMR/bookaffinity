@@ -1,0 +1,119 @@
+.modal-register{
+    width: 30vw;
+    height: 50vh;
+}
+button{
+    background-image: linear-gradient(to right, #F8B823, #D86A2C);
+    width: 90%;
+    margin-left: 5% !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white !important;
+}
+.button-register{
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.register-input{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    margin-left: 5%;
+    }
+
+.title-register {
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+.link-login{
+    text-decoration-color: #D86A2C;
+    color: #D86A2C;
+    font-weight: bold;
+    margin-left: 35%;
+}
+.text-link{
+    margin-bottom: 15%;
+    margin-left: 25%;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+.modal-register{
+    width: 40vw;
+    height: 30vh !important;
+    }
+button{
+    margin-left: 30%;
+}
+
+.link-login{
+    margin-left: 40%;
+    color: #D86A2C !important;
+    }
+.text-link{
+    margin-top: 5%;
+    margin-left: 28%;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .modal-register{
+    width: 50vw;
+    height: 50vh !important;
+    }
+    button{
+    margin-left: 5% !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
+    .mat-form-field{
+    width: 90%;
+    margin-left: 5%;
+    } 
+    .link-login{
+    margin-left: 40%;
+    color:#D86A2C !important;
+    }
+    .title{
+    margin-left: 35%;
+    }
+    .text-link{
+    margin-top: 5%;
+    margin-left: 30%;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .title-register{
+    margin-left: 10vh;
+    }
+    .modal-register{
+    width: 55vw;
+    height: 50vh !important;
+    }
+    button{
+    width: 90%;
+    height: 5vh;
+    }
+    .link-login{
+    margin-left: 35%;
+    color:#D86A2C !important;
+    }
+    .text-link{
+    margin-top: 3vh;
+    margin-left: 4vh;
+    }
+    .register-input{
+    width: 55vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #808080;
+    box-sizing: border-box;
+    }
+}
+

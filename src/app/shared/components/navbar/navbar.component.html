@@ -5,8 +5,10 @@
   </div>
   <div class="button button--container">
     <button class="button button--sell" mat-button>Vende tu libro</button>
-    <button class="button button--login" mat-button >Login</button>
-    <button class="button button--register" mat-button>Regístrate</button>
-<!--     <button mat-button (click)="openDialog()"><mat-icon>account_circle</mat-icon></button> -->
+    <button class="button button--login" mat-button (click)="openLogin()">Login</button>
+    <button class="button button--register" mat-button (click)="openRegister()">Regístrate</button>
+    <button mat-button (click)="openDialog()"><mat-icon>account_circle</mat-icon></button>
+    <button mat-button (click)="openReview()">Abrir review</button>
+    <button mat-button (click)="openStock()">Stock</button>
   </div>
 </div>

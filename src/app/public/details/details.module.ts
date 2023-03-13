@@ -6,7 +6,9 @@ import { DetailsComponent } from './pages/details/details.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SheetComponent } from './components/sheet/sheet.component';
 import { ReviewComponent } from './components/review/review.component';
+import { ModalreviewComponent } from './components/modalreview/modalreview.component';
 import { MaterialModule } from 'src/app/material/material.module';
+import { ModalstockComponent } from './components/modalstock/modalstock.component';
 
 
 @NgModule({
@@ -15,16 +17,15 @@ import { MaterialModule } from 'src/app/material/material.module';
     CarouselComponent,
     SheetComponent,
     ReviewComponent,
-
+    ModalreviewComponent,
+    ModalstockComponent
+  
   ],
   imports: [
     CommonModule,
     DetailsRoutingModule,
     MaterialModule
   ],
-  exports:[
-    DetailsComponent
-
-  ]
+  exports: [ModalreviewComponent, DetailsComponent]
 })
 export class DetailsModule { }
