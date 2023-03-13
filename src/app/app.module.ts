@@ -8,8 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PublicModule } from './public/public.module';
 import { SharedModule } from './shared/shared.module';
 import { PrivateModule } from './private/private.module';
-import { DetailsModule } from './public/details/details.module';
 import { DashboardModule } from './public/dashboard/dashboard.module';
+import { DetailsModule } from './public/details/details.module';
 import { EcommerceModule } from './private/ecommerce/ecommerce.module';
 
 @NgModule({

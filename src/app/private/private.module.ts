@@ -1,4 +1,5 @@
 import { AddCopyModule } from './add-copy/add-copy.module';
+import { ChatModule } from './chat/chat.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrivateRoutingModule } from './private-routing.module';
@@ -12,7 +13,11 @@ import { PrivateRoutingModule } from './private-routing.module';
     AddCopyModule
   ],
   exports: [
-    AddCopyModule
+    AddCopyModule,
+    ChatModule
+  ],
+  exports: [
+    ChatModule
   ]
 })
 export class PrivateModule { }
