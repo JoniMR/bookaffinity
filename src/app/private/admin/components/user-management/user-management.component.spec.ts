@@ -8,9 +8,9 @@ describe('UserManagementComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ UserManagementComponent ]
+      declarations: [UserManagementComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

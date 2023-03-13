@@ -23,6 +23,7 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
     AdminRoutingModule,
     MaterialModule,
     ReactiveFormsModule,
+
   ],exports:[
     AdminComponent,
     BookRequestsComponent,
