@@ -1,1 +1,27 @@
-<p>book-requests works!</p>
+<mat-card>
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile>
+      <mat-list role="list">
+        <mat-list-item role="listitem"><mat-card-title>{{ BookTittle }}</mat-card-title></mat-list-item>
+        <mat-divider></mat-divider>
+
+        <mat-list-item role="listitem"><mat-card-subtitle>{{ Theme }}</mat-card-subtitle></mat-list-item>
+        <mat-list-item role="listitem"><mat-card-subtitle>{{ Theme2 }}</mat-card-subtitle></mat-list-item>
+        <mat-list-item role="listitem"><mat-card-subtitle>{{ Theme3 }}</mat-card-subtitle></mat-list-item>
+      </mat-list>
+      
+      
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <img src="{{ imageProfile }}" />
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-card-actions align="end">
+        <button mat-raised-button class="button-Green">Aprobar</button>
+        <button mat-raised-button color="warn">Rechazar</button>
+      </mat-card-actions>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

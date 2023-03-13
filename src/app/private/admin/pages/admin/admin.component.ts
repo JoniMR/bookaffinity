@@ -11,5 +11,10 @@ export class AdminComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  hidden = false;
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 
 }
