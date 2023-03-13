@@ -1,3 +1,4 @@
+import { AdminModule } from './private/admin/admin.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -22,7 +23,8 @@ import { EcommerceModule } from './private/ecommerce/ecommerce.module';
     DashboardModule,
     SharedModule,
     DetailsModule,
-    EcommerceModule
+    EcommerceModule,
+    AdminModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
