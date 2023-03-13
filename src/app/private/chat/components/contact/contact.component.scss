@@ -1,0 +1,26 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    cursor: pointer;
+    width: auto;
+}
+.contact:hover{
+    background-color: var(--secondary-hover-color);
+}
+
+p{
+    font-size: 0.8em;
+    font-family: Inter;
+}
+.contact--name{
+    font-weight: bold;
+}   
+.contact--text{
+    margin-left: 1rem;
+}
+
+img {
+    height: 2.5em;
+}

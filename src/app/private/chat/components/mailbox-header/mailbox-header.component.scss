@@ -1,0 +1,21 @@
+.chat--header{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0;
+    cursor: pointer;
+    margin-left: 4em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--primary-main-color);
+}
+p{
+    font-size: 1.2em;
+}
+.chat--header-text{
+    margin-left: 1rem;
+}
+.chat--header-name{
+    font-weight: bold;
+}   
+

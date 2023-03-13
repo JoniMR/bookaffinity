@@ -7,8 +7,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PublicModule } from './public/public.module';
 import { SharedModule } from './shared/shared.module';
-import { DetailsModule } from './public/details/details.module';
+import { PrivateModule } from './private/private.module';
 import { DashboardModule } from './public/dashboard/dashboard.module';
+import { DetailsModule } from './public/details/details.module';
 import { EcommerceModule } from './private/ecommerce/ecommerce.module';
 
 @NgModule({
@@ -22,6 +23,7 @@ import { EcommerceModule } from './private/ecommerce/ecommerce.module';
     PublicModule,
     DashboardModule,
     SharedModule,
+    PrivateModule,
     DetailsModule,
     EcommerceModule,
     AdminModule
