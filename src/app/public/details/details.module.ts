@@ -8,6 +8,7 @@ import { SheetComponent } from './components/sheet/sheet.component';
 import { ReviewComponent } from './components/review/review.component';
 import { ModalreviewComponent } from './components/modalreview/modalreview.component';
 import { MaterialModule } from 'src/app/material/material.module';
+import { ModalstockComponent } from './components/modalstock/modalstock.component';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { MaterialModule } from 'src/app/material/material.module';
     CarouselComponent,
     SheetComponent,
     ReviewComponent,
-    ModalreviewComponent
+    ModalreviewComponent,
+    ModalstockComponent
+  
   ],
   imports: [
     CommonModule,

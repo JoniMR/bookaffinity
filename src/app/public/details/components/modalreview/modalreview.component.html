@@ -12,11 +12,11 @@
             </div>
         </div>
         <div class="email-container">
-            <h3>Título</h3>
+            <h3 class="tittle-comment">Título</h3>
             <input class="headline-input" type="text" placeholder="Título">        
         </div>
         <div class="message-container">
-            <h3>Escribe tu comentario</h3>
+            <h3 class="write-comment">Escribe tu comentario</h3>
             <input class="message-input" type="text" placeholder="Introduce tu comentario" >        
         </div>
         <h3>Añade imágenes</h3>
@@ -26,10 +26,10 @@
                 <div *ngIf="!picture" class="no-picture"></div>
             </div>   
         </div>
-        <button class="publish-photo" mat-raised-button color="accent">Subir foto</button>
+        <button class="publish-photo" mat-raised-button color="accent"><p class="button-publish">Subir foto</p></button>
         <mat-card-actions class="button-singin">
             <div class="container-buttton">
-                <button class="publish-button" mat-raised-button color="accent">Publicar comentario</button>
+                <button class="publish-button" mat-raised-button color="accent"><p class="button-publish">Publicar comentario</p></button>
             </div>
             </mat-card-actions>
 

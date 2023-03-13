@@ -4,6 +4,7 @@ import { RegisterComponent } from 'src/app/public/user/pages/register/register.c
 import { AccountComponent } from './../account/account.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ModalstockComponent } from 'src/app/public/details/components/modalstock/modalstock.component';
 
 @Component({
   selector: 'app-navbar',
@@ -30,5 +31,8 @@ export class NavbarComponent implements OnInit {
   }
   openReview() {
     this.dialog.open(ModalreviewComponent)
+  }
+  openStock() {
+    this.dialog.open(ModalstockComponent)
   }
 }

@@ -1,6 +1,6 @@
 .modal-register{
     width: 30vw;
-    height: 60vh!important;
+    height: 50vh;
 }
 button{
     background-image: linear-gradient(to right, #F8B823, #D86A2C);
@@ -8,6 +8,13 @@ button{
     margin-left: 5% !important;
     margin-top: 5%;
     margin-bottom: 5%;
+    color: white !important;
+}
+.button-register{
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .register-input{
@@ -28,43 +35,36 @@ button{
     text-decoration-color: #D86A2C;
     color: #D86A2C;
     font-weight: bold;
-    margin-left: 25%;
+    margin-left: 35%;
 }
 .text-link{
     margin-bottom: 15%;
-    margin-left: 40%;
+    margin-left: 25%;
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 1500px) and (min-width: 800px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
 .modal-register{
     width: 40vw;
-    height: 30vh;
+    height: 30vh !important;
     }
 button{
     margin-left: 30%;
 }
-.link-register{
+
+.link-login{
     margin-left: 40%;
-    text-decoration-color: #D86A2C;
-}
-.text-register{
-    margin-left: 20%;
-    text-decoration-color: #D86A2C;
-}
-.link-register{
-    margin-left: 23%;
     color: #D86A2C !important;
     }
 .text-link{
     margin-top: 5%;
-    margin-left: 30%;
+    margin-left: 28%;
     }
 }
-@media screen and (max-width: 800px) and (min-width: 500px) {
+@media screen and (max-width: 768px) and (min-width: 481px) {
     .modal-register{
     width: 50vw;
-    height: 50vh;
+    height: 50vh !important;
     }
     button{
     margin-left: 5% !important;
@@ -75,37 +75,37 @@ button{
     width: 90%;
     margin-left: 5%;
     } 
-    .link-register{
-    margin-left: 20%;
-    color: #F8B823 !important;
+    .link-login{
+    margin-left: 40%;
+    color:#D86A2C !important;
     }
     .title{
-        margin-left: 35%;
+    margin-left: 35%;
     }
     .text-link{
     margin-top: 5%;
-    margin-left: 12%;
+    margin-left: 30%;
     }
 }
-@media screen and (max-width: 500px) and (min-width: 250px) {
-    .title{
-    margin-left: 15%;
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    .title-register{
+    margin-left: 10vh;
     }
     .modal-register{
     width: 55vw;
-    height: 20vh;
+    height: 50vh !important;
     }
     button{
     width: 90%;
     height: 5vh;
     }
-    .link-register{
-    margin-left: 20%;
-    color: #F8B823 !important;
+    .link-login{
+    margin-left: 35%;
+    color:#D86A2C !important;
     }
     .text-link{
-    margin-top: 20%;
-    margin-left: 10vh;
+    margin-top: 3vh;
+    margin-left: 4vh;
     }
     .register-input{
     width: 55vw;

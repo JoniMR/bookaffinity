@@ -13,6 +13,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 const modules = [
@@ -29,6 +31,7 @@ const modules = [
   MatButtonModule,
   MaterialRoutingModule,
   MatDialogModule,
+  MatCardModule,MatGridListModule
 ]
 
 @NgModule({
