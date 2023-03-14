@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-details',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  id : string;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.id = history.state.id != undefined ? history.state.id : 0;
+    if (this.id == '0') {
+      this.router.navigate(["/dashboard"])
+    }
   }
 
 }

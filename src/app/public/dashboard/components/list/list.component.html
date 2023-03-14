@@ -3,7 +3,7 @@
     <mat-card *ngFor="let l of list | paginate:page_size:page_number">
       <button
           href="#"
-          routerLink="/details"
+          (click)="navigateTo('list message')"
           routerLinkActive="active"
           class="list--button-container">
           <div class="list list--img-container">

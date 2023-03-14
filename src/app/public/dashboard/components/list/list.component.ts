@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { list } from '../../data/data';
 import { List } from '../../models/list';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-list',
@@ -12,7 +13,6 @@ export class ListComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true}) paginator: MatPaginator;
 
   list: List[] = list;
-
   page_size: number = 5;
   page_number: number = 1;
 
@@ -21,7 +21,7 @@ export class ListComponent implements OnInit {
     this.page_number = e.pageIndex + 1;
   }
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.paginator._intl.itemsPerPageLabel="Libros por página:";
@@ -37,6 +37,10 @@ export class ListComponent implements OnInit {
       const endIndex = startIndex < length ? Math.min(startIndex + pageSize, length) : startIndex + pageSize;
       return `${startIndex + 1} - ${endIndex} de ${length}`;
     }
-
   }
+
+  navigateTo(idProduct : string){
+    this.router.navigate(['/details'], { state: { id: idProduct } });
+  }
+
 }
