@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +14,7 @@ email: FormControl;
 password: FormControl;
 
 
-  constructor() {
+  constructor(public dialog: MatDialog, public dialogRef: MatDialogRef<LoginComponent>) {
     this.email = new FormControl('', [Validators.required, Validators.email]);
     this.password = new FormControl('', [Validators.required]);
   }
@@ -33,5 +35,9 @@ password: FormControl;
     }
 
     return this.password.hasError('password') ? 'Not a valid password' : '';
+  }
+  openRegister() {
+    this.dialog.open(RegisterComponent)
+    this.dialogRef.close()
   }
 }

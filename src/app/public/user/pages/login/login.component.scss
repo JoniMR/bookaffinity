@@ -47,8 +47,19 @@ button{
     font-weight: bold;
     margin-left: 25%;
 }
+
+button.link-register{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #D86A2C;
+    text-decoration: underline;
+    cursor: pointer;
+}
 .text-link{
-    margin-left: 30%;
+   // margin-left: 30%;
+    text-align: center;
     margin-bottom: 0;
 }
 

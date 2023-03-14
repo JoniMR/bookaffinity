@@ -1,23 +1,23 @@
 <mat-list role="list" class="list list--container">
   <mat-list-item role="listitem">
-    <mat-card *ngFor="let l of list | paginate:page_size:page_number">
+    <mat-card *ngFor="let element of list | paginate:page_size:page_number">
       <button
           href="#"
-          (click)="navigateTo('list message')"
+          (click)="navigateTo(element.id)"
           routerLinkActive="active"
           class="list--button-container">
           <div class="list list--img-container">
             <img
               mat-card-image
-              src="{{l.img}}"
+              src="{{element.img}}"
               alt="Photo of a Shiba Inu"
             />
           </div>            
         <mat-card-content>
           <div class="list list--card-text">
-            <p class="mat-subheading-2"><b>{{l.title}}</b></p>
+            <p class="mat-subheading-2"><b>{{element.title}}</b></p>
             <hr />
-            <p class="mat-subheading-1">{{l.author}}</p>
+            <p class="mat-subheading-1">{{element.author}}</p>
           </div>
           <mat-icon>favorite_border</mat-icon>
           <mat-icon>add_shopping_cart</mat-icon>
