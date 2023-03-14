@@ -22,7 +22,6 @@ export class NavbarComponent implements OnInit {
   openDialog() {
     this.dialog.open(AccountComponent);
   }
-
   openLogin() {
     this.dialog.open(LoginComponent)
   }
