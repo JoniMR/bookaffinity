@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { MaterialModule } from 'src/app/material/material.module';
 import { LoginComponent } from 'src/app/public/user/pages/login/login.component';
+import { AccountComponent } from 'src/app/shared/components/account/account.component';
 import { ModalreviewComponent } from '../modalreview/modalreview.component';
 
 @Component({
@@ -43,6 +44,31 @@ export class SheetComponent implements OnInit {
         console.log(err) 
       });
     }
+  }
+
+  navigateToMessages(){
+    if (this.id != 0) {
+      this.router.navigate(["messages"])
+      .then(nav => {
+        console.log(nav); 
+      }, err => {
+        console.log(err) 
+      });
+    }
+  }
+  navigateToDetailModal(){
+    if (this.id != 0) {
+      this.router.navigate(["messages"])
+      .then(nav => {
+        console.log(nav); 
+      }, err => {
+        console.log(err) 
+      });
+    }
+  }
+
+  openAccountModal() {
+    this.dialog.open(AccountComponent);
   }
 
   openLogin() {
