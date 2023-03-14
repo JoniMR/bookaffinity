@@ -51,28 +51,30 @@
         class="action-button publish-button"
         mat-raised-button
         color="warn"
+        (click)="navigateToAddProduct()"
       >
-        Publish your copy
+        ¡Véndelo!
       </button>
       <button
         class="action-button review-button"
         mat-raised-button
         color="warn"
+        (click)="navigateToAddReview()"
       >
-        <p class="text-button">Add your review</p>
+        <p class="text-button">Comenta</p>
       </button>
     </div>
   </div>
   <div class="sold-by">
     <div class="sold-by-container">
-      <h2 class="sold-by-title">Sold by</h2>
+      <button><h2 class="sold-by-title" (click)="navigateToEcommerce()">Sold by</h2></button>
     </div>
     <div class="product-at-sell">
-      <p class="user-id">departamento ux</p>
-      <p class="feedback">si</p>
+      <button class=""><p class="user-id">username_264635151</p></button>
+      <p class="feedback">98.7% Votos positivos</p>
       <hr class="rule" />
-      <p class="contact">undefined</p>
-      <p class="other-items">asdsasadsasdsa</p>
+      <button><p class="contact">Contacta con el vendedor</p></button>
+    <button><p class="other-items">asdsasadsasdsa</p></button>
     </div>
     <div class="product-at-sell">
       <p class="user-id">departamento ux</p>

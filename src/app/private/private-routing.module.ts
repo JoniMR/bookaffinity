@@ -2,11 +2,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  // path: '',
-  //   loadChildren: () =>
-  //     import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
-  // },
+  {
+  path: 'add',
+    loadChildren: () =>
+      import('./add-copy/add-copy.module').then((m) => m.AddCopyModule),
+  },
+  {
+    path: 'sold-by',
+      loadChildren: () =>
+        import('./ecommerce/ecommerce.module').then((m) => m.EcommerceModule),
+    },
 ];
 
 @NgModule({

@@ -19,6 +19,7 @@ export class AddCopyComponent implements OnInit {
       photos: new FormControl('', [Validators.required]),
       description: new FormControl('', [Validators.required]),
       price: new FormControl('', [Validators.required]),
+      value: new FormControl('', [Validators.required]),
       });
   }
 
