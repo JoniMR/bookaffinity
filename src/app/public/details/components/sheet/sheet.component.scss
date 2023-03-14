@@ -38,8 +38,6 @@ p {
   height: 37vw;
 }
 
-
-
 .title {
   margin: 0;
   font-size: 23px;
@@ -57,7 +55,6 @@ p {
 .stars {
   margin-right: 0.6vw;
   flex:2;
-
 }
 
 .star{
@@ -163,8 +160,14 @@ p {
   border: 1.5px solid #e6800a50;
   border-radius: 5px;
 }
+
+.sold-by-container > button{
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 .sold-by-title{
-  padding-left: 1vw;
   padding-top: 1.3vw;
   padding-bottom: 1.3vw;
   font-size: 16px;

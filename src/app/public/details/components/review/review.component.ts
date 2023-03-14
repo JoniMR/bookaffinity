@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { LoginComponent } from 'src/app/public/user/pages/login/login.component';
+import { ModalreviewComponent } from '../modalreview/modalreview.component';
 
 @Component({
   selector: 'app-review',
@@ -14,9 +18,25 @@ export class ReviewComponent implements OnInit {
     'https://media.karousell.com/media/photos/products/2015/10/11/a_project_guide_to_ux_design_for_user_experience_designers_guide_book_1444559799_5757a608.jpg',
   ];
 
-  constructor() { }
+    //Variable provisional hasta comprobación de logueo
+    login:boolean = false;
+
+  constructor(public dialog: MatDialog, public router: Router) { }
 
   ngOnInit(): void {
   }
 
+  navigateToAddReview(){
+    if (!this.login) {
+      this.openReview();
+    } else {
+      this.openLogin();
+    }
+  }
+  openLogin() {
+    this.dialog.open(LoginComponent)
+  }
+  openReview() {
+    this.dialog.open(ModalreviewComponent)
+  }
 }

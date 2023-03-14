@@ -1,4 +1,4 @@
-form{
+form.add-copy-form{
     height: calc(100vh - 20em);        
     width: 85vw;
     height: 60em;
@@ -35,16 +35,16 @@ h2{
     .mat-price { grid-area: 7 / 2 / 8 / 3; width: 30%;}
     .request-container { grid-area: 8 / 2 / 8 / 3; width: 20%;}
     
-    ::ng-deep mat-form-field > div > div{
+    ::ng-deep mat-form-field.form-input > div > div{
         background-color: transparent !important;
     }
 
-    ::ng-deep mat-form-field > div:first-child > div:first-child{
+    ::ng-deep mat-form-field.form-input > div:first-child > div:first-child{
         border: 1px solid lightgrey;
         border-bottom: none !important;
         border-radius: 6px;
     }
-    ::ng-deep mat-form-field > div:first-child > div:nth-child(2){
+    ::ng-deep mat-form-field.form-input > div:first-child > div:nth-child(2){
         margin-left: 0.4%;
         width: 99.4%;
     }
