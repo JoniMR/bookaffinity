@@ -5,6 +5,7 @@ import { MaterialModule } from 'src/app/material/material.module';
 import { LoginComponent } from 'src/app/public/user/pages/login/login.component';
 import { AccountComponent } from 'src/app/shared/components/account/account.component';
 import { ModalreviewComponent } from '../modalreview/modalreview.component';
+import { ModalstockComponent } from '../modalstock/modalstock.component';
 
 @Component({
   selector: 'app-sheet',
@@ -20,6 +21,7 @@ export class SheetComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = history.state.id != undefined ? history.state.id : 0;
+    console.log(`Id: ${this.id}`)
   }
   navigateToAddProduct(){
     if (!this.login) {
@@ -35,6 +37,7 @@ export class SheetComponent implements OnInit {
       this.openLogin();
     }
   }  
+
   navigateToEcommerce(){
     if (this.id != 0) {
       this.router.navigate(["sold-by"])
@@ -58,12 +61,8 @@ export class SheetComponent implements OnInit {
   }
   navigateToDetailModal(){
     if (this.id != 0) {
-      this.router.navigate(["messages"])
-      .then(nav => {
-        console.log(nav); 
-      }, err => {
-        console.log(err) 
-      });
+      this.dialog.open(ModalstockComponent, {data: {id : this.id}});
+      console.log(`Details Product Moda: ${this.id}`)
     }
   }
 
