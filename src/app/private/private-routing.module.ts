@@ -8,10 +8,16 @@ const routes: Routes = [
       import('./add-copy/add-copy.module').then((m) => m.AddCopyModule),
   },
   {
-    path: 'sold-by',
-      loadChildren: () =>
-        import('./ecommerce/ecommerce.module').then((m) => m.EcommerceModule),
-    },
+  path: 'sold-by',
+    loadChildren: () =>
+      import('./ecommerce/ecommerce.module').then((m) => m.EcommerceModule),
+  },
+  {
+  path: 'messages',
+    loadChildren: () =>
+      import('./chat/chat.module').then((m) => m.ChatModule),
+  },
+  
 ];
 
 @NgModule({
