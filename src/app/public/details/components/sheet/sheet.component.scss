@@ -134,13 +134,11 @@ p {
 }
 
 .review-button{
-  background-clip: text;
-  
+  background-clip: text;  
   border-width: 2px;
   border-style: solid;
   border-radius: 3px ;
   border-image: linear-gradient(to right, #F8B823, #D86A2C) 1;
-
 }
 
 .text-button{
@@ -167,6 +165,7 @@ p {
   background: none;
   cursor: pointer;
 }
+
 .sold-by-title{
   padding-top: 1.3vw;
   padding-bottom: 1.3vw;
@@ -179,12 +178,29 @@ p {
   border-radius: 5px;
   margin-top: 2vh;
 }
+.button-at-sell{
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+// .button-at-sell > p{
+//   text-align: left;
+// }
 
 .user-id{
   font-size: 14px;
   margin-left: 1vw;
   margin-top: 1.5vh;
   color: #0072BC
+}
+
+.product{
+  color: #0072BC;
+  font-size: 14px;
+  margin-left: 1vw;
+  margin-top: 1.5vh;
 }
 
 .feedback{
@@ -213,7 +229,7 @@ p {
   margin-left: 1vw;
   font-size: 14px;
   margin-top: 1.5vh;
-color: #0072BC;
-margin-bottom: 1.5vh;
+  color: #0072BC;
+  margin-bottom: 1.5vh;
 }
 

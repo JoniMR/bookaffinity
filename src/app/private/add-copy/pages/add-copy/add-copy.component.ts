@@ -30,6 +30,8 @@ export class AddCopyComponent implements OnInit {
 
   onSubmit(): void {
     // display some fireworks
+    console.log(this.addCopyForm.value.title)
+    
   }
 
   navigateTo(){

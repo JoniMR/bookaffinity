@@ -15,8 +15,14 @@ const routes: Routes = [
   {
     path: 'request',
     loadChildren: () =>
-      import('./request-book/request-book.module').then((m) => m.RequestBookModule),
-  }
+      import('./request-book/request-book.module').then(
+        (m) => m.RequestBookModule
+      ),
+  },
+  {
+    path: 'messages',
+    loadChildren: () => import('./chat/chat.module').then((m) => m.ChatModule),
+  },
 ];
 
 @NgModule({

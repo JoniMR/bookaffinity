@@ -70,11 +70,11 @@
       <button><h2 class="sold-by-title" (click)="navigateToEcommerce()">Sold by</h2></button>
     </div>
     <div class="product-at-sell">
-      <button class=""><p class="user-id">username_264635151</p></button>
-      <p class="feedback">98.7% Votos positivos</p>
+      <button class="button-at-sell" (click)="openAccountModal()"><p class="user-id">username_264635151</p></button>
       <hr class="rule" />
-      <button><p class="contact">Contacta con el vendedor</p></button>
-    <button><p class="other-items">asdsasadsasdsa</p></button>
+      <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="product">Revisa el producto</p></button>
+      <p class="feedback">98.7% Votos positivos</p>
+      <button class="button-at-sell" (click)="navigateToMessages()"><p class="contact">Contacta con el vendedor</p></button>
     </div>
     <div class="product-at-sell">
       <p class="user-id">departamento ux</p>

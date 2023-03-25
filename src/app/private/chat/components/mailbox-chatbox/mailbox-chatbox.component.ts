@@ -1,3 +1,4 @@
+import { MailboxMessageService } from './../../services/mailbox-message.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MailboxChatboxComponent implements OnInit {
 
-  constructor() { }
+  message : string
+
+  constructor(private messageService: MailboxMessageService) { }
 
   ngOnInit(): void {
+    this.message = this.messageService.serviceMessage
+    console.log(`El mensaje: ${this.message}`)
   }
+
 
 }
