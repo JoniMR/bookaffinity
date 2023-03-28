@@ -3,9 +3,15 @@
 * https://materialtheme.arcsine.dev
 * Fork at: https://materialtheme.arcsine.dev/?c=YHBhbGV0dGU$YHByaW1hcnk$YF48I2ZmZmZmZiIsIj9lcjwjZmZmZmZmIiwiO2VyPCNmZmZmZmZ$LCIlPmBePCNlYWIzMzQiLCI~ZXI8I2ZmZjhlOSIsIjtlcjwjZTE5YTIxfiwid2Fybj5gXjwjYmMwMDAwIiwiP2VyPCMwMGJjNGIiLCI7ZXI8I2ZmMDAwMH4sIj9UZXh0PCMwMDAwMDAiLCI~PTwjZmFmYWZhIiwiO1RleHQ8I2ZmZmZmZiIsIjs9PCMyYzJjMmN$LCJmb250cz5bYEA8KC00IiwiZmFtaWx5PEludGVyfixgQDwoLTN$LGBAPCgtMn4sYEA8KC0xfixgQDxoZWFkbGluZX4sYEA8dGl0bGV$LGBAPHN1YiktMn4sYEA8c3ViKS0xfixgQDxib2R5LTJ$LGBAPGJvZHktMX4sYEA8YnV0dG9ufixgQDxjYXB0aW9ufixgQDxpbnB1dCIsInNpemU$bnVsbH1dLCJpY29uczxGaWxsZWQiLCI~bmVzcz50cnVlLCJ2ZXJzaW9uPjEyfQ==
 */
-@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+:root {
+  --primary-main-color: #F8B823;
+  --secondary-main-color: #D86A2C;
+  --primary-hover-color: #EAB334;
+  --secondary-hover-color: #FFFBF3;
+}
+
 .mat-badge-content {
   font-weight: 600;
   font-size: 12px;
@@ -1327,7 +1333,7 @@ body {
 }
 
 .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
-  color: white;
+  color: #423836;
 }
 
 .mat-accent .mat-option.mat-selected:not(.mat-option-disabled) {
@@ -1359,7 +1365,7 @@ body {
 
 .mat-primary .mat-pseudo-checkbox-checked,
 .mat-primary .mat-pseudo-checkbox-indeterminate {
-  background: white;
+  background: #423836;
 }
 
 .mat-pseudo-checkbox-checked,
@@ -1654,7 +1660,7 @@ body {
 
 .mat-badge-content {
   color: rgba(0, 0, 0, 0.87);
-  background: white;
+  background: #423836;
 }
 .cdk-high-contrast-active .mat-badge-content {
   outline: solid 1px;
@@ -1687,7 +1693,7 @@ body {
   background: transparent;
 }
 .mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
-  color: white;
+  color: #423836;
 }
 .mat-button.mat-accent, .mat-icon-button.mat-accent, .mat-stroked-button.mat-accent {
   color: #eab334;
@@ -1699,7 +1705,7 @@ body {
   color: rgba(0, 0, 0, 0.26);
 }
 .mat-button.mat-primary .mat-button-focus-overlay, .mat-icon-button.mat-primary .mat-button-focus-overlay, .mat-stroked-button.mat-primary .mat-button-focus-overlay {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-button.mat-accent .mat-button-focus-overlay, .mat-icon-button.mat-accent .mat-button-focus-overlay, .mat-stroked-button.mat-accent .mat-button-focus-overlay {
   background-color: #eab334;
@@ -1740,7 +1746,7 @@ body {
   color: rgba(0, 0, 0, 0.26);
 }
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
   background-color: #eab334;
@@ -1885,7 +1891,7 @@ body {
 }
 
 .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background, .mat-checkbox-checked.mat-primary .mat-checkbox-background {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
   background-color: #eab334;
@@ -1910,7 +1916,7 @@ body {
 
 .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-primary .mat-ripple-element,
 .mat-checkbox:active:not(.mat-checkbox-disabled).mat-primary .mat-ripple-element {
-  background: white;
+  background: #423836;
 }
 .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element,
 .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
@@ -1943,7 +1949,7 @@ body {
 }
 
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
-  background-color: white;
+  background-color: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary .mat-chip-remove {
@@ -2046,7 +2052,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-calendar-body-in-range::before {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(66, 56, 54, 0.2);
 }
 
 .mat-calendar-body-comparison-identical,
@@ -2056,12 +2062,12 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .mat-calendar-body-comparison-bridge-start::before,
 [dir=rtl] .mat-calendar-body-comparison-bridge-end::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
+  background: linear-gradient(to right, rgba(66, 56, 54, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
 }
 
 .mat-calendar-body-comparison-bridge-end::before,
 [dir=rtl] .mat-calendar-body-comparison-bridge-start::before {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
+  background: linear-gradient(to left, rgba(66, 56, 54, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
 }
 
 .mat-calendar-body-in-range > .mat-calendar-body-comparison-identical,
@@ -2075,12 +2081,12 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-calendar-body-selected {
-  background-color: white;
+  background-color: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 
 .mat-calendar-body-disabled > .mat-calendar-body-selected {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(66, 56, 54, 0.4);
 }
 
 .mat-calendar-body-today.mat-calendar-body-selected {
@@ -2090,7 +2096,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),
 .cdk-keyboard-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),
 .cdk-program-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(66, 56, 54, 0.3);
 }
 
 .mat-datepicker-content {
@@ -2180,7 +2186,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-datepicker-toggle-active {
-  color: white;
+  color: #423836;
 }
 .mat-datepicker-toggle-active.mat-accent {
   color: #eab334;
@@ -2261,7 +2267,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-form-field.mat-focused .mat-form-field-label {
-  color: white;
+  color: #423836;
 }
 .mat-form-field.mat-focused .mat-form-field-label.mat-accent {
   color: #eab334;
@@ -2279,7 +2285,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-form-field.mat-focused .mat-form-field-ripple {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-form-field.mat-focused .mat-form-field-ripple.mat-accent {
   background-color: #eab334;
@@ -2289,7 +2295,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-form-field-type-mat-native-select.mat-focused:not(.mat-form-field-invalid) .mat-form-field-infix::after {
-  color: white;
+  color: #423836;
 }
 .mat-form-field-type-mat-native-select.mat-focused:not(.mat-form-field-invalid).mat-accent .mat-form-field-infix::after {
   color: #eab334;
@@ -2361,7 +2367,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(0, 0, 0, 0.87);
 }
 .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-  color: white;
+  color: #423836;
 }
 .mat-form-field-appearance-outline.mat-focused.mat-accent .mat-form-field-outline-thick {
   color: #eab334;
@@ -2380,7 +2386,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-icon.mat-primary {
-  color: white;
+  color: #423836;
 }
 .mat-icon.mat-accent {
   color: #eab334;
@@ -2399,7 +2405,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-input-element {
-  caret-color: white;
+  caret-color: #423836;
 }
 .mat-input-element::-moz-placeholder {
   color: rgba(0, 0, 0, 0.42);
@@ -2517,15 +2523,15 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-progress-bar-background {
-  fill: #fbfbfb;
+  fill: #cccac9;
 }
 
 .mat-progress-bar-buffer {
-  background-color: #fbfbfb;
+  background-color: #cccac9;
 }
 
 .mat-progress-bar-fill::after {
-  background-color: white;
+  background-color: #423836;
 }
 
 .mat-progress-bar.mat-accent .mat-progress-bar-background {
@@ -2549,7 +2555,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-progress-spinner circle, .mat-spinner circle {
-  stroke: white;
+  stroke: #423836;
 }
 .mat-progress-spinner.mat-accent circle, .mat-spinner.mat-accent circle {
   stroke: #eab334;
@@ -2563,11 +2569,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
-  border-color: white;
+  border-color: #423836;
 }
 .mat-radio-button.mat-primary .mat-radio-inner-circle,
 .mat-radio-button.mat-primary .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-primary:active .mat-radio-persistent-ripple {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
   border-color: #eab334;
@@ -2625,7 +2631,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
-  color: white;
+  color: #423836;
 }
 .mat-form-field.mat-focused.mat-accent .mat-select-arrow {
   color: #eab334;
@@ -2687,13 +2693,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background-color: #eab334;
 }
 .mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-bar {
-  background-color: rgba(255, 255, 255, 0.54);
+  background-color: rgba(66, 56, 54, 0.54);
 }
 .mat-slide-toggle.mat-primary.mat-checked .mat-ripple-element {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-slide-toggle.mat-warn.mat-checked .mat-slide-toggle-thumb {
   background-color: #bc0000;
@@ -2724,13 +2730,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-primary .mat-slider-track-fill,
 .mat-primary .mat-slider-thumb,
 .mat-primary .mat-slider-thumb-label {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-primary .mat-slider-thumb-label-text {
   color: rgba(0, 0, 0, 0.87);
 }
 .mat-primary .mat-slider-focus-ring {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(66, 56, 54, 0.2);
 }
 
 .mat-accent .mat-slider-track-fill,
@@ -2828,7 +2834,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-step-header .mat-step-icon-selected,
 .mat-step-header .mat-step-icon-state-done,
 .mat-step-header .mat-step-icon-state-edit {
-  background-color: white;
+  background-color: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 .mat-step-header.mat-accent .mat-step-icon {
@@ -2937,10 +2943,10 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-tab-group.mat-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
 .mat-tab-nav-bar.mat-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
 .mat-tab-nav-bar.mat-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-tab-group.mat-primary.mat-background-primary > .mat-tab-header .mat-ink-bar, .mat-tab-group.mat-primary.mat-background-primary > .mat-tab-link-container .mat-ink-bar, .mat-tab-nav-bar.mat-primary.mat-background-primary > .mat-tab-header .mat-ink-bar, .mat-tab-nav-bar.mat-primary.mat-background-primary > .mat-tab-link-container .mat-ink-bar {
   background-color: rgba(0, 0, 0, 0.87);
@@ -2976,10 +2982,10 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-tab-group.mat-background-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .mat-tab-nav-bar.mat-background-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
 .mat-tab-nav-bar.mat-background-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
 .mat-tab-nav-bar.mat-background-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .mat-tab-group.mat-background-primary > .mat-tab-header, .mat-tab-group.mat-background-primary > .mat-tab-link-container, .mat-tab-group.mat-background-primary > .mat-tab-header-pagination, .mat-tab-nav-bar.mat-background-primary > .mat-tab-header, .mat-tab-nav-bar.mat-background-primary > .mat-tab-link-container, .mat-tab-nav-bar.mat-background-primary > .mat-tab-header-pagination {
-  background-color: white;
+  background-color: #423836;
 }
 .mat-tab-group.mat-background-primary > .mat-tab-header .mat-tab-label, .mat-tab-group.mat-background-primary > .mat-tab-link-container .mat-tab-link, .mat-tab-nav-bar.mat-background-primary > .mat-tab-header .mat-tab-label, .mat-tab-nav-bar.mat-background-primary > .mat-tab-link-container .mat-tab-link {
   color: rgba(0, 0, 0, 0.87);
@@ -3094,7 +3100,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(0, 0, 0, 0.87);
 }
 .mat-toolbar.mat-primary {
-  background: white;
+  background: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 .mat-toolbar.mat-accent {
@@ -3184,7 +3190,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(255, 255, 255, 0.5);
 }
 .theme-alternate .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-accent .mat-option.mat-selected:not(.mat-option-disabled) {
   color: #eab334;
@@ -3209,7 +3215,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 .theme-alternate .mat-primary .mat-pseudo-checkbox-checked,
 .theme-alternate .mat-primary .mat-pseudo-checkbox-indeterminate {
-  background: white;
+  background: #423836;
 }
 .theme-alternate .mat-pseudo-checkbox-checked,
 .theme-alternate .mat-pseudo-checkbox-indeterminate,
@@ -3323,7 +3329,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 .theme-alternate .mat-badge-content {
   color: rgba(0, 0, 0, 0.87);
-  background: white;
+  background: #423836;
 }
 .cdk-high-contrast-active .theme-alternate .mat-badge-content {
   outline: solid 1px;
@@ -3352,7 +3358,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background: transparent;
 }
 .theme-alternate .mat-button.mat-primary, .theme-alternate .mat-icon-button.mat-primary, .theme-alternate .mat-stroked-button.mat-primary {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-button.mat-accent, .theme-alternate .mat-icon-button.mat-accent, .theme-alternate .mat-stroked-button.mat-accent {
   color: #eab334;
@@ -3364,7 +3370,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(255, 255, 255, 0.3);
 }
 .theme-alternate .mat-button.mat-primary .mat-button-focus-overlay, .theme-alternate .mat-icon-button.mat-primary .mat-button-focus-overlay, .theme-alternate .mat-stroked-button.mat-primary .mat-button-focus-overlay {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-button.mat-accent .mat-button-focus-overlay, .theme-alternate .mat-icon-button.mat-accent .mat-button-focus-overlay, .theme-alternate .mat-stroked-button.mat-accent .mat-button-focus-overlay {
   background-color: #eab334;
@@ -3402,7 +3408,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(255, 255, 255, 0.3);
 }
 .theme-alternate .mat-flat-button.mat-primary, .theme-alternate .mat-raised-button.mat-primary, .theme-alternate .mat-fab.mat-primary, .theme-alternate .mat-mini-fab.mat-primary {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-flat-button.mat-accent, .theme-alternate .mat-raised-button.mat-accent, .theme-alternate .mat-fab.mat-accent, .theme-alternate .mat-mini-fab.mat-accent {
   background-color: #eab334;
@@ -3523,7 +3529,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background-color: #2c2c2c;
 }
 .theme-alternate .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background, .theme-alternate .mat-checkbox-checked.mat-primary .mat-checkbox-background {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .theme-alternate .mat-checkbox-checked.mat-accent .mat-checkbox-background {
   background-color: #eab334;
@@ -3545,7 +3551,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 .theme-alternate .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-primary .mat-ripple-element,
 .theme-alternate .mat-checkbox:active:not(.mat-checkbox-disabled).mat-primary .mat-ripple-element {
-  background: white;
+  background: #423836;
 }
 .theme-alternate .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element,
 .theme-alternate .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
@@ -3576,7 +3582,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background: #ffffff;
 }
 .theme-alternate .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
-  background-color: white;
+  background-color: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 .theme-alternate .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary .mat-chip-remove {
@@ -3663,7 +3669,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-color: rgba(255, 255, 255, 0.3);
 }
 .theme-alternate .mat-calendar-body-in-range::before {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(66, 56, 54, 0.2);
 }
 .theme-alternate .mat-calendar-body-comparison-identical,
 .theme-alternate .mat-calendar-body-in-comparison-range::before {
@@ -3671,11 +3677,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 .theme-alternate .mat-calendar-body-comparison-bridge-start::before,
 .theme-alternate [dir=rtl] .mat-calendar-body-comparison-bridge-end::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
+  background: linear-gradient(to right, rgba(66, 56, 54, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
 }
 .theme-alternate .mat-calendar-body-comparison-bridge-end::before,
 .theme-alternate [dir=rtl] .mat-calendar-body-comparison-bridge-start::before {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
+  background: linear-gradient(to left, rgba(66, 56, 54, 0.2) 50%, rgba(249, 171, 0, 0.2) 50%);
 }
 .theme-alternate .mat-calendar-body-in-range > .mat-calendar-body-comparison-identical,
 .theme-alternate .mat-calendar-body-in-comparison-range.mat-calendar-body-in-range::after {
@@ -3686,11 +3692,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background: #46a35e;
 }
 .theme-alternate .mat-calendar-body-selected {
-  background-color: white;
+  background-color: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 .theme-alternate .mat-calendar-body-disabled > .mat-calendar-body-selected {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(66, 56, 54, 0.4);
 }
 .theme-alternate .mat-calendar-body-today.mat-calendar-body-selected {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.87);
@@ -3698,7 +3704,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .theme-alternate .mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),
 .theme-alternate .cdk-keyboard-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical),
 .theme-alternate .cdk-program-focused .mat-calendar-body-active > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(66, 56, 54, 0.3);
 }
 .theme-alternate .mat-datepicker-content {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
@@ -3785,7 +3791,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
 .theme-alternate .mat-datepicker-toggle-active {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-datepicker-toggle-active.mat-accent {
   color: #eab334;
@@ -3846,7 +3852,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(255, 255, 255, 0.7);
 }
 .theme-alternate .mat-form-field.mat-focused .mat-form-field-label {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-form-field.mat-focused .mat-form-field-label.mat-accent {
   color: #eab334;
@@ -3861,7 +3867,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background-color: white;
 }
 .theme-alternate .mat-form-field.mat-focused .mat-form-field-ripple {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-form-field.mat-focused .mat-form-field-ripple.mat-accent {
   background-color: #eab334;
@@ -3870,7 +3876,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background-color: #bc0000;
 }
 .theme-alternate .mat-form-field-type-mat-native-select.mat-focused:not(.mat-form-field-invalid) .mat-form-field-infix::after {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-form-field-type-mat-native-select.mat-focused:not(.mat-form-field-invalid).mat-accent .mat-form-field-infix::after {
   color: #eab334;
@@ -3936,7 +3942,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: white;
 }
 .theme-alternate .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-form-field-appearance-outline.mat-focused.mat-accent .mat-form-field-outline-thick {
   color: #eab334;
@@ -3954,7 +3960,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(255, 255, 255, 0.15);
 }
 .theme-alternate .mat-icon.mat-primary {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-icon.mat-accent {
   color: #eab334;
@@ -3970,7 +3976,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: rgba(255, 255, 255, 0.5);
 }
 .theme-alternate .mat-input-element {
-  caret-color: white;
+  caret-color: #423836;
 }
 .theme-alternate .mat-input-element::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
@@ -4073,13 +4079,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-color: rgba(255, 255, 255, 0.5);
 }
 .theme-alternate .mat-progress-bar-background {
-  fill: #616161;
+  fill: #322f2f;
 }
 .theme-alternate .mat-progress-bar-buffer {
-  background-color: #616161;
+  background-color: #322f2f;
 }
 .theme-alternate .mat-progress-bar-fill::after {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-progress-bar.mat-accent .mat-progress-bar-background {
   fill: #5c4e2e;
@@ -4100,7 +4106,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background-color: #bc0000;
 }
 .theme-alternate .mat-progress-spinner circle, .theme-alternate .mat-spinner circle {
-  stroke: white;
+  stroke: #423836;
 }
 .theme-alternate .mat-progress-spinner.mat-accent circle, .theme-alternate .mat-spinner.mat-accent circle {
   stroke: #eab334;
@@ -4112,11 +4118,11 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-color: rgba(255, 255, 255, 0.7);
 }
 .theme-alternate .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
-  border-color: white;
+  border-color: #423836;
 }
 .theme-alternate .mat-radio-button.mat-primary .mat-radio-inner-circle,
 .theme-alternate .mat-radio-button.mat-primary .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .theme-alternate .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-persistent-ripple, .theme-alternate .mat-radio-button.mat-primary:active .mat-radio-persistent-ripple {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
   border-color: #eab334;
@@ -4168,7 +4174,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background: rgba(250, 250, 250, 0.12);
 }
 .theme-alternate .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
-  color: white;
+  color: #423836;
 }
 .theme-alternate .mat-form-field.mat-focused.mat-accent .mat-select-arrow {
   color: #eab334;
@@ -4224,13 +4230,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background-color: #eab334;
 }
 .theme-alternate .mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-bar {
-  background-color: rgba(255, 255, 255, 0.54);
+  background-color: rgba(66, 56, 54, 0.54);
 }
 .theme-alternate .mat-slide-toggle.mat-primary.mat-checked .mat-ripple-element {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-slide-toggle.mat-warn.mat-checked .mat-slide-toggle-thumb {
   background-color: #bc0000;
@@ -4257,13 +4263,13 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .theme-alternate .mat-primary .mat-slider-track-fill,
 .theme-alternate .mat-primary .mat-slider-thumb,
 .theme-alternate .mat-primary .mat-slider-thumb-label {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-primary .mat-slider-thumb-label-text {
   color: rgba(0, 0, 0, 0.87);
 }
 .theme-alternate .mat-primary .mat-slider-focus-ring {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(66, 56, 54, 0.2);
 }
 .theme-alternate .mat-accent .mat-slider-track-fill,
 .theme-alternate .mat-accent .mat-slider-thumb,
@@ -4352,7 +4358,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .theme-alternate .mat-step-header .mat-step-icon-selected,
 .theme-alternate .mat-step-header .mat-step-icon-state-done,
 .theme-alternate .mat-step-header .mat-step-icon-state-edit {
-  background-color: white;
+  background-color: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 .theme-alternate .mat-step-header.mat-accent .mat-step-icon {
@@ -4428,10 +4434,10 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .theme-alternate .mat-tab-group.mat-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .theme-alternate .mat-tab-nav-bar.mat-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .theme-alternate .mat-tab-nav-bar.mat-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
 .theme-alternate .mat-tab-nav-bar.mat-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
 .theme-alternate .mat-tab-nav-bar.mat-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .theme-alternate .mat-tab-group.mat-primary .mat-ink-bar, .theme-alternate .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-tab-group.mat-primary.mat-background-primary > .mat-tab-header .mat-ink-bar, .theme-alternate .mat-tab-group.mat-primary.mat-background-primary > .mat-tab-link-container .mat-ink-bar, .theme-alternate .mat-tab-nav-bar.mat-primary.mat-background-primary > .mat-tab-header .mat-ink-bar, .theme-alternate .mat-tab-nav-bar.mat-primary.mat-background-primary > .mat-tab-link-container .mat-ink-bar {
   background-color: rgba(0, 0, 0, 0.87);
@@ -4467,10 +4473,10 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .theme-alternate .mat-tab-group.mat-background-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled), .theme-alternate .mat-tab-nav-bar.mat-background-primary .mat-tab-label.cdk-keyboard-focused:not(.mat-tab-disabled), .theme-alternate .mat-tab-nav-bar.mat-background-primary .mat-tab-label.cdk-program-focused:not(.mat-tab-disabled),
 .theme-alternate .mat-tab-nav-bar.mat-background-primary .mat-tab-link.cdk-keyboard-focused:not(.mat-tab-disabled),
 .theme-alternate .mat-tab-nav-bar.mat-background-primary .mat-tab-link.cdk-program-focused:not(.mat-tab-disabled) {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .theme-alternate .mat-tab-group.mat-background-primary > .mat-tab-header, .theme-alternate .mat-tab-group.mat-background-primary > .mat-tab-link-container, .theme-alternate .mat-tab-group.mat-background-primary > .mat-tab-header-pagination, .theme-alternate .mat-tab-nav-bar.mat-background-primary > .mat-tab-header, .theme-alternate .mat-tab-nav-bar.mat-background-primary > .mat-tab-link-container, .theme-alternate .mat-tab-nav-bar.mat-background-primary > .mat-tab-header-pagination {
-  background-color: white;
+  background-color: #423836;
 }
 .theme-alternate .mat-tab-group.mat-background-primary > .mat-tab-header .mat-tab-label, .theme-alternate .mat-tab-group.mat-background-primary > .mat-tab-link-container .mat-tab-link, .theme-alternate .mat-tab-nav-bar.mat-background-primary > .mat-tab-header .mat-tab-label, .theme-alternate .mat-tab-nav-bar.mat-background-primary > .mat-tab-link-container .mat-tab-link {
   color: rgba(0, 0, 0, 0.87);
@@ -4584,7 +4590,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: white;
 }
 .theme-alternate .mat-toolbar.mat-primary {
-  background: white;
+  background: #423836;
   color: rgba(0, 0, 0, 0.87);
 }
 .theme-alternate .mat-toolbar.mat-accent {
@@ -4629,7 +4635,9 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: inherit;
 }
 
-.mat-raised-button, .mat-stroked-button, .mat-flat-button {
+.mat-raised-button,
+.mat-stroked-button,
+.mat-flat-button {
   padding: 0 1.15em;
   margin: 0 0.65em;
   min-width: 3em;
@@ -4656,4 +4664,71 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-radius: 2vh;
   width: 170px;
   color: white;
+}
+
+.button-Green {
+  background-color: #00BC4B;
+  color: white;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+body {
+  margin: 0;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  background-color: #EAB334;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #EAB334;
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background-color: #EAB334;
+}
+
+.mat-list-item-content {
+  padding: 0 !important;
+}
+
+.mat-card {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 13vw;
+}
+
+.mat-card-content {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 13vw;
+  height: 20vh;
+}
+
+.mat-option {
+  font-family: Inter;
+}
+
+.mat-tab-body-content {
+  overflow: hidden;
+}
+
+.mat-tab-body-content {
+  overflow: hidden !important;
+}
+
+body, html {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+}
+
+app-admin {
+  position: relative !important;
+  margin-bottom: 5rem !important;
 }/*# sourceMappingURL=styles.css.map */

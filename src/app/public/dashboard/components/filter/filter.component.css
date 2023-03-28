@@ -1,1 +1,10 @@
-/*# sourceMappingURL=filter.component.css.map */
+.filter--container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  align-items: end;
+  justify-items: center;
+}
+
+.custom-form-field {
+  width: 100px;
+}/*# sourceMappingURL=filter.component.css.map */
