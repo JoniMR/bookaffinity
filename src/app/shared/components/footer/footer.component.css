@@ -1,1 +1,32 @@
-/*# sourceMappingURL=footer.component.css.map */
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+  border-top: solid 1px #CBCBCB;
+  box-shadow: 0px -10px 7px -3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+a {
+  color: #E6800A;
+  text-decoration: none;
+}
+
+p {
+  color: grey;
+  padding-top: 1vh;
+}
+
+p, a {
+  font-family: Inter;
+  padding: 1vh;
+  margin: 1vh;
+}
+
+.links-container a {
+  padding: 1vh;
+}/*# sourceMappingURL=footer.component.css.map */

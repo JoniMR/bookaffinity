@@ -177,31 +177,32 @@ p {
   border: 1.5px solid #e6800a50;
   border-radius: 5px;
   margin-top: 2vh;
+  padding-bottom: 1.5vh;
 }
 .button-at-sell{
   width: 100%;
   background: none;
   border: none;
+  margin: 0;
+  margin-left: 1vw;
+  margin-top: 1.5vh;
   cursor: pointer;
+  padding: 0;
 }
 
 // .button-at-sell > p{
 //   text-align: left;
 // }
 
-.user-id{
+.button-text{
   font-size: 14px;
-  margin-left: 1vw;
-  margin-top: 1.5vh;
+  margin: 0;
+  text-align: start ;
+  // margin-left: 1vw;
+  // margin-top: 1.5vh;
   color: #0072BC
 }
 
-.product{
-  color: #0072BC;
-  font-size: 14px;
-  margin-left: 1vw;
-  margin-top: 1.5vh;
-}
 
 .feedback{
   margin-left: 1vw;
@@ -210,26 +211,11 @@ p {
 
 }
 
-.contact{
-  margin-left: 1vw;
-  margin-top: 1.5vh;
-  font-size: 14px;
-  color: #0072BC
-
-}
 
 .rule{
   border: 1px solid #e6800a50;
   margin-left: 1vw;
   margin-right: 1vw;
   margin-top: 1.5vh;
+  margin-bottom: 0;
 }
-
-.other-items{
-  margin-left: 1vw;
-  font-size: 14px;
-  margin-top: 1.5vh;
-  color: #0072BC;
-  margin-bottom: 1.5vh;
-}
-

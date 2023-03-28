@@ -1,5 +1,10 @@
+<button (click)="navigateTo()" routerLinkActive="active">
+  Solicitar nuevo libro (Esto no va aqui)
+</button>
+
 <form [formGroup]="addCopyForm" class="add-copy-form" (ngSubmit)="onSubmit()">
   <h2>List your book</h2>
+
   <div class="form-grid">
     <label class="title">Título <span>*</span></label>
     <mat-form-field class="mat-title form-input" appearance="fill">
@@ -8,7 +13,9 @@
       <mat-error *ngIf="formError('title', 'required')">
         El título es <strong>obligatorio</strong>
       </mat-error>
-      <mat-hint align="end">{{ 150 - titleMessage.value.length }} caracteres disponibles</mat-hint>
+      <mat-hint align="end"
+        >{{ 150 - titleMessage.value.length }} caracteres disponibles</mat-hint
+      >
     </mat-form-field>
     <label class="condition">Estado <span>*</span></label>
     <mat-form-field class="mat-condition form-input" appearance="fill">
@@ -23,7 +30,10 @@
     <mat-form-field class="mat-details form-input" appearance="fill">
       <mat-label>Añade más detalles sobre su estado...</mat-label>
       <textarea matInput rows="10" #detailsMessage maxlength="1000"></textarea>
-      <mat-hint align="end">{{1000 - detailsMessage.value.length }} caracteres disponibles</mat-hint>
+      <mat-hint align="end"
+        >{{ 1000 - detailsMessage.value.length }} caracteres
+        disponibles</mat-hint
+      >
     </mat-form-field>
     <label class="photos">Fotos <span>*</span></label>
     <div class="img-preview">
@@ -34,10 +44,8 @@
       <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
       <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
     </div>
-      <button mat-stroked-button class="up-photo" >
-        Sube una foto
-      </button>
-      <!-- <mat-form-field class="up-photo" appearance="fill">
+    <button mat-stroked-button class="up-photo">Sube una foto</button>
+    <!-- <mat-form-field class="up-photo" appearance="fill">
         <button mat-stroked-button  >
         Sube una foto
       </button>
@@ -45,8 +53,17 @@
     <label class="description">Descripción <span>*</span></label>
     <mat-form-field class="mat-description form-input" appearance="fill">
       <mat-label>Describe en profundidad el libro</mat-label>
-      <textarea matInput rows="10" formControlName="description" #detailsMessage maxlength="1000"></textarea>
-      <mat-hint align="end">{{1000 - detailsMessage.value.length }} caracteres disponibles</mat-hint>
+      <textarea
+        matInput
+        rows="10"
+        formControlName="description"
+        #detailsMessage
+        maxlength="1000"
+      ></textarea>
+      <mat-hint align="end"
+        >{{ 1000 - detailsMessage.value.length }} caracteres
+        disponibles</mat-hint
+      >
       <mat-error *ngIf="formError('description', 'required')">
         La descripción es <strong>obligatoria</strong>
       </mat-error>
@@ -54,14 +71,21 @@
     <label class="price">Precio <span>*</span></label>
     <mat-form-field class="mat-price form-input" appearance="fill">
       <mat-label>Introduzca el precio</mat-label>
-      <input matInput currencyMask formControlName="value" [options]="{ prefix: '€ ', thousands: '.', decimal: ',' }" />
+      <input
+        matInput
+        currencyMask
+        formControlName="value"
+        [options]="{ prefix: '€ ', thousands: '.', decimal: ',' }"
+      />
       <mat-error *ngIf="formError('price', 'required')">
         El precio es <strong>obligatorio</strong>
       </mat-error>
     </mat-form-field>
     <div class="request-container">
-      <button mat-raised-button type="submit" class="request-button">Enviar petición</button>
+      <button mat-raised-button type="submit" class="request-button">
+        Enviar petición
+      </button>
       <small><span>* Campos obligatorios</span></small>
     </div>
-  </div>  
+  </div>
 </form>

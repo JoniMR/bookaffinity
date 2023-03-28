@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-copy',
@@ -10,7 +11,7 @@ export class AddCopyComponent implements OnInit {
   
   addCopyForm: FormGroup;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.addCopyForm = new FormGroup({
@@ -33,5 +34,8 @@ export class AddCopyComponent implements OnInit {
     
   }
 
+  navigateTo(){
+    this.router.navigate(["/request"]);
+  }
 
 }
