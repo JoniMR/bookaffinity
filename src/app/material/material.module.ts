@@ -41,7 +41,8 @@ const modules = [
   MatButtonModule,
   MaterialRoutingModule,
   MatDialogModule,
-  MatCardModule,MatGridListModule
+  MatCardModule,
+  MatGridListModule
 ]
 
 @NgModule({
