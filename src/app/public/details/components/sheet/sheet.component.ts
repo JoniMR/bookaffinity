@@ -17,6 +17,7 @@ export class SheetComponent implements OnInit {
   //Variable provisional hasta comprobación de logueo
   login: boolean = false;
   id: number;
+  score : number = 4.2;
   constructor(public dialog: MatDialog, public router: Router) { }
 
   ngOnInit(): void {

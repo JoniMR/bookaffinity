@@ -11,11 +11,24 @@
     </h1>
     <div class="details">
       <div class="stars">
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
+        <mat-icon *ngIf="score<1" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=1" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<1.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=1.5 && score<2" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=2" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<2.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=2.5 && score<3" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=3" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<3.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=3.5 && score<4" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=4" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<4.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=4.5 && score<5" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=5" class="star">star</mat-icon>
       </div>
       <p class="number-reviews">125 productos valorados</p>
       <p class="number-orders">425 ventas</p>
@@ -73,21 +86,23 @@
       <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
       <hr class="rule" />
       <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
-      <p class="feedback">98.7% Votos positivos</p>
+      <p class="feedback">Ver otros productos del vendedor</p>
       <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
     </div>
     <div class="product-at-sell">
       <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
       <hr class="rule" />
       <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
-      <p class="feedback">98.7% Votos positivos</p>
+      <p class="feedback">Ver otros productos del vendedor</p>
+
       <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
     </div>
     <div class="product-at-sell">
       <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
       <hr class="rule" />
       <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
-      <p class="feedback">98.7% Votos positivos</p>
+      <p class="feedback">Ver otros productos del vendedor</p>
+
       <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
     </div>
 </div>
