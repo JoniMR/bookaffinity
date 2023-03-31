@@ -1,0 +1,14 @@
+<div>
+  <ngx-dropzone (change)="onSelect($event)">
+    <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+    <ngx-dropzone-image-preview
+      ngProjectAs="ngx-dropzone-preview"
+      *ngFor="let f of files"
+      [file]="f"
+      [removable]="true"
+      (removed)="onRemove(f)"
+    >
+    </ngx-dropzone-image-preview>
+  </ngx-dropzone>
+</div>
+<button class="publish-photo" mat-raised-button color="accent" (click)="onUpload()"><p class="button-publish">Subir foto</p></button>
