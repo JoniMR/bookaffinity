@@ -3,6 +3,7 @@ import { ChatModule } from './chat/chat.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PrivateRoutingModule } from './private-routing.module';
+import { RequestBookModule } from './request-book/request-book.module';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { PrivateRoutingModule } from './private-routing.module';
   imports: [
     CommonModule,
     PrivateRoutingModule,
-    AddCopyModule
+    AddCopyModule,
+    RequestBookModule
   ],
   exports: [
     AddCopyModule,

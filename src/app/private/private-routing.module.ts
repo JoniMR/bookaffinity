@@ -3,25 +3,30 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-  path: 'add',
+    path: 'add',
     loadChildren: () =>
       import('./add-copy/add-copy.module').then((m) => m.AddCopyModule),
   },
   {
-  path: 'sold-by',
+    path: 'sold-by',
     loadChildren: () =>
       import('./ecommerce/ecommerce.module').then((m) => m.EcommerceModule),
   },
   {
-  path: 'messages',
+    path: 'request',
     loadChildren: () =>
-      import('./chat/chat.module').then((m) => m.ChatModule),
+      import('./request-book/request-book.module').then(
+        (m) => m.RequestBookModule
+      ),
   },
-  
+  {
+    path: 'messages',
+    loadChildren: () => import('./chat/chat.module').then((m) => m.ChatModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class PrivateRoutingModule { }
+export class PrivateRoutingModule {}
