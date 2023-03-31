@@ -20,13 +20,13 @@
   <div class="filter filter--container-language">
     <form>
       <mat-form-field class="custom-form-field">
-        <mat-select-trigger>
-          <img
-            src="../../../../../assets/svg/{{ selectedLanguage }}.svg"
-            alt=""
-          />
-        </mat-select-trigger>
         <mat-select [(ngModel)]="selectedLanguage" name="language">
+          <mat-select-trigger>
+            <img
+              src="../../../../../assets/svg/{{ selectedLanguage }}.svg"
+              alt=""
+            />
+          </mat-select-trigger>
           <mat-option
             *ngFor="let language of languages"
             [value]="language.value" 

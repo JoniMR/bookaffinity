@@ -38,8 +38,6 @@ p {
   height: 37vw;
 }
 
-
-
 .title {
   margin: 0;
   font-size: 23px;
@@ -57,7 +55,6 @@ p {
 .stars {
   margin-right: 0.6vw;
   flex:2;
-
 }
 
 .star{
@@ -137,13 +134,11 @@ p {
 }
 
 .review-button{
-  background-clip: text;
-  
+  background-clip: text;  
   border-width: 2px;
   border-style: solid;
   border-radius: 3px ;
   border-image: linear-gradient(to right, #F8B823, #D86A2C) 1;
-
 }
 
 .text-button{
@@ -163,8 +158,15 @@ p {
   border: 1.5px solid #e6800a50;
   border-radius: 5px;
 }
+
+.sold-by-container > button{
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .sold-by-title{
-  padding-left: 1vw;
   padding-top: 1.3vw;
   padding-bottom: 1.3vw;
   font-size: 16px;
@@ -175,14 +177,32 @@ p {
   border: 1.5px solid #e6800a50;
   border-radius: 5px;
   margin-top: 2vh;
+  padding-bottom: 1.5vh;
 }
-
-.user-id{
-  font-size: 14px;
+.button-at-sell{
+  width: 100%;
+  background: none;
+  border: none;
+  margin: 0;
   margin-left: 1vw;
   margin-top: 1.5vh;
+  cursor: pointer;
+  padding: 0;
+}
+
+// .button-at-sell > p{
+//   text-align: left;
+// }
+
+.button-text{
+  font-size: 14px;
+  margin: 0;
+  text-align: start ;
+  // margin-left: 1vw;
+  // margin-top: 1.5vh;
   color: #0072BC
 }
+
 
 .feedback{
   margin-left: 1vw;
@@ -191,26 +211,11 @@ p {
 
 }
 
-.contact{
-  margin-left: 1vw;
-  margin-top: 1.5vh;
-  font-size: 14px;
-  color: #0072BC
-
-}
 
 .rule{
   border: 1px solid #e6800a50;
   margin-left: 1vw;
   margin-right: 1vw;
   margin-top: 1.5vh;
+  margin-bottom: 0;
 }
-
-.other-items{
-  margin-left: 1vw;
-  font-size: 14px;
-  margin-top: 1.5vh;
-color: #0072BC;
-margin-bottom: 1.5vh;
-}
-

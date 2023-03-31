@@ -1,0 +1,106 @@
+.container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+p,
+h1,
+h2,
+select,
+label {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.page-title {
+  margin-top: 7vh;
+  font-size: 28px;
+}
+
+.book-title {
+  font-size: 22px;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.results {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.select-sortby {
+  margin-left: 1vw;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#hr1 {
+  border: 1px solid rgba(230, 128, 10, 0.3137254902);
+  margin-bottom: 3vh;
+}
+
+#hr2 {
+  border: 1px solid #e4e4ee;
+  margin: 0;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.picture {
+  height: 22vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex: 1;
+}
+
+.item-info {
+  flex: 6;
+  margin-left: 1vw;
+}
+
+.price {
+  margin-top: 1vh;
+  font-weight: 500;
+}
+
+.soldby {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1vh;
+}
+
+.field-value {
+  margin-left: 1vw;
+  font-weight: 500;
+}
+
+.vendor {
+  margin-left: 1vw;
+}
+
+.item-card:hover {
+  background-color: #FFF8E9;
+}/*# sourceMappingURL=list.component.css.map */

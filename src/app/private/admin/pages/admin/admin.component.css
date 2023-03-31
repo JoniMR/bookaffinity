@@ -1,1 +1,40 @@
-/*# sourceMappingURL=admin.component.css.map */
+::ng-deep .mat-ink-bar {
+  background-color: #F8B823 !important;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.mat-tab-body-content {
+  overflow: hidden;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.icono {
+  position: absolute;
+  right: 0;
+}
+
+.dorado {
+  color: #eab334 !important;
+}
+
+.mat-form-field {
+  color: #eab334;
+}/*# sourceMappingURL=admin.component.css.map */

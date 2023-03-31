@@ -1,14 +1,19 @@
 <div class="container">
-  <div class="logo logo--container">
-    <img class="logo logo--svg-show" src="../../../../assets/svg/Logo - Imagotipo horizontal.svg" alt="" />
-    <img class="logo logo--svg-hidden" src="../../../../assets/svg/Logo - Isotipo.svg" alt="" />
-  </div>
+  <a href="#"
+  routerLink="/"
+  routerLinkActive="active"
+  class="list--button-container">
+    <div class="logo logo--container">
+      <img class="logo logo--svg-show" src="../../../../assets/svg/Logo - Imagotipo horizontal.svg" alt="" />
+      <img class="logo logo--svg-hidden" src="../../../../assets/svg/Logo - Isotipo.svg" alt="" />
+    </div>
+  </a>
   <div class="button button--container">
-    <button class="button button--sell" mat-button>Vende tu libro</button>
-    <button class="button button--login" mat-button (click)="openLogin()">Login</button>
-    <button class="button button--register" mat-button (click)="openRegister()">Regístrate</button>
-    <button mat-button (click)="openDialog()"><mat-icon>account_circle</mat-icon></button>
-    <button mat-button (click)="openReview()">Abrir review</button>
-    <button mat-button (click)="openStock()">Stock</button>
+    <button class="button button--sell" mat-button (click)="navigateToAddProduct()">¡Véndelo!</button>
+    <button *ngIf="!login" class="button button--login" mat-button (click)="openLogin()">Login</button>
+    <button *ngIf="!login" class="button button--register" mat-button (click)="openRegister()">Regístrate</button>
+    <button *ngIf="login" mat-button (click)="openAccountModal()"><mat-icon>account_circle</mat-icon></button>
+    <!-- <button mat-button (click)="openReview()">Abrir review</button> -->
+    <!-- <button mat-button (click)="openStock()">Stock</button> -->
   </div>
 </div>

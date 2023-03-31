@@ -5,6 +5,7 @@ import { AccountComponent } from './../account/account.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalstockComponent } from 'src/app/public/details/components/modalstock/modalstock.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -13,16 +14,17 @@ import { ModalstockComponent } from 'src/app/public/details/components/modalstoc
 })
 
 export class NavbarComponent implements OnInit {
+   //Variable provisional hasta comprobación de logueo
+  login: boolean
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, public router: Router) { }
 
   ngOnInit(): void {
     
   }
-  openDialog() {
+  openAccountModal() {
     this.dialog.open(AccountComponent);
   }
-
   openLogin() {
     this.dialog.open(LoginComponent)
   }
@@ -34,5 +36,12 @@ export class NavbarComponent implements OnInit {
   }
   openStock() {
     this.dialog.open(ModalstockComponent)
+  }
+  navigateToAddProduct(){
+    if (!this.login) {
+      this.router.navigate(['/add']);
+    } else {
+      this.openLogin();
+    }
   }
 }

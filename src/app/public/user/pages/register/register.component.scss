@@ -37,10 +37,18 @@ button{
     font-weight: bold;
     margin-left: 35%;
 }
+button.link-login{
+    background: none;
+    border: none;
+    color: #D86A2C!important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .text-link{
     margin-bottom: 15%;
-    margin-left: 25%;
     margin-bottom: 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {

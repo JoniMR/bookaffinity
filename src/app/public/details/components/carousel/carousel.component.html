@@ -4,7 +4,6 @@
     <div class="pic-container" *ngFor="let photo of photos.slice(currentPage * 5, currentPage*5 + 5)">
       <img *ngIf="photo!='no-photo'" class="picture" [src]="photo" />
       <div *ngIf="photo=='no-photo'" class="no-photo"></div>
-
     </div>
   </div>
   <button mat-stroked-button class="lateral-button right-button" (click)=nextPage()>></button>

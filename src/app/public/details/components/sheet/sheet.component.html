@@ -11,17 +11,30 @@
     </h1>
     <div class="details">
       <div class="stars">
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
+        <mat-icon *ngIf="score<1" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=1" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<1.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=1.5 && score<2" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=2" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<2.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=2.5 && score<3" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=3" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<3.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=3.5 && score<4" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=4" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<4.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=4.5 && score<5" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=5" class="star">star</mat-icon>
       </div>
-      <p class="number-reviews">125 product feedback</p>
-      <p class="number-orders">425 orders</p>
+      <p class="number-reviews">125 productos valorados</p>
+      <p class="number-orders">425 ventas</p>
     </div>
     <div class="specifics">
-      <h2 class="title-section">Item specifics</h2>
+      <h2 class="title-section">Especificaciones</h2>
       <div class="specs">
         <div class="spec-row">
           <p class="tag-spec">Condition:</p>
@@ -38,7 +51,7 @@
       </div>
     </div>
     <div class="description">
-      <h2 class="title-section">Item description</h2>
+      <h2 class="title-section">Descripciónn</h2>
       <p class="text-desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo
         officiis adipisci voluptates rem corrupti quia deserunt, in qui odio
@@ -51,42 +64,45 @@
         class="action-button publish-button"
         mat-raised-button
         color="warn"
+        (click)="navigateToAddProduct()"
       >
-        Publish your copy
+        ¡Véndelo!
       </button>
       <button
         class="action-button review-button"
         mat-raised-button
         color="warn"
+        (click)="navigateToAddReview()"
       >
-        <p class="text-button">Add your review</p>
+        <p class="text-button">Añade tu review</p>
       </button>
     </div>
   </div>
   <div class="sold-by">
     <div class="sold-by-container">
-      <h2 class="sold-by-title">Sold by</h2>
+      <button><h2 class="sold-by-title" (click)="navigateToEcommerce()">Vendido por</h2></button>
     </div>
     <div class="product-at-sell">
-      <p class="user-id">departamento ux</p>
-      <p class="feedback">si</p>
+      <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
       <hr class="rule" />
-      <p class="contact">undefined</p>
-      <p class="other-items">asdsasadsasdsa</p>
+      <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
+      <p class="feedback">Ver otros productos del vendedor</p>
+      <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
     </div>
     <div class="product-at-sell">
-      <p class="user-id">departamento ux</p>
-      <p class="feedback">si</p>
+      <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
       <hr class="rule" />
-      <p class="contact">undefined</p>
-      <p class="other-items">asdsasadsasdsa</p>
+      <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
+      <p class="feedback">Ver otros productos del vendedor</p>
+
+      <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
     </div>
     <div class="product-at-sell">
-      <p class="user-id">departamento ux</p>
-      <p class="feedback">si</p>
+      <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
       <hr class="rule" />
-      <p class="contact">undefined</p>
-      <p class="other-items">asdsasadsasdsa</p>
+      <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
+      <p class="feedback">Ver otros productos del vendedor</p>
+
+      <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
     </div>
-  </div>
 </div>
