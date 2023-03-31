@@ -16,6 +16,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
    //Variable provisional hasta comprobación de logueo
   login: boolean
+  isAdmin: boolean
 
   constructor(public dialog: MatDialog, public router: Router) { }
 
