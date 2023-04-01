@@ -12,6 +12,7 @@ import { LoginService } from '../../services/login.service';
 export class LoginComponent implements OnInit {
   email: FormControl;
   password: FormControl;
+  errorMsg : string;
 
   constructor(
     public dialog: MatDialog,
@@ -23,12 +24,28 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.email.value + ", " + this.password.value)
-    this.loginService.getUserbyEmailAndPassword(this.email.value, this.password.value).subscribe(res => {
-      if(res.id_user){
-        // Guardar usuario en el session storage??? y cerrar modal
-      }
-    })
+    console.log(this.email.value + ', ' + this.password.value);
+    this.loginService
+      .getUserbyEmailAndPassword(this.email.value, this.password.value)
+      .subscribe(
+        (data) => {
+          if (data.id_user) {
+            // Guardar usuario en el session storage??? y cerrar modal
+            sessionStorage.setItem('user', JSON.stringify(data));
+            this.dialogRef.close();
+          }
+        },
+        (err) => {
+          this.handleError(err);
+        }
+      );
+  }
+
+  handleError(error: any) {
+    if (error.status === 500) {
+      //  Show error message
+      this.errorMsg = "El usuario no existe"
+    }
   }
 
   ngOnInit(): void {}

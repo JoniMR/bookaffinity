@@ -32,6 +32,7 @@
         <a href="#">¿Olvidó su contraseña?</a>
       </div>
     </div>
+    <h2 *ngIf="errorMsg">{{errorMsg}}</h2>
     <mat-card-actions (click)="login()" class="button-singin">
       <div class="container-buttton">
         <button mat-raised-button color="accent">
