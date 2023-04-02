@@ -10,7 +10,8 @@
             class="register-input"
             type="text"
             placeholder="Introduzca su nombre"
-            name="email"
+            name="name"
+            [formControl]="name"
             required
         />
         </div>
@@ -22,6 +23,7 @@
             type="text"
             placeholder="Introzca su email"
             name="email"
+            [formControl]="email"
             required
         />
         </div>
@@ -33,12 +35,14 @@
             type="password"
             placeholder="Crea una contraseña"
             password="password"
+            [formControl]="password"
             required
         />
         </div>
     </div>
     </div>
-    <mat-card-actions class="button-register">
+    <h2 *ngIf="errorMsg">{{errorMsg}}</h2>
+    <mat-card-actions (click)="register()" class="button-register">
     <div class="container-buttton">
         <button mat-raised-button color="accent"><p class="button-register">Registrar</p></button>
     </div>
