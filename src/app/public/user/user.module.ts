@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { UserRoutingModule } from './user-routing.module';
 import { LoginComponent } from './pages/login/login.component';
@@ -15,7 +16,8 @@ import { MaterialModule } from 'src/app/material/material.module';
   imports: [
     CommonModule,
     UserRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   exports: [LoginComponent]
 })
