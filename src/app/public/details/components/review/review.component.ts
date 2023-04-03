@@ -11,6 +11,8 @@ import { ModalreviewComponent } from '../modalreview/modalreview.component';
 })
 export class ReviewComponent implements OnInit {
 
+//Input con el libro
+
   photos: string[] = [
     'https://media.karousell.com/media/photos/products/2015/10/11/a_project_guide_to_ux_design_for_user_experience_designers_guide_book_1444559799_5757a608.jpg',
     'https://images.squarespace-cdn.com/content/v1/5e0129c5956b7a5624566864/1601792163210-8D766XYHP41B2VRYZFYV/pro-angular-9.png?format=1000w',
@@ -24,6 +26,7 @@ export class ReviewComponent implements OnInit {
   constructor(public dialog: MatDialog, public router: Router) { }
 
   ngOnInit(): void {
+    // Recuperar las reviews
   }
 
   navigateToAddReview(){
@@ -37,6 +40,7 @@ export class ReviewComponent implements OnInit {
     this.dialog.open(LoginComponent)
   }
   openReview() {
+    // Envías el libro al modal
     this.dialog.open(ModalreviewComponent)
   }
 }

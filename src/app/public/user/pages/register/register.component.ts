@@ -15,6 +15,8 @@ export class RegisterComponent implements OnInit {
   password : FormControl;
   name : FormControl;
   errorMsg : string;
+  hide = true;
+
 
   constructor(public dialog: MatDialog, public dialogRef: MatDialogRef<RegisterComponent>,  private registerService : RegisterService) { 
     this.email = new FormControl('', [Validators.required, Validators.email]);
@@ -45,6 +47,27 @@ export class RegisterComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+  getErrorEmail() {
+    if (this.email.hasError('required')) {
+      return 'Introduzca su email';
+    }
+
+    return this.email.hasError('email') ? 'No es válido el email' : '';
+  }
+  getErrorMessage() {
+    if (this.name.hasError('required')) {
+      return 'Introduzca su nombre';
+    }
+
+    return this.email.hasError('name') ? 'No es válido el nombre' : '';
+  }
+  getErrorMessagePas() {
+    if (this.password.hasError('required')) {
+      return 'Debes introducir la contraseña';
+    }
+
+    return this.password.hasError('password') ? 'La contraseña no es válida' : '';
   }
   openLogin() {
     this.dialog.open(LoginComponent)
