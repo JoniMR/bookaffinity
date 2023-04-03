@@ -4,41 +4,29 @@
     <h2 class="title-register">Registro</h2>
     </div>
     <div>
-    <div class="container">
-        <div appearance="fill">
-        <input
-            class="register-input"
-            type="text"
-            placeholder="Introduzca su nombre"
-            name="name"
-            [formControl]="name"
-            required
-        />
+        <div class="email-container">
+            <mat-form-field appearance="fill">
+            <mat-label>Introduzca su nombre</mat-label>
+            <input matInput placeholder="María" [formControl]="name" required>
+              <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="email-container">
+            <mat-form-field appearance="fill">
+            <mat-label>Introduzca su email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorEmail()}}</mat-error>
+            </mat-form-field>
         </div>
     </div>
-    <div class="register-container">
-        <div appearance="fill">
-        <input
-            class="register-input"
-            type="text"
-            placeholder="Introzca su email"
-            name="email"
-            [formControl]="email"
-            required
-        />
-        </div>
-    </div>
-    <div class="password-container">
-        <div appearance="fill">
-        <input
-            class="register-input"
-            type="password"
-            placeholder="Crea una contraseña"
-            password="password"
-            [formControl]="password"
-            required
-        />
-        </div>
+    <div class="pass-container">
+        <mat-form-field appearance="fill">
+        <mat-label>Introduzca su contraseña</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
     </div>
     </div>
     <h2 *ngIf="errorMsg">{{errorMsg}}</h2>
@@ -49,5 +37,4 @@
     </mat-card-actions>
     <h4 class="text-link">¿Ya eres miembr@?</h4>
     <button class="link-login" (click)="openLogin()">Sign in</button>
-</div>
 </div>

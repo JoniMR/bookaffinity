@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
   email: FormControl;
   password: FormControl;
   errorMsg : string;
+  hide = true;
 
   constructor(
     public dialog: MatDialog,
@@ -32,7 +33,7 @@ export class LoginComponent implements OnInit {
           if (data.id_user) {
             // Guardar usuario en el session storage??? y cerrar modal
             sessionStorage.setItem('user', JSON.stringify(data));
-            this.dialogRef.close();
+            this.dialogRef.close(true);
           }
         },
         (err) => {
@@ -52,17 +53,17 @@ export class LoginComponent implements OnInit {
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
-      return 'You must enter a email';
+      return 'Debes introducir un email';
     }
 
-    return this.email.hasError('email') ? 'Not a valid email' : '';
+    return this.email.hasError('email') ? 'El email no es válido' : '';
   }
   getErrorMessagePas() {
     if (this.password.hasError('required')) {
-      return 'You must enter a password';
+      return 'Debes introducir la contraseña';
     }
 
-    return this.password.hasError('password') ? 'Not a valid password' : '';
+    return this.password.hasError('password') ? 'La contraseña no es válida' : '';
   }
   openRegister() {
     this.dialog.open(RegisterComponent);

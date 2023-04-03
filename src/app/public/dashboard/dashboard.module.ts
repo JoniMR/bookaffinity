@@ -8,6 +8,7 @@ import { FilterComponent } from './components/filter/filter.component';
 import { SearchComponent } from './components/search/search.component';
 import { MaterialModule } from 'src/app/material/material.module';
 import { PaginatePipe } from './pipes/paginate.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
