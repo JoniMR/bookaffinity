@@ -50,7 +50,6 @@
             
 2) Revisiones:
 	Navegación:  account.component.html -> send a message 
-    Login: El navbar debe saber si el usuario es admin
     Libros: hacer medias de rating de comentarios
     Navegación: modalstock.component.html -> modal usuario
                 modalstock.component.html-> botón comprar
