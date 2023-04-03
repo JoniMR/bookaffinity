@@ -12,7 +12,7 @@
             Carousel.service -> getAllImg
             ModalReview.service -> - getRatingComentario (para hacer media de rating)
                                    - UpdateBook (Añadir image)
-            ModalReview.service -> - getBookById
+                                   - getBookById
                                    - addComment
             Modalstock.service -> - getAllImg
                                   - getEjemplarById
