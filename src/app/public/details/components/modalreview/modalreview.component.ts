@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { ReviewComponent } from '../review/review.component';
+import { ImgUploadComponent } from 'src/app/shared/components/img-upload/img-upload.component';
 
 @Component({
   selector: 'app-modalreview',

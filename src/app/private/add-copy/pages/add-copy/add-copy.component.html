@@ -3,7 +3,7 @@
 </button>
 
 <form [formGroup]="addCopyForm" class="add-copy-form" (ngSubmit)="onSubmit()">
-  <h2>List your book</h2>
+  <h2>Vende tu libro</h2>
 
   <div class="form-grid">
     <label class="title">Título <span>*</span></label>
@@ -36,7 +36,7 @@
       >
     </mat-form-field>
     <label class="photos">Fotos <span>*</span></label>
-    <div class="img-preview">
+<!--     <div class="img-preview">
       <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
       <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
       <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
@@ -44,12 +44,13 @@
       <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
       <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
     </div>
-    <button mat-stroked-button class="up-photo">Sube una foto</button>
+    <button mat-stroked-button class="up-photo">Sube una foto</button> -->
     <!-- <mat-form-field class="up-photo" appearance="fill">
         <button mat-stroked-button  >
         Sube una foto
       </button>
     </mat-form-field> -->
+    <app-img-upload></app-img-upload>
     <label class="description">Descripción <span>*</span></label>
     <mat-form-field class="mat-description form-input" appearance="fill">
       <mat-label>Describe en profundidad el libro</mat-label>

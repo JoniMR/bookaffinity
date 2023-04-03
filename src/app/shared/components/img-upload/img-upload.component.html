@@ -1,6 +1,6 @@
 <div>
   <ngx-dropzone (change)="onSelect($event)">
-    <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+    <ngx-dropzone-label>¡Arrastra tus imágenes aqui!</ngx-dropzone-label>
     <ngx-dropzone-image-preview
       ngProjectAs="ngx-dropzone-preview"
       *ngFor="let f of files"
@@ -11,4 +11,13 @@
     </ngx-dropzone-image-preview>
   </ngx-dropzone>
 </div>
-<button class="publish-photo" mat-raised-button color="accent" (click)="onUpload()"><p class="button-publish">Subir foto</p></button>
+  <div class="container-buttton">
+    <button
+      class="publish-photo"
+      mat-raised-button
+      color="accent"
+      (click)="onUpload()"
+    >
+      <p class="button-publish">Subir foto</p>
+    </button>
+  </div>

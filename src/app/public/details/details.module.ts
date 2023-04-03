@@ -9,7 +9,7 @@ import { ReviewComponent } from './components/review/review.component';
 import { ModalreviewComponent } from './components/modalreview/modalreview.component';
 import { MaterialModule } from 'src/app/material/material.module';
 import { ModalstockComponent } from './components/modalstock/modalstock.component';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -19,12 +19,12 @@ import { ModalstockComponent } from './components/modalstock/modalstock.componen
     ReviewComponent,
     ModalreviewComponent,
     ModalstockComponent
-  
   ],
   imports: [
     CommonModule,
     DetailsRoutingModule,
-    MaterialModule
+    MaterialModule,
+    SharedModule
   ],
   exports: [ModalreviewComponent, DetailsComponent]
 })
