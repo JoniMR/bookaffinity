@@ -33,6 +33,11 @@ export class SheetComponent implements OnInit {
       (data) => {
         console.log(data);
           this.book = data;
+          console.log(this.book.picture)
+          if (this.book.picture == undefined) {  
+            console.log("HELLO book picture")          
+            this.book.picture = "https://i.imgur.com/BkqNIm4.png"
+          }
       },
       (err) => {
         this.handleError(err);
