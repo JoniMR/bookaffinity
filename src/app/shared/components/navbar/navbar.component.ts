@@ -10,34 +10,39 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
-
 export class NavbarComponent implements OnInit {
-   //Variable provisional hasta comprobación de logueo
-  login: boolean
+  //Variable provisional hasta comprobación de logueo
+  login: boolean = false;
+  user: string | null = sessionStorage.getItem('user');
 
-  constructor(public dialog: MatDialog, public router: Router) { }
+  constructor(public dialog: MatDialog, public router: Router) {}
 
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
   openAccountModal() {
     this.dialog.open(AccountComponent);
   }
   openLogin() {
-    this.dialog.open(LoginComponent)
+    this.dialog
+      .open(LoginComponent)
+      .afterClosed()
+      .subscribe((res) => {
+        if ( res===true && this.user != null) {
+          this.login = true;
+        }
+      })
   }
   openRegister() {
-    this.dialog.open(RegisterComponent)
+    this.dialog.open(RegisterComponent);
   }
   openReview() {
-    this.dialog.open(ModalreviewComponent)
+    this.dialog.open(ModalreviewComponent);
   }
   openStock() {
-    this.dialog.open(ModalstockComponent)
+    this.dialog.open(ModalstockComponent);
   }
-  navigateToAddProduct(){
+  navigateToAddProduct() {
     if (!this.login) {
       this.router.navigate(['/add']);
     } else {
