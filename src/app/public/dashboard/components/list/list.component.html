@@ -3,7 +3,7 @@
     <mat-card *ngFor="let element of list | paginate:page_size:page_number">
       <button
           href="#"
-          (click)="navigateTo(element.id)"
+          (click)="navigateTo(element.id_book)"
           routerLinkActive="active"
           class="list--button-container">
           <div class="list list--img-container">
@@ -15,9 +15,9 @@
           </div>            
         <mat-card-content>
           <div class="list list--card-text">
-            <p class="mat-subheading-2"><b>{{element.title}}</b></p>
+            <p class="mat-subheading-2"><b>{{element.name}}</b></p>
             <hr />
-            <p class="mat-subheading-1">{{element.author}}</p>
+            <p class="mat-subheading-1">{{element.id_author}}</p>
           </div>
           <mat-icon>favorite_border</mat-icon>
           <mat-icon>add_shopping_cart</mat-icon>
