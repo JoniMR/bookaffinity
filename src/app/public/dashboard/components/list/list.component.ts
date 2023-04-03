@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
-import { list } from '../../data/data';
-import { List } from '../../models/list';
+// import { list } from '../../data/data';
+import { BookInterface } from '../../models/book';
 import { Router} from '@angular/router';
+import { ListService } from '../../services/list.service';
 
 @Component({
   selector: 'app-list',
@@ -12,7 +13,7 @@ import { Router} from '@angular/router';
 export class ListComponent implements OnInit {
   @ViewChild(MatPaginator, { static: true}) paginator: MatPaginator;
 
-  list: List[] = list;
+  list: BookInterface[]// = list;
   page_size: number = 5;
   page_number: number = 1;
 
@@ -21,9 +22,23 @@ export class ListComponent implements OnInit {
     this.page_number = e.pageIndex + 1;
   }
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private listService : ListService) {}
 
   ngOnInit(): void {
+    this.listService
+    .getAllBooks()
+    .subscribe(
+      (data) => {
+        console.log(data);
+          this.list = data;
+      },
+      (err) => {
+        this.handleError(err);
+      }
+    );
+    // this.list.forEach((ele) => {
+    //   ele.picture = "SDFDSdfsdfd";
+    // });
     this.paginator._intl.itemsPerPageLabel="Libros por página:";
     this.paginator._intl.nextPageLabel = 'Siguiente';
     this.paginator._intl.previousPageLabel = 'Anterior';
@@ -36,6 +51,12 @@ export class ListComponent implements OnInit {
       const startIndex = page * pageSize;
       const endIndex = startIndex < length ? Math.min(startIndex + pageSize, length) : startIndex + pageSize;
       return `${startIndex + 1} - ${endIndex} de ${length}`;
+    }
+  }
+
+  handleError(error: any) {
+    if (error.status === 500) {
+      //  Show error message
     }
   }
 
