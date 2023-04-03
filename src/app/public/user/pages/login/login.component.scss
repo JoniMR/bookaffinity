@@ -1,6 +1,9 @@
 body{
     max-height: 100vh;
 }
+.mat-form-field{
+    width: 30vw;
+}
 .button-acept{
     color: white;
     font-family: "Inter", sans-serif;
@@ -12,6 +15,7 @@ body{
     height: 43vh;
     margin-top: 0% !important;
 }
+
 button{
     background-image: linear-gradient(to right, #F8B823, #D86A2C);
     width: 90%;
