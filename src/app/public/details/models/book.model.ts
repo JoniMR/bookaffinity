@@ -5,5 +5,6 @@ export interface BookInterface {
     isbn: string,
     id_author: number,
     language: string,
-    status: string
+    status: string,
+    picture: string
 }

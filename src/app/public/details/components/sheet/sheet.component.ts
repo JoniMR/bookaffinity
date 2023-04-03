@@ -6,6 +6,8 @@ import { LoginComponent } from 'src/app/public/user/pages/login/login.component'
 import { AccountComponent } from 'src/app/shared/components/account/account.component';
 import { ModalreviewComponent } from '../modalreview/modalreview.component';
 import { ModalstockComponent } from '../modalstock/modalstock.component';
+import { DetailService } from '../../services/detail.service';
+import { BookInterface } from '../../models/book.model';
 
 @Component({
   selector: 'app-sheet',
@@ -18,11 +20,30 @@ export class SheetComponent implements OnInit {
   login: boolean = false;
   id: number;
   score : number = 4.2;
-  constructor(public dialog: MatDialog, public router: Router) { }
+  book : BookInterface
+  constructor(public dialog: MatDialog, public router: Router, private detailService : DetailService) { }
 
   ngOnInit(): void {
     this.id = history.state.id != undefined ? history.state.id : 0;
     console.log(`Id: ${this.id}`)
+    
+    this.detailService
+    .getBookById(this.id)
+    .subscribe(
+      (data) => {
+        console.log(data);
+          this.book = data;
+      },
+      (err) => {
+        this.handleError(err);
+      }
+    );
+  }
+
+  handleError(error: any) {
+    if (error.status === 500) {
+      //  Show error message
+    }
   }
   navigateToAddProduct(){
     if (!this.login) {
