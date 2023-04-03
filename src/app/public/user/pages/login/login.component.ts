@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
           if (data.id_user) {
             // Guardar usuario en el session storage??? y cerrar modal
             sessionStorage.setItem('user', JSON.stringify(data));
-            this.dialogRef.close();
+            this.dialogRef.close(true);
           }
         },
         (err) => {
