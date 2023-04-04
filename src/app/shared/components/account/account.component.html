@@ -1,19 +1,19 @@
 <div class="tarjeta">
   <div class="image">
-    <img class="image-profile" src="{{ imageProfile }}" alt="Foto de perfil" />
+    <img class="image-profile" src="{{user.picture}}" alt="Foto de perfil" />
   </div>
   <div class="content">
-    <h1 mat-dialog-title>{{ name }}</h1>
+    <h1 mat-dialog-title>{{ user.name }}</h1>
     <div class="example-button-container">
       <button mat-button class="button-messsage">
         <mat-icon>message</mat-icon> Send a message
       </button>
     </div>
-    <h3 class="userName">Username :</h3>
-    <p class="p-dorado">{{ userName }}</p>
-    <h4 class="bio">Bio :</h4>
+    <h3 class="userName">Email: </h3>
+    <p class="p-dorado">{{ user.email }}</p>
+    <h4 class="bio">Bio: </h4>
     <p class="bio">{{ bio }}</p>
-    <h4 class="texto location">Location:</h4>
+    <h4 class="texto location">Dirección: </h4>
     <p class="texto">{{ location }}</p>
   </div>
 </div>

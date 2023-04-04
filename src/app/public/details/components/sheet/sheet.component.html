@@ -41,7 +41,7 @@
         </div>
         <div class="spec-row">
           <p class="tag-spec">Autor:</p>
-          <p class="value-spec">{{this.book.id_author}}</p>
+          <p class="value-spec">{{this.book.author.name_author}}</p>
         </div>
         <div class="spec-row">
           <p class="tag-spec">ISBN:</p>
@@ -76,27 +76,11 @@
     <div class="sold-by-container">
       <button><h2 class="sold-by-title" (click)="navigateToEcommerce()">Vendido por</h2></button>
     </div>
-    <div class="product-at-sell">
-      <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
+    <div *ngFor="let copy of copyList" class="product-at-sell">
+      <button class="button-at-sell" (click)="openAccountModal(copy.user.id_user)"><p class="button-text">{{copy.user.name}}</p></button>
       <hr class="rule" />
       <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
       <p class="feedback">Ver otros productos del vendedor</p>
-      <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
-    </div>
-    <div class="product-at-sell">
-      <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
-      <hr class="rule" />
-      <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
-      <p class="feedback">Ver otros productos del vendedor</p>
-
-      <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
-    </div>
-    <div class="product-at-sell">
-      <button class="button-at-sell" (click)="openAccountModal()"><p class="button-text">username_264635151</p></button>
-      <hr class="rule" />
-      <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
-      <p class="feedback">Ver otros productos del vendedor</p>
-
       <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
     </div>
 </div>

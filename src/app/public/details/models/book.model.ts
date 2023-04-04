@@ -6,5 +6,6 @@ export interface BookInterface {
     id_author: number,
     language: string,
     status: string,
-    picture: string
+    picture: string,
+    author: any
 }

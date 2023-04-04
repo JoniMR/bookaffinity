@@ -8,6 +8,7 @@ import { ModalreviewComponent } from '../modalreview/modalreview.component';
 import { ModalstockComponent } from '../modalstock/modalstock.component';
 import { DetailService } from '../../services/detail.service';
 import { BookInterface } from '../../models/book.model';
+import { CopyInterface } from '../../models/copy.model';
 
 @Component({
   selector: 'app-sheet',
@@ -19,8 +20,10 @@ export class SheetComponent implements OnInit {
   //Variable provisional hasta comprobación de logueo
   login: boolean = false;
   id: number;
-  score : number = 4.2;
+  score : number = 2.2;
   book : BookInterface
+  copyList: CopyInterface[]
+
   constructor(public dialog: MatDialog, public router: Router, private detailService : DetailService) { }
 
   ngOnInit(): void {
@@ -31,13 +34,28 @@ export class SheetComponent implements OnInit {
     .getBookById(this.id)
     .subscribe(
       (data) => {
-        console.log(data);
+          //console.log(data);
           this.book = data;
-          console.log(this.book.picture)
+          //console.log(this.book.author.name_author)
           if (this.book.picture == undefined) {  
-            console.log("HELLO book picture")          
+            //console.log("HELLO book picture")   
             this.book.picture = "https://i.imgur.com/BkqNIm4.png"
           }
+      },
+      (err) => {
+        this.handleError(err);
+      }
+    );
+
+    this.detailService
+    .getCopiesByBookId(this.id)
+    .subscribe(
+      (data) => {
+        console.log("HELLO lista de datos de vendedores")
+        console.log(data);
+        this.copyList = data;
+        console.log("USER " + this.copyList[0].user)
+        console.log(this.copyList[0].user.name)          
       },
       (err) => {
         this.handleError(err);
@@ -50,6 +68,7 @@ export class SheetComponent implements OnInit {
       //  Show error message
     }
   }
+
   navigateToAddProduct(){
     if (!this.login) {
       this.router.navigate(['/add']);
@@ -93,8 +112,8 @@ export class SheetComponent implements OnInit {
     }
   }
 
-  openAccountModal() {
-    this.dialog.open(AccountComponent);
+  openAccountModal(id_user: number) {
+    this.dialog.open(AccountComponent, {data: {id : id_user}});
   }
 
   openLogin() {
