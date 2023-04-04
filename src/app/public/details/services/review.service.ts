@@ -7,7 +7,7 @@ import { CommentInterface } from '../models/detail.model';
 providedIn: 'root',
 })
 export class ReviewService {
-private commentUrl:string = "http://localhost:5000/api/book/get/comment/all/:id"
+private commentUrl:string = "http://localhost:5000/api/book/get/comment/all/"
 private reviewUrl: string = 'http://localhost:5000/api/user/add/comment';
 constructor(private http: HttpClient) {}
 

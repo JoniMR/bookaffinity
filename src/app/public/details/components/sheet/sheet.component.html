@@ -10,7 +10,8 @@
     </h1>
     <div class="details">
       <div class="stars">
-        <mat-icon *ngIf="score<1" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score==0" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score> 0 && score<1" class="star">star_half</mat-icon>
         <mat-icon *ngIf="score>=1" class="star">star</mat-icon>
 
         <mat-icon *ngIf="score<1.5" class="star">star_border</mat-icon>

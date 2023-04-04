@@ -9,6 +9,8 @@ import { ModalstockComponent } from '../modalstock/modalstock.component';
 import { DetailService } from '../../services/detail.service';
 import { BookInterface } from '../../models/book.model';
 import { CopyInterface } from '../../models/copy.model';
+import { ReviewService } from '../../services/review.service';
+import { CommentInterface } from '../../models/detail.model';
 
 @Component({
   selector: 'app-sheet',
@@ -20,11 +22,13 @@ export class SheetComponent implements OnInit {
   //Variable provisional hasta comprobación de logueo
   login: boolean = false;
   id: number;
-  score : number = 2.2;
+  score : number = 0;
   book : BookInterface
   copyList: CopyInterface[]
+  commentList: CommentInterface[]
+  rating: number = 0
 
-  constructor(public dialog: MatDialog, public router: Router, private detailService : DetailService) { }
+  constructor(public dialog: MatDialog, public router: Router, private detailService : DetailService, private reviewService: ReviewService) { }
 
   ngOnInit(): void {
     this.id = history.state.id != undefined ? history.state.id : 0;
@@ -51,11 +55,28 @@ export class SheetComponent implements OnInit {
     .getCopiesByBookId(this.id)
     .subscribe(
       (data) => {
-        console.log("HELLO lista de datos de vendedores")
-        console.log(data);
         this.copyList = data;
         console.log("USER " + this.copyList[0].user)
         console.log(this.copyList[0].user.name)          
+      },
+      (err) => {
+        this.handleError(err);
+      }
+    );
+
+    this.reviewService
+    .getAllCommentByBookId(this.id)
+    .subscribe(
+      (data) => {
+        console.log("HELLO lista de comentarios")
+        console.log(this.id)
+        console.log(data);   
+        
+        data.forEach(element => {
+          this.rating += element.rating
+        })
+
+        this.score = !!data.length && data.length > 0 ? (this.rating / data.length) : 0
       },
       (err) => {
         this.handleError(err);
