@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { LoginComponent } from 'src/app/public/user/pages/login/login.component';
+import { BookInterface } from '../../models/book.model';
 import { ModalreviewComponent } from '../modalreview/modalreview.component';
+import { ReviewService } from '../../services/review.service';
 
 @Component({
   selector: 'app-review',
@@ -11,7 +13,8 @@ import { ModalreviewComponent } from '../modalreview/modalreview.component';
 })
 export class ReviewComponent implements OnInit {
 
-//Input con el libro
+
+@Input()libro:BookInterface | undefined
 
   photos: string[] = [
     'https://media.karousell.com/media/photos/products/2015/10/11/a_project_guide_to_ux_design_for_user_experience_designers_guide_book_1444559799_5757a608.jpg',
@@ -23,10 +26,19 @@ export class ReviewComponent implements OnInit {
     //Variable provisional hasta comprobación de logueo
     login:boolean = false;
 
-  constructor(public dialog: MatDialog, public router: Router) { }
+  
+  constructor(public dialog: MatDialog, public router: Router, private reviewService: ReviewService) { }
 
   ngOnInit(): void {
-    // Recuperar las reviews
+    // this.reviewService
+    // .getAllCommentByBookId()
+    // .subscribe(
+    //   (data) => {
+    //     console.log(data);
+    //       this.comment = data;
+    //   },
+    // );
+    
   }
 
   navigateToAddReview(){
@@ -40,7 +52,6 @@ export class ReviewComponent implements OnInit {
     this.dialog.open(LoginComponent)
   }
   openReview() {
-    // Envías el libro al modal
-    this.dialog.open(ModalreviewComponent)
+    // this.dialog.open(ModalreviewComponent, {data: this.Review})
   }
 }

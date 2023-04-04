@@ -8,7 +8,7 @@ import { UserInterface } from '../../public/user/models/user.model'
   providedIn: "root"
 })
 
-export class CreateChatService {
+export class AccountService {
     private backendURL ='http://localhost:5000/api/user/'
     createdChatId: number    
 
