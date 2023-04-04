@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { BookInterface } from '../../models/book.model';
 
 @Component({
   selector: 'app-details',
@@ -9,6 +10,7 @@ import { Router } from '@angular/router';
 export class DetailsComponent implements OnInit {
 
   id : string;
+  book : BookInterface
 
   constructor(private router: Router) { }
 
