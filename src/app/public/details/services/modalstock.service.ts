@@ -29,12 +29,14 @@ export class ModalStockService {
   createInvoice(
     id_invoice: number,
     id_copy: number,
-    id_user: number
+    id_user: number,
+    price: number,
   ): Observable<InvoiceInterface> {
     const body = {
       id_invoice: id_invoice,
       id_copy: id_copy,
       id_user: id_user,
+      price: price,
     };
     return this.http.post<InvoiceInterface>(
       this.createInvoicModalStockUrl,

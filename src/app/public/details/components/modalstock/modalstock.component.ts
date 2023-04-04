@@ -16,6 +16,7 @@ export interface Book {
 export class ModalstockComponent implements OnInit {
   currentPage: number = 0;
   itemIndex: number = 0;
+
   price: FormControl;
 
   photos: string[] = [
@@ -78,3 +79,4 @@ export class ModalstockComponent implements OnInit {
     );
   }
 }
+
