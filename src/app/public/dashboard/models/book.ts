@@ -6,5 +6,5 @@ export class BookInterface {
   id_author: number;
   language: number;
   picture: string;
-
+  author: string
 }

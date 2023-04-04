@@ -54,4 +54,10 @@
     Navegación: modalstock.component.html -> modal usuario
                 modalstock.component.html-> botón comprar
     Cambio de contraseña: Usar otro formulario ocultando cambios
+
+    - Si estás logueado vender te lleva a login y viceversa
+    - Falsear info de usuario
+    - Botón de cerrar sesión
+    - Formulario de véndelo. Al enviar que navegue (y enseñe un mensaje)
+    - Cambiar estilo botón formulario de véndelo arriba/izquierda
     
