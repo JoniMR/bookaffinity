@@ -11,26 +11,16 @@ import {
 @Injectable({
   providedIn: 'root',
 })
-export class ModalstockService {
+export class ModalStockService {
   private updateModalStockUrl: string = 'http://localhost:5000/api/copy/update';
   private createInvoicModalStockUrl: string =
     'http://localhost:5000/api/copy/invoice/create';
   constructor(private http: HttpClient) {}
 
   updateCopy(
-    id_copy: number,
-    id_user: number,
-    id_book: number,
-    visible: number,
-    status: string,
     price: number
   ): Observable<CopyInterface> {
     const body = {
-      id_copy: id_copy,
-      id_user: id_user,
-      id_book: id_book,
-      visible: visible,
-      status: status,
       price: price,
     };
     return this.http.put<CopyInterface>(this.updateModalStockUrl, body);
