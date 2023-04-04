@@ -13,7 +13,8 @@ import {
 })
 export class ModalstockService {
   private updateModalStockUrl: string = 'http://localhost:5000/api/copy/update';
-  private createInvoicModalStockUrl: string = 'http://localhost:5000/api/copy/invoice/create'
+  private createInvoicModalStockUrl: string =
+    'http://localhost:5000/api/copy/invoice/create';
   constructor(private http: HttpClient) {}
 
   updateCopy(
@@ -38,8 +39,16 @@ export class ModalstockService {
   createInvoice(
     id_invoice: number,
     id_copy: number,
-    id_user: number,
+    id_user: number
   ): Observable<InvoiceInterface> {
-    
+    const body = {
+      id_invoice: id_invoice,
+      id_copy: id_copy,
+      id_user: id_user,
+    };
+    return this.http.post<InvoiceInterface>(
+      this.createInvoicModalStockUrl,
+      body
+    );
   }
 }
