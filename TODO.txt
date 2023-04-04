@@ -1,0 +1,57 @@
+1) Servicios:
+	Shared:
+		*Account:
+			//getUserById (Id del usuario destinatario)
+			createChat (Desde el botón de send a message. Usando Id propio e Id destinatario)
+
+    Public:
+        *User:
+            Login.service
+            Register.service
+        *Details:
+            Carousel.service -> getAllImg
+            ModalReview.service -> - getRatingComentario (para hacer media de rating)
+                                   - UpdateBook (Añadir image)
+                                   - getBookById
+                                   - addComment
+            Modalstock.service -> - getAllImg
+                                  - getEjemplarById
+                                  - getUserById
+                                  - createInvoice
+                                  - updateCopy
+            Review.service -> - addComment
+                              - addImgComment
+            Sheet.service -> - getImgBookByBookId
+                             - getBookById
+                             - getRatingComentario (para hacer media de rating)
+                             - getEjemplarByBookId (conseguir 3 primeros)
+                             - getUserById (de los 3 vendedores a partir de los objetos libros obtenidos para obtener nombre y el resto de productos)
+        *Dashboard:
+            List.service -> getAllBooks
+
+    Private:
+        *Add-copy:
+            add-copy.service -> getBookById
+                                createCopy
+                                uploadWithImg
+        *Admin:
+            book-request -> - getAllEjemplares (filtrar luego los que tengan status 0)
+                            - updateCopy (cambiar el status a 1)
+            user-management -> - getAllUser
+        
+        *Chat:
+            contacts -> - gettUsersByChatIdList
+                        
+            contact -> - getUserById
+            mailbox.header -> getUserById
+            mailbox.chatbox -> - getChatByUserId
+                               - getMessage
+            mailbox.message -> - addMessage
+            
+2) Revisiones:
+	Navegación:  account.component.html -> send a message 
+    Libros: hacer medias de rating de comentarios
+    Navegación: modalstock.component.html -> modal usuario
+                modalstock.component.html-> botón comprar
+    Cambio de contraseña: Usar otro formulario ocultando cambios
+    
