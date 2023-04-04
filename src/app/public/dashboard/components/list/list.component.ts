@@ -31,6 +31,12 @@ export class ListComponent implements OnInit {
       (data) => {
         console.log(data);
           this.list = data;
+          this.list.forEach(element =>{
+            if (element.picture == undefined) {  
+              console.log("HELLO book picture")          
+              element.picture = "https://i.imgur.com/BkqNIm4.png"
+            }
+          })
       },
       (err) => {
         this.handleError(err);

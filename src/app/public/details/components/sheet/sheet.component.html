@@ -2,12 +2,11 @@
 <div class="content">
   <img
     class="book-cover"
-    src="https://res.cloudinary.com/bloomsbury-atlas/image/upload/w_568,c_scale/jackets/9781847496270.jpg"
+    src="{{this.book.picture}}"
   />
   <div class="info">
     <h1 class="title">
-      Canon EOS 5D Mark 3 Digital SLR Camera Body (MK 3DSLR) *NEW* + *3Year
-      Warranty’
+      {{this.book.name}}
     </h1>
     <div class="details">
       <div class="stars">
@@ -41,23 +40,18 @@
           <p class="value-spec">new</p>
         </div>
         <div class="spec-row">
-          <p class="tag-spec">Género:</p>
-          <p class="value-spec">ejemplo</p>
+          <p class="tag-spec">Autor:</p>
+          <p class="value-spec">{{this.book.id_author}}</p>
         </div>
         <div class="spec-row">
           <p class="tag-spec">ISBN:</p>
-          <p class="value-spec">si</p>
+          <p class="value-spec">{{this.book.isbn}}</p>
         </div>
       </div>
     </div>
     <div class="description">
       <h2 class="title-section">Descripción</h2>
-      <p class="text-desc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo
-        officiis adipisci voluptates rem corrupti quia deserunt, in qui odio
-        dolores aspernatur aliquam voluptas provident numquam a! Adipisci,
-        temporibus dolores?
-      </p>
+      <p class="text-desc">{{this.book.summary}}</p>
     </div>
     <div class="actions">
       <button
