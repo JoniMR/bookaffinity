@@ -37,12 +37,7 @@
         </mat-select>
       </mat-form-field> -->
       <label class="photos">Fotos <span>*</span></label>
-      <div class="img-preview">
-        <img src="https://picsum.photos/200/200" alt="preview" width="150px" />
-      </div>
-        <button mat-stroked-button class="up-photo" >
-          Sube una foto
-        </button>
+      <app-img-upload></app-img-upload>
         <!-- <mat-form-field class="up-photo" appearance="fill">
           <button mat-stroked-button  >
           Sube una foto
@@ -58,7 +53,12 @@
         </mat-error>
       </mat-form-field>
       <div class="request-container">
-        <button mat-raised-button type="submit" class="request-button">Enviar Solicitud</button>
+        <button *ngIf="!clicked" mat-raised-button type="submit" class="request-button" (click)="onSubmit()">
+          Enviar solicitud
+        </button>
+        <button *ngIf="clicked" mat-raised-button type="submit" class="review-button" (click)="navigateToDashboard()">
+          Volver al inicio
+        </button>
         <small><span>* Campos obligatorios</span></small>      
       </div>
     </div>  

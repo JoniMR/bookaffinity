@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-request-book',
@@ -7,12 +8,13 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./request-book.component.scss']
 })
 export class RequestBookComponent implements OnInit {
-  
+
+  clicked: boolean = false;
   requestForm: FormGroup;
 
   categoryList : string[] = ["Crimen", "Romance", "Ciencia"];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.requestForm = new FormGroup({
@@ -31,4 +33,7 @@ export class RequestBookComponent implements OnInit {
     // display some fireworks
   }
 
+  navigateToDashboard() {
+    this.router.navigate(['']);
+}
 }

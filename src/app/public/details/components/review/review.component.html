@@ -16,7 +16,7 @@
     <p class="text-button">Añade tu review</p>
   </button>
   <hr id="hr2" />
-  <div class="filters-container">
+  <!-- <div class="filters-container">
     <div class="filter-container">
       <mat-icon class="filter-icon">filter_list</mat-icon>
       <h2 class="filter">Filter</h2>
@@ -24,73 +24,42 @@
 
     <h2 class="sortby">Sort by</h2>
   </div>
-  <hr id="hr3" />
+  <hr id="hr3" /> -->
 
-  <div class="review">
-    <div class="data-review">
-      <div class="stars">
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-      </div>
-      <p class="text-review">Odio angular</p>
-
-      <!-- TO DO: Las imagenes vendrán del objeto review (El objeto solo puede tener 4 como máximo) -->
-      <div class="pictures">
-        <div class="pic-container" *ngFor="let photo of photos">
-          <img class="picture" [src]="photo" />
+  <div *ngFor="let review of reviews">
+    <div class="review">
+      <div class="data-review">
+        <div class="stars">
+          <mat-icon *ngIf="review.rating<1" class="star">star_half</mat-icon>
+          <mat-icon *ngIf="review.rating>=1" class="star">star</mat-icon>
+  
+          <mat-icon *ngIf="review.rating<1.5" class="star">star_border</mat-icon>
+          <mat-icon *ngIf="review.rating>=1.5 && review.rating<2" class="star">star_half</mat-icon>
+          <mat-icon *ngIf="review.rating>=2" class="star">star</mat-icon>
+  
+          <mat-icon *ngIf="review.rating<2.5" class="star">star_border</mat-icon>
+          <mat-icon *ngIf="review.rating>=2.5 && review.rating<3" class="star">star_half</mat-icon>
+          <mat-icon *ngIf="review.rating>=3" class="star">star</mat-icon>
+  
+          <mat-icon *ngIf="review.rating<3.5" class="star">star_border</mat-icon>
+          <mat-icon *ngIf="review.rating>=3.5 && review.rating<4" class="star">star_half</mat-icon>
+          <mat-icon *ngIf="review.rating>=4" class="star">star</mat-icon>
+  
+          <mat-icon *ngIf="review.rating<4.5" class="star">star_border</mat-icon>
+          <mat-icon *ngIf="review.rating>=4.5 && review.rating<5" class="star">star_half</mat-icon>
+          <mat-icon *ngIf="review.rating>=5" class="star">star</mat-icon>
         </div>
+        <p class="text-review">{{review.text}}</p>
+  
+        <!-- TO DO: Las imagenes vendrán del objeto review (El objeto solo puede tener 4 como máximo) -->
+        <!-- <div class="pictures">
+          <div class="pic-container" *ngFor="let photo of photos">
+            <img class="picture" [src]="photo" />
+          </div>
+        </div> -->
       </div>
+      <!-- <p class="author">{{review.id_user}}</p> -->
+      <!-- <p class="date">01/01/2023</p> -->
     </div>
-    <p class="author">Un sabio</p>
-    <p class="date">01/01/2023</p>
+    <hr id="hr3" />
   </div>
-  <hr id="hr3" />
-
-  <div class="review">
-    <div class="data-review">
-      <div class="stars">
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-      </div>
-      <p class="text-review">Odio angular</p>
-
-      <!-- TO DO: Las imagenes vendrán del objeto review (El objeto solo puede tener 4 como máximo) -->
-      <div class="pictures">
-        <div class="pic-container" *ngFor="let photo of photos">
-          <img class="picture" [src]="photo" />
-        </div>
-      </div>
-    </div>
-    <p class="author">Un sabio</p>
-    <p class="date">01/01/2023</p>
-  </div>
-  <hr id="hr3" />
-
-  <div class="review">
-    <div class="data-review">
-      <div class="stars">
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-        <mat-icon class="star">star</mat-icon>
-      </div>
-      <p class="text-review">Odio angular</p>
-
-      <!-- TO DO: Las imagenes vendrán del objeto review (El objeto solo puede tener 4 como máximo) -->
-      <div class="pictures">
-        <div class="pic-container" *ngFor="let photo of photos">
-          <img class="picture" [src]="photo" />
-        </div>
-      </div>
-    </div>
-    <p class="author">Un sabio</p>
-    <p class="date">01/01/2023</p>
-  </div>
-</div>

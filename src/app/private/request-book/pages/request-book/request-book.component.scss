@@ -14,7 +14,7 @@ h2{
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(8, 0.25fr);
+    grid-template-rows: repeat(1, 0.25fr);
     grid-column-gap: 0px;
     grid-row-gap: 0.8em;
     }

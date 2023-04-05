@@ -5,6 +5,7 @@ import { LoginComponent } from 'src/app/public/user/pages/login/login.component'
 import { BookInterface } from '../../models/book.model';
 import { ModalreviewComponent } from '../modalreview/modalreview.component';
 import { ReviewService } from '../../services/review.service';
+import { CommentInterface } from '../../models/comment.model';
 
 @Component({
   selector: 'app-review',
@@ -25,19 +26,24 @@ export class ReviewComponent implements OnInit {
 
     //Variable provisional hasta comprobación de logueo
     login:boolean = false;
+    id: number;
+    reviews : CommentInterface[];
 
   
   constructor(public dialog: MatDialog, public router: Router, private reviewService: ReviewService) { }
 
   ngOnInit(): void {
-    // this.reviewService
-    // .getAllCommentByBookId()
-    // .subscribe(
-    //   (data) => {
-    //     console.log(data);
-    //       this.comment = data;
-    //   },
-    // );
+    
+
+    this.id = history.state.id != undefined ? history.state.id : 0;
+    console.log(`yo que se yaaaaa Id: ${this.id}`)
+    this.reviewService
+    .getAllCommentByBookId(this.id)
+    .subscribe(
+      (data) => {
+          this.reviews = data;
+      },
+    );
     
   }
 
