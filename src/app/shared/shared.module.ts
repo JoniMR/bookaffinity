@@ -1,28 +1,33 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SharedRoutingModule } from './shared-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AccountComponent } from './components/account/account.component';
 import { MaterialModule } from '../material/material.module';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ImgUploadComponent } from './components/img-upload/img-upload.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
 
 @NgModule({
   declarations: [
     NavbarComponent,
     FooterComponent,
     AccountComponent,
+    ImgUploadComponent,
   ],
   imports: [
     CommonModule,
     SharedRoutingModule,
     MaterialModule,
+    HttpClientModule,
+    NgxDropzoneModule
   ],
   exports: [
     AccountComponent,
     NavbarComponent,
     FooterComponent,
+    ImgUploadComponent
   ]
 })
 export class SharedModule { }

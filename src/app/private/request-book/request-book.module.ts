@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RequestBookComponent } from './pages/request-book/request-book.component';
 import { MaterialModule } from 'src/app/material/material.module';
 import { RequestBookRoutingModule } from './request-book-routing.module';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { RequestBookRoutingModule } from './request-book-routing.module';
   imports: [
     CommonModule,
     MaterialModule,
-    RequestBookRoutingModule
+    RequestBookRoutingModule,
+    SharedModule
   ],
   exports:[
     RequestBookComponent
