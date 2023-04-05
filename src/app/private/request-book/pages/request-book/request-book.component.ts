@@ -30,7 +30,7 @@ export class RequestBookComponent implements OnInit {
     }
 
   onSubmit(): void {
-    // display some fireworks
+    this.clicked = true
   }
 
   navigateToDashboard() {

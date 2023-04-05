@@ -30,8 +30,9 @@ export class NavbarComponent implements OnInit {
       .subscribe((res) => {
         if ( res===true && this.user != null) {
           this.login = true;
+          console.log("lol");
         }
-        console.log("lol");
+        
       })
   }
   openRegister() {
