@@ -5,14 +5,13 @@ import { CommonModule } from '@angular/common';
 import { PrivateRoutingModule } from './private-routing.module';
 import { RequestBookModule } from './request-book/request-book.module';
 
-
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
     PrivateRoutingModule,
     AddCopyModule,
-    RequestBookModule
+    RequestBookModule,
   ],
   exports: [
     AddCopyModule,

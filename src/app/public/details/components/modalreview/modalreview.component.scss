@@ -10,7 +10,7 @@
     padding: 0;
 }
 .headline-input{
-    width: 70%;
+    width: 100%;
     padding: 12px 20px;
     display: inline-block;
     border: 1px solid #808080;
@@ -18,19 +18,22 @@
 };
 .publish-button{
     margin-bottom: none;
+    width: 100%;
 }
 
 .message-input{
-    width: 70%;
+    width: 100%;
     height: 30%;
     display: inline-block;
     border: 1px solid #808080;
     box-sizing: border-box;
+    padding: 12px 20px;
     padding-bottom: 20%;
+
 };
 .modal-review{
-    width: 50vw;
-    height: 85vh;
+    width: 40vw;
+    height: 90vh;
     }
 
 .comment-photo{
@@ -39,14 +42,13 @@
 };
 
 .pic-review{
-width: 50%;
-height: 70%;
+width: 40%;
+height: 100%;
 }
 button{
     background-image: linear-gradient(to right, #F8B823, #D86A2C);
-    width: 90%;
-    margin-top: 3%;
-    margin-bottom: 0 !important;
+    margin-top: 2%;
+    margin-bottom: 2% !important;
 }
 .stars {
     margin-right: 0.6vw;
@@ -89,7 +91,7 @@ button{
     height: 55vh !important;
     }
     button{
-    width: 95%;
+    width: 100%;
     height: 5vh;
     }
     .link-register{
@@ -141,7 +143,7 @@ button{
     height: 50vh;
     }
     button{
-    width: 95%;
+    width: 100%;
     height: 5vh;
     margin-left: 2%;
     }
@@ -195,7 +197,7 @@ button{
     height: 50vh;
     }
     button{
-    width: 95%;
+    width: 100%;
     height: 5vh;
     }
     .link-register{
@@ -251,7 +253,7 @@ button{
     height: 60vh;
     }
     button{
-    width: 95%;
+    width: 100%;
     height: 5vh;
     }
     .link-register{
