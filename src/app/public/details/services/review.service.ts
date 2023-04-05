@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { CommentInterface } from '../models/detail.model';
+import { CommentInterface } from '../models/comment.model';
 
 @Injectable({
 providedIn: 'root',
 })
 export class ReviewService {
-private commentUrl:string = "http://localhost:5000/api/book/get/comment/all/:id"
+private commentUrl:string = "http://localhost:5000/api/book/get/comment/all/"
 private reviewUrl: string = 'http://localhost:5000/api/user/add/comment';
 constructor(private http: HttpClient) {}
 
