@@ -54,3 +54,14 @@ ngx-dropzone {
     margin-top: 2%;
   }
 }
+
+.review-button {
+  background-clip: text;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  border-image: linear-gradient(to right, #f8b823, #d86a2c) 1;
+  background-image: linear-gradient(to right, #F8B823, #D86A2C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

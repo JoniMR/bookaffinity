@@ -31,6 +31,7 @@ export class NavbarComponent implements OnInit {
         if ( res===true && this.user != null) {
           this.login = true;
         }
+        console.log("lol");
       })
   }
   openRegister() {
@@ -43,10 +44,11 @@ export class NavbarComponent implements OnInit {
     this.dialog.open(ModalstockComponent);
   }
   navigateToAddProduct() {
-    if (!this.login) {
       this.router.navigate(['/add']);
-    } else {
-      this.openLogin();
-    }
+  }
+  logout() {
+    sessionStorage.removeItem("user");
+    this.login = false;
+    this.router.navigate(['']);
   }
 }

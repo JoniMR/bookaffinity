@@ -8,10 +8,13 @@ import { ImgUploadService } from '../../services/img-upload/img-upload.service';
   providers: [ImgUploadService],
 })
 export class ImgUploadComponent implements OnInit {
+
   constructor(private _imguploadService: ImgUploadService) {}
 
-  ngOnInit(): void {}
+  uploaded: boolean = false;
 
+  ngOnInit(): void {}
+  
   files: File[] = [];
 
   onSelect(event: any) {
@@ -42,7 +45,11 @@ export class ImgUploadComponent implements OnInit {
           console.log(response);
           console.log('Subida completada ' + index);
         }
+        this.uploaded = true;
       });
     });
+  }
+  onNewUpload(){
+    this.uploaded = false;
   }
 }

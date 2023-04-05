@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class AddCopyComponent implements OnInit {
   
   addCopyForm: FormGroup;
+  clicked: boolean = false;
 
   constructor(private router: Router) { }
 
@@ -29,7 +30,7 @@ export class AddCopyComponent implements OnInit {
     }
 
   onSubmit(): void {
-    // display some fireworks
+    this.clicked = true;
     console.log(this.addCopyForm.value.title)
     
   }
@@ -38,4 +39,7 @@ export class AddCopyComponent implements OnInit {
     this.router.navigate(["/request"]);
   }
 
+  navigateToDashboard() {
+    this.router.navigate(['']);
+}
 }

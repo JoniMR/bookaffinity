@@ -53,7 +53,12 @@
         </mat-error>
       </mat-form-field>
       <div class="request-container">
-        <button mat-raised-button type="submit" class="request-button">Enviar Solicitud</button>
+        <button *ngIf="!clicked" mat-raised-button type="submit" class="request-button" (click)="onSubmit()">
+          Enviar solicitud
+        </button>
+        <button *ngIf="clicked" mat-raised-button type="submit" class="review-button" (click)="navigateToDashboard()">
+          Volver al inicio
+        </button>
         <small><span>* Campos obligatorios</span></small>      
       </div>
     </div>  

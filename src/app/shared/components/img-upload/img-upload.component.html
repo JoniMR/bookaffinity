@@ -12,12 +12,20 @@
   </ngx-dropzone>
 </div>
   <div class="container-buttton">
-    <button
+    <button *ngIf="!uploaded"
       class="publish-photo"
       mat-raised-button
       color="accent"
       (click)="onUpload()"
     >
-      <p class="button-publish">Subir foto</p>
+      <p class="button-publish">Subir fotos</p>
     </button>
+    <button *ngIf="uploaded"
+    class="review-button"
+    mat-raised-button
+    color="accent"
+    (click)="onNewUpload()"
+  >
+    <p class="button-publish">Subir más fotos</p>
+  </button>
   </div>
