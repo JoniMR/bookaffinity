@@ -1,0 +1,60 @@
+INSERT INTO Galeria_Libro  (ID_Galeria_Libro,ID_Libro)
+VALUES
+  (1,17),
+  (2,21),
+  (3,25),
+  (4,4),
+  (5,15),
+  (6,23),
+  (7,47),
+  (8,38),
+  (9,49),
+  (10,6);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Libro,ID_Libro)
+VALUES
+  (11,19),
+  (12,24),
+  (13,0),
+  (14,9),
+  (15,4),
+  (16,16),
+  (17,1),
+  (18,31),
+  (19,11),
+  (20,25);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Libro,ID_Libro)
+VALUES
+  (21,18),
+  (22,29),
+  (23,20),
+  (24,9),
+  (25,48),
+  (26,30),
+  (27,18),
+  (28,17),
+  (29,27),
+  (30,41);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Libro,ID_Libro)
+VALUES
+  (31,1),
+  (32,24),
+  (33,21),
+  (34,47),
+  (35,6),
+  (36,11),
+  (37,36),
+  (38,6),
+  (39,1),
+  (40,44);
+INSERT INTO Galeria_Ejemplar (ID_Galeria_Libro,ID_Libro)
+VALUES
+  (41,9),
+  (42,0),
+  (43,12),
+  (44,24),
+  (45,1),
+  (46,30),
+  (47,17),
+  (48,23),
+  (49,25),
+  (50,17);

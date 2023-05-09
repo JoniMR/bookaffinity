@@ -1,0 +1,10 @@
+<div class="chat--container">
+  <form [formGroup]="messageForm" class="chat--form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="chat--input">
+      <mat-label>Escribe tu mensaje</mat-label>
+      <input matInput #message formControlName="message" maxlength="256" />
+      <mat-hint align="end">{{ message.value.length }} / 256</mat-hint>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit" class="chat--button">Enviar</button>
+  </form>
+</div>

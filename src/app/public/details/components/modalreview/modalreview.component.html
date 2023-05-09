@@ -1,0 +1,49 @@
+<div class="container modal-review">
+  <form #reviewForm="ngForm" (ngSubmit)="sendReview()">
+    <h2 class="title-review">Deja tu comentario sobre el libro</h2>
+    <div>
+      <div>
+        <h3>Puntuación</h3>
+        <div class="stars">
+          <mat-icon class="star">star</mat-icon>
+          <mat-icon class="star">star</mat-icon>
+          <mat-icon class="star">star</mat-icon>
+          <mat-icon class="star">star</mat-icon>
+          <mat-icon class="star">star</mat-icon>
+        </div>
+      </div>
+      <div class="email-container">
+        <h3 class="tittle-comment">Título</h3>
+        <input class="headline-input" type="text" placeholder="Título" />
+      </div>
+      <div class="message-container">
+        <h3 class="write-comment">Escribe tu comentario</h3>
+        <input
+          class="message-input"
+          type="text"
+          placeholder="Introduce tu comentario"
+        />
+      </div>
+      <h3 class="write-comment">Añade imágenes</h3>
+      <!-- Método antiguo de previsualización de imágenes
+             <div class="comment-photo">
+                <div class="picture-review" *ngFor="let picture of picturelist">
+                    <img *ngIf="picture" class="pic-review" [src]="picture">
+                    <div *ngIf="!picture" class="no-picture"></div>
+                </div>   
+            </div> 
+        -->
+      <app-img-upload></app-img-upload>
+        <div class="container-buttton">
+          <button
+            type="submit"
+            class="publish-button"
+            mat-raised-button
+            color="accent"
+          >
+            <p class="button-publish">Publicar comentario</p>
+          </button>
+        </div>
+    </div>
+  </form>
+</div>

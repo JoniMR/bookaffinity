@@ -1,0 +1,40 @@
+<div class="modal-register">
+<div class="register-card">
+    <div>
+    <h2 class="title-register">Registro</h2>
+    </div>
+    <div>
+        <div class="email-container">
+            <mat-form-field appearance="fill">
+            <mat-label>Introduzca su nombre</mat-label>
+            <input matInput placeholder="María" [formControl]="name" required>
+              <mat-error *ngIf="name.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="email-container">
+            <mat-form-field appearance="fill">
+            <mat-label>Introduzca su email</mat-label>
+            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorEmail()}}</mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="pass-container">
+        <mat-form-field appearance="fill">
+        <mat-label>Introduzca su contraseña</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
+    </div>
+    </div>
+    <h2 *ngIf="errorMsg">{{errorMsg}}</h2>
+    <mat-card-actions (click)="register()" class="button-register">
+    <div class="container-buttton">
+        <button mat-raised-button color="accent"><p class="button-register">Registrar</p></button>
+    </div>
+    </mat-card-actions>
+    <h4 class="text-link">¿Ya eres miembr@?</h4>
+    <button class="link-login" (click)="openLogin()">Sign in</button>
+</div>

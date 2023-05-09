@@ -1,0 +1,29 @@
+<div class="parent">
+  <div>  
+    <button mat-stroked-button class="lateral-button left-button" (click)=prevPage()></button>
+    <img
+      class="image-stock"
+      src="https://images.unsplash.com/photo-1580501170961-bb0dbf63a6df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80"
+    />
+    <button mat-stroked-button class="lateral-button right-button" (click)=nextPage()></button>
+    <div class="circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+      <div class="circle-5"></div>
+    </div>
+  </div>  
+
+  <div class="container-fluid stock-text">
+    <h3>Detalles del libro: {{data.id}}</h3>
+    <div><p>Autor: {{data.id}}</p></div>
+    <div><p>Estado:</p></div>
+    <div><p>Descripción del estado:</p></div>
+    <div><p>Sinopsis:</p></div>
+  </div>
+
+</div>
+
+
+

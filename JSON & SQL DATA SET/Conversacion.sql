@@ -1,0 +1,60 @@
+INSERT INTO Conversacion (ID_Conversacion,ID_Usuario1,ID_Usuario2)
+VALUES
+  (1,13,34),
+  (2,33,40),
+  (3,35,16),
+  (4,18,13),
+  (5,19,44),
+  (6,17,28),
+  (7,22,36),
+  (8,9,39),
+  (9,36,12),
+  (10,31,23);
+INSERT INTO Conversacion (ID_Conversacion,ID_Usuario1,ID_Usuario2)
+VALUES
+  (11,21,12),
+  (12,41,18),
+  (13,11,8),
+  (14,33,28),
+  (15,1,48),
+  (16,14,21),
+  (17,19,7),
+  (18,15,3),
+  (19,35,49),
+  (20,37,17);
+INSERT INTO Conversacion (ID_Conversacion,ID_Usuario1,ID_Usuario2)
+VALUES
+  (21,9,32),
+  (22,37,46),
+  (23,20,18),
+  (24,33,38),
+  (25,30,33),
+  (26,35,34),
+  (27,15,32),
+  (28,23,19),
+  (29,38,11),
+  (30,44,30);
+INSERT INTO Conversacion (ID_Conversacion,ID_Usuario1,ID_Usuario2)
+VALUES
+  (31,44,9),
+  (32,28,39),
+  (33,7,3),
+  (34,11,15),
+  (35,16,6),
+  (36,9,45),
+  (37,14,24),
+  (38,8,29),
+  (39,37,39),
+  (40,39,27);
+INSERT INTO Conversacion (ID_Conversacion,ID_Usuario1,ID_Usuario2)
+VALUES
+  (41,25,38),
+  (42,29,4),
+  (43,42,29),
+  (44,21,1),
+  (45,41,35),
+  (46,16,22),
+  (47,33,12),
+  (48,39,16),
+  (49,48,26),
+  (50,30,8);

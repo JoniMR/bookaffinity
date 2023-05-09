@@ -1,0 +1,75 @@
+.list--container {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  height: 70vh;
+  margin-bottom: 5vh;
+}
+
+.list--button-container {
+  border: none;
+  background: none;
+}
+
+.list--img-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.mat-icon {
+  color: #eab334;
+}
+
+.list--card-text {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  height: 15vh;
+  margin-bottom: 2vh;
+}
+
+::ng-deep .mat-list-item-content {
+  padding: 0 !important;
+}
+
+.mat-card {
+  overflow: hidden;
+  width: 13vw;
+  height: 70vh;
+  margin: 5px;
+}
+
+.mat-card:hover {
+  transform: translateY(-7px);
+}
+
+.mat-card-content {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.mat-option {
+  font-family: Inter;
+}
+
+@media (max-width: 768px) {
+  .list--container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .mat-card {
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
+    width: 35vw;
+    height: 80vh;
+  }
+  .list--img-container img {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    overflow: hidden;
+  }
+}/*# sourceMappingURL=list.component.css.map */

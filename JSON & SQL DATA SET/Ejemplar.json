@@ -1,0 +1,402 @@
+[
+	{
+		"ID_Ejemplar": 1,
+		"Precio": 986.64,
+		"Visible": 0,
+		"Estado": "Sed malesuada augue ut",
+		"ID_Usuario": 20,
+		"ID_Libro": 23
+	},
+	{
+		"ID_Ejemplar": 2,
+		"Precio": 146.09,
+		"Visible": 1,
+		"Estado": "eu tellus eu augue porttitor interdum. Sed",
+		"ID_Usuario": 1,
+		"ID_Libro": 50
+	},
+	{
+		"ID_Ejemplar": 3,
+		"Precio": 367.40,
+		"Visible": 1,
+		"Estado": "rutrum eu, ultrices sit amet, risus. Donec nibh",
+		"ID_Usuario": 11,
+		"ID_Libro": 49
+	},
+	{
+		"ID_Ejemplar": 4,
+		"Precio": 144.75,
+		"Visible": 1,
+		"Estado": "massa. Suspendisse eleifend. Cras sed leo. Cras vehicula aliquet libero.",
+		"ID_Usuario": 22,
+		"ID_Libro": 3
+	},
+	{
+		"ID_Ejemplar": 5,
+		"Precio": 520.24,
+		"Visible": 1,
+		"Estado": "eu, accumsan sed, facilisis vitae,",
+		"ID_Usuario": 34,
+		"ID_Libro": 12
+	},
+	{
+		"ID_Ejemplar": 6,
+		"Precio": 596.12,
+		"Visible": 1,
+		"Estado": "dignissim tempor arcu. Vestibulum ut eros non enim",
+		"ID_Usuario": 14,
+		"ID_Libro": 27
+	},
+	{
+		"ID_Ejemplar": 7,
+		"Precio": 901.38,
+		"Visible": 1,
+		"Estado": "cursus et, magna.",
+		"ID_Usuario": 11,
+		"ID_Libro": 27
+	},
+	{
+		"ID_Ejemplar": 8,
+		"Precio": 562.67,
+		"Visible": 1,
+		"Estado": "metus sit amet ante. Vivamus",
+		"ID_Usuario": 47,
+		"ID_Libro": 47
+	},
+	{
+		"ID_Ejemplar": 9,
+		"Precio": 447.05,
+		"Visible": 1,
+		"Estado": "diam. Pellentesque habitant morbi tristique senectus et netus",
+		"ID_Usuario": 32,
+		"ID_Libro": 37
+	},
+	{
+		"ID_Ejemplar": 10,
+		"Precio": 956.81,
+		"Visible": 1,
+		"Estado": "libero. Donec consectetuer mauris id sapien.",
+		"ID_Usuario": 19,
+		"ID_Libro": 50
+	},
+	{
+		"ID_Ejemplar": 11,
+		"Precio": 570.24,
+		"Visible": 0,
+		"Estado": "sem, vitae aliquam eros turpis non enim. Mauris quis turpis",
+		"ID_Usuario": 44,
+		"ID_Libro": 44
+	},
+	{
+		"ID_Ejemplar": 12,
+		"Precio": 557.42,
+		"Visible": 0,
+		"Estado": "pede. Cras vulputate",
+		"ID_Usuario": 29,
+		"ID_Libro": 25
+	},
+	{
+		"ID_Ejemplar": 13,
+		"Precio": 827.70,
+		"Visible": 0,
+		"Estado": "Donec elementum, lorem ut aliquam iaculis, lacus",
+		"ID_Usuario": 39,
+		"ID_Libro": 28
+	},
+	{
+		"ID_Ejemplar": 14,
+		"Precio": 185.46,
+		"Visible": 0,
+		"Estado": "Aenean sed",
+		"ID_Usuario": 49,
+		"ID_Libro": 36
+	},
+	{
+		"ID_Ejemplar": 15,
+		"Precio": 125.28,
+		"Visible": 0,
+		"Estado": "Praesent eu nulla at sem molestie sodales.",
+		"ID_Usuario": 25,
+		"ID_Libro": 2
+	},
+	{
+		"ID_Ejemplar": 16,
+		"Precio": 811.36,
+		"Visible": 0,
+		"Estado": "lectus. Nullam suscipit, est ac facilisis facilisis, magna tellus faucibus",
+		"ID_Usuario": 32,
+		"ID_Libro": 31
+	},
+	{
+		"ID_Ejemplar": 17,
+		"Precio": 120.89,
+		"Visible": 1,
+		"Estado": "sem semper erat, in consectetuer ipsum nunc id enim.",
+		"ID_Usuario": 23,
+		"ID_Libro": 20
+	},
+	{
+		"ID_Ejemplar": 18,
+		"Precio": 454.44,
+		"Visible": 0,
+		"Estado": "sagittis placerat. Cras dictum ultricies",
+		"ID_Usuario": 29,
+		"ID_Libro": 29
+	},
+	{
+		"ID_Ejemplar": 19,
+		"Precio": 371.82,
+		"Visible": 1,
+		"Estado": "cursus non, egestas a,",
+		"ID_Usuario": 42,
+		"ID_Libro": 35
+	},
+	{
+		"ID_Ejemplar": 20,
+		"Precio": 277.58,
+		"Visible": 1,
+		"Estado": "at arcu.",
+		"ID_Usuario": 26,
+		"ID_Libro": 24
+	},
+	{
+		"ID_Ejemplar": 21,
+		"Precio": 305.94,
+		"Visible": 0,
+		"Estado": "est, vitae sodales nisi magna sed dui. Fusce",
+		"ID_Usuario": 34,
+		"ID_Libro": 17
+	},
+	{
+		"ID_Ejemplar": 22,
+		"Precio": 258.89,
+		"Visible": 0,
+		"Estado": "nisi. Mauris",
+		"ID_Usuario": 25,
+		"ID_Libro": 12
+	},
+	{
+		"ID_Ejemplar": 23,
+		"Precio": 309.00,
+		"Visible": 1,
+		"Estado": "congue. In scelerisque scelerisque dui. Suspendisse",
+		"ID_Usuario": 4,
+		"ID_Libro": 44
+	},
+	{
+		"ID_Ejemplar": 24,
+		"Precio": 698.34,
+		"Visible": 1,
+		"Estado": "urna justo faucibus lectus, a sollicitudin orci sem",
+		"ID_Usuario": 19,
+		"ID_Libro": 46
+	},
+	{
+		"ID_Ejemplar": 25,
+		"Precio": 304.10,
+		"Visible": 0,
+		"Estado": "enim commodo",
+		"ID_Usuario": 31,
+		"ID_Libro": 24
+	},
+	{
+		"ID_Ejemplar": 26,
+		"Precio": 154.61,
+		"Visible": 1,
+		"Estado": "est. Mauris eu turpis. Nulla aliquet. Proin",
+		"ID_Usuario": 44,
+		"ID_Libro": 5
+	},
+	{
+		"ID_Ejemplar": 27,
+		"Precio": 422.69,
+		"Visible": 1,
+		"Estado": "ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed",
+		"ID_Usuario": 22,
+		"ID_Libro": 15
+	},
+	{
+		"ID_Ejemplar": 28,
+		"Precio": 740.20,
+		"Visible": 0,
+		"Estado": "lectus sit amet luctus vulputate, nisi sem",
+		"ID_Usuario": 39,
+		"ID_Libro": 40
+	},
+	{
+		"ID_Ejemplar": 29,
+		"Precio": 984.50,
+		"Visible": 0,
+		"Estado": "lacus pede sagittis",
+		"ID_Usuario": 23,
+		"ID_Libro": 32
+	},
+	{
+		"ID_Ejemplar": 30,
+		"Precio": 325.26,
+		"Visible": 1,
+		"Estado": "nostra, per inceptos hymenaeos. Mauris",
+		"ID_Usuario": 25,
+		"ID_Libro": 21
+	},
+	{
+		"ID_Ejemplar": 31,
+		"Precio": 68.30,
+		"Visible": 0,
+		"Estado": "odio, auctor vitae, aliquet nec, imperdiet",
+		"ID_Usuario": 10,
+		"ID_Libro": 4
+	},
+	{
+		"ID_Ejemplar": 32,
+		"Precio": 863.18,
+		"Visible": 1,
+		"Estado": "Maecenas malesuada fringilla est. Mauris eu turpis. Nulla aliquet.",
+		"ID_Usuario": 33,
+		"ID_Libro": 12
+	},
+	{
+		"ID_Ejemplar": 33,
+		"Precio": 830.61,
+		"Visible": 1,
+		"Estado": "dui. Fusce aliquam, enim nec tempus scelerisque,",
+		"ID_Usuario": 9,
+		"ID_Libro": 8
+	},
+	{
+		"ID_Ejemplar": 34,
+		"Precio": 972.87,
+		"Visible": 1,
+		"Estado": "fermentum metus. Aenean sed pede nec",
+		"ID_Usuario": 38,
+		"ID_Libro": 42
+	},
+	{
+		"ID_Ejemplar": 35,
+		"Precio": 735.06,
+		"Visible": 1,
+		"Estado": "Sed eget lacus. Mauris non dui nec",
+		"ID_Usuario": 18,
+		"ID_Libro": 21
+	},
+	{
+		"ID_Ejemplar": 36,
+		"Precio": 579.36,
+		"Visible": 0,
+		"Estado": "convallis convallis dolor. Quisque tincidunt pede ac",
+		"ID_Usuario": 14,
+		"ID_Libro": 9
+	},
+	{
+		"ID_Ejemplar": 37,
+		"Precio": 43.23,
+		"Visible": 1,
+		"Estado": "consectetuer, cursus et, magna. Praesent interdum",
+		"ID_Usuario": 25,
+		"ID_Libro": 48
+	},
+	{
+		"ID_Ejemplar": 38,
+		"Precio": 244.99,
+		"Visible": 0,
+		"Estado": "lectus",
+		"ID_Usuario": 15,
+		"ID_Libro": 41
+	},
+	{
+		"ID_Ejemplar": 39,
+		"Precio": 956.31,
+		"Visible": 0,
+		"Estado": "Vivamus euismod urna. Nullam",
+		"ID_Usuario": 10,
+		"ID_Libro": 47
+	},
+	{
+		"ID_Ejemplar": 40,
+		"Precio": 767.85,
+		"Visible": 1,
+		"Estado": "pede, malesuada vel, venenatis vel,",
+		"ID_Usuario": 4,
+		"ID_Libro": 7
+	},
+	{
+		"ID_Ejemplar": 41,
+		"Precio": 750.27,
+		"Visible": 0,
+		"Estado": "Vivamus sit amet risus. Donec egestas. Aliquam nec enim. Nunc",
+		"ID_Usuario": 33,
+		"ID_Libro": 40
+	},
+	{
+		"ID_Ejemplar": 42,
+		"Precio": 458.45,
+		"Visible": 1,
+		"Estado": "turpis. Aliquam adipiscing lobortis risus.",
+		"ID_Usuario": 42,
+		"ID_Libro": 22
+	},
+	{
+		"ID_Ejemplar": 43,
+		"Precio": 899.21,
+		"Visible": 1,
+		"Estado": "tristique",
+		"ID_Usuario": 6,
+		"ID_Libro": 27
+	},
+	{
+		"ID_Ejemplar": 44,
+		"Precio": 387.99,
+		"Visible": 1,
+		"Estado": "magna tellus faucibus leo, in",
+		"ID_Usuario": 12,
+		"ID_Libro": 26
+	},
+	{
+		"ID_Ejemplar": 45,
+		"Precio": 175.32,
+		"Visible": 1,
+		"Estado": "rutrum lorem ac risus.",
+		"ID_Usuario": 30,
+		"ID_Libro": 8
+	},
+	{
+		"ID_Ejemplar": 46,
+		"Precio": 12.29,
+		"Visible": 0,
+		"Estado": "Duis a mi fringilla mi lacinia",
+		"ID_Usuario": 46,
+		"ID_Libro": 14
+	},
+	{
+		"ID_Ejemplar": 47,
+		"Precio": 573.59,
+		"Visible": 1,
+		"Estado": "pede sagittis augue, eu tempor erat neque",
+		"ID_Usuario": 12,
+		"ID_Libro": 46
+	},
+	{
+		"ID_Ejemplar": 48,
+		"Precio": 221.92,
+		"Visible": 1,
+		"Estado": "nibh. Phasellus nulla. Integer vulputate, risus a ultricies adipiscing,",
+		"ID_Usuario": 49,
+		"ID_Libro": 38
+	},
+	{
+		"ID_Ejemplar": 49,
+		"Precio": 849.73,
+		"Visible": 0,
+		"Estado": "Vestibulum ante ipsum primis in faucibus orci luctus et",
+		"ID_Usuario": 15,
+		"ID_Libro": 4
+	},
+	{
+		"ID_Ejemplar": 50,
+		"Precio": 528.30,
+		"Visible": 0,
+		"Estado": "Aliquam erat volutpat. Nulla dignissim. Maecenas ornare egestas",
+		"ID_Usuario": 4,
+		"ID_Libro": 3
+	}
+]

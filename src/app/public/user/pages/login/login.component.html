@@ -1,0 +1,38 @@
+<div class="modal-login">
+  <div class="login-card">
+    <div>
+      <h2 class="title">Sign in</h2>
+    </div>
+    <div>
+      <div class="email-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Introduzca su email</mat-label>
+          <input matInput placeholder="pat@example.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="pass-container">
+        <mat-form-field appearance="fill">
+          <mat-label>Introduzca su contraseña</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" [formControl]="password" required>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+      <div class="forgot-password">
+        <a href="#">¿Olvidó su contraseña?</a>
+      </div>
+    </div>
+    <h2 *ngIf="errorMsg">{{errorMsg}}</h2>
+    <mat-card-actions (click)="login()" class="button-singin">
+      <div class="container-buttton">
+        <button mat-raised-button color="accent">
+          <p class="button-acept">Aceptar</p>
+        </button>
+      </div>
+    </mat-card-actions>
+    <h4 class="text-link">¿Aún no te has registrado?</h4>
+    <button class="link-register" (click)="openRegister()">Regístrate</button>
+  </div>
+</div>

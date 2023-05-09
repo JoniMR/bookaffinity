@@ -1,0 +1,87 @@
+<!-- <div class="navbar-test"></div> -->
+<div class="content">
+  <img
+    class="book-cover"
+    src="{{this.book.picture}}"
+  />
+  <div class="info">
+    <h1 class="title">
+      {{this.book.name}}
+    </h1>
+    <div class="details">
+      <div class="stars">
+        <mat-icon *ngIf="score==0" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score> 0 && score<1" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=1" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<1.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=1.5 && score<2" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=2" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<2.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=2.5 && score<3" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=3" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<3.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=3.5 && score<4" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=4" class="star">star</mat-icon>
+
+        <mat-icon *ngIf="score<4.5" class="star">star_border</mat-icon>
+        <mat-icon *ngIf="score>=4.5 && score<5" class="star">star_half</mat-icon>
+        <mat-icon *ngIf="score>=5" class="star">star</mat-icon>
+      </div>
+      <p class="number-reviews">125 productos valorados</p>
+      <p class="number-orders">425 ventas</p>
+    </div>
+    <div class="specifics">
+      <h2 class="title-section">Especificaciones</h2>
+      <div class="specs">
+        <!-- <div class="spec-row">
+          <p class="tag-spec">Estado:</p>
+          <p class="value-spec">new</p>
+        </div> -->
+        <div class="spec-row">
+          <p class="tag-spec">Autor:</p>
+          <p class="value-spec">{{this.book.author.name_author}}</p>
+        </div>
+        <div class="spec-row">
+          <p class="tag-spec">ISBN:</p>
+          <p class="value-spec">{{this.book.isbn}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <h2 class="title-section">Descripción</h2>
+      <p class="text-desc">{{this.book.summary}}</p>
+    </div>
+    <div class="actions">
+      <button
+        class="action-button publish-button"
+        mat-raised-button
+        color="warn"
+        (click)="navigateToAddProduct()"
+      >
+        ¡Véndelo!
+      </button>
+      <button
+        class="action-button review-button"
+        mat-raised-button
+        color="warn"
+        (click)="navigateToAddReview()"
+      >
+        <p class="text-button">Añade tu review</p>
+      </button>
+    </div>
+  </div>
+  <div class="sold-by">
+    <div class="sold-by-container">
+      <button><h2 class="sold-by-title" (click)="navigateToEcommerce()">Vendido por</h2></button>
+    </div>
+    <div *ngFor="let copy of copyList" class="product-at-sell">
+      <button class="button-at-sell" (click)="openAccountModal(copy.user.id_user)"><p class="button-text">{{copy.user.name}}</p></button>
+      <hr class="rule" />
+      <button class="button-at-sell" (click)="navigateToDetailModal()"><p class="button-text">Revisa el producto</p></button>
+      <p class="feedback">Ver otros productos del vendedor</p>
+      <button class="button-at-sell" (click)="navigateToMessages()"><p class="button-text">Contacta con el vendedor</p></button>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+.photo-stock{
+  display: flex;
+  flex-direction: column;
+}
+.image-stock{
+  object-fit: contain;
+  width: 30vw;
+  height: 40vh;
+  max-width: 30vw;
+  max-height: 40vh;
+}
+
+.circles{
+  display: flex;
+  flex-direction: row;
+}
+
+.circle-1{
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 2%;
+  margin-left: 25%;
+}
+.circle-2{
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 2%;
+
+}
+.circle-3{
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 2%;
+
+}
+.circle-4{
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 2%;
+  background-color: gray;
+}
+.circle-5{
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.stock-text{
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.lateral-button {
+  height: 53%;
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  border-color: #E6800A;
+  color: #EC9F47;
+  width: 1.5vw !important;
+  min-width: unset !important;
+  padding: 0;
+  margin-top: 20%;
+  
+}
+.left-button {
+  margin-right: 1.5vw;
+  float: left;
+}
+
+.right-button {
+  margin-left: 0.5vw;
+  float: right;
+  margin-left: 12px;
+}

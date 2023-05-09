@@ -1,0 +1,35 @@
+.contact--list {
+  width: 23vw;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.contact--title {
+  text-align: center;
+}
+p{
+  font-family: Inter;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d68e36 #e4b978;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e4b978;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d68e36;
+  border-radius: 90px;
+  border: 3px none #ffffff;
+}

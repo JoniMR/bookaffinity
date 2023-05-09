@@ -1,0 +1,55 @@
+<div class="filter filter--container">
+  <div class="form form--genres">
+    <mat-form-field class="form form--field">
+      <mat-label class="mat-caption">Géneros</mat-label>
+      <mat-select [formControl]="genresForm" multiple class="mat-caption">
+        <mat-select-trigger class="mat-caption">
+          {{genresForm.value?.[0] || ''}}
+          <span class="mat-caption" *ngIf="(genresForm.value?.length || 0) > 1">
+            (+{{ (genresForm.value?.length || 0) - 1 }}
+            {{ genresForm.value?.length === 2 ? "otros" : "otros" }})
+          </span>
+        </mat-select-trigger>
+        <mat-option *ngFor="let genre of genres" [value]="genre" class="mat-caption">{{
+          genre
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div class="filter filter--container-language">
+    <form>
+      <mat-form-field class="custom-form-field">
+        <mat-select [(ngModel)]="selectedLanguage" name="language">
+          <mat-select-trigger>
+            <img
+              src="../../../../../assets/svg/{{ selectedLanguage }}.svg"
+              alt=""
+            />
+          </mat-select-trigger>
+          <mat-option
+            *ngFor="let language of languages"
+            [value]="language.value" 
+            ><img
+              src="../../../../../assets/svg/{{ language.value }}.svg"
+              alt=""
+            />
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+
+  <div class="form form--order">
+    <form>
+      <mat-form-field>
+        <mat-label class="mat-caption">Ordenar por</mat-label>
+        <mat-select class="mat-caption" [(ngModel)]="selectedOrderBy" name="orderBy">
+          <mat-option *ngFor="let orderBy of orderBy" [value]="orderBy.value" class="mat-caption"
+            >{{ orderBy.value }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+</div>
